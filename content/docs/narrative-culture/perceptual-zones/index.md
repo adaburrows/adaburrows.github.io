@@ -16,7 +16,7 @@ aliases: ["/writing/narratives-and-culture/"]
 
 Each individual (an agent) has their own perceptual zone which differs from other people's perceptual zones. The perceptual zones may overlap, but in many case they don't. The perceptual zone is the combined whole of experience each individual is perceiving and sense-making at any given time.
 
-{{< figure title="Image 1" caption="Two visual perceptual zones looking towards each other and overlapping" src="https://adaburrows.com/writing/narratives-and-culture/images/Two%20Viewpoints.jpeg">}}
+{{< figure title="Image 1" caption="Two visual perceptual zones looking towards each other and overlapping" src="images/Two%20Viewpoints.jpeg">}}
 
 There are at least two principal divisions of perceptual zones: Interior + Exterior. These different zones are also supported by the concepts of external and internal focalization in literature.
 
@@ -62,17 +62,17 @@ If we lay these individual strands of narrative beside one another, we'll find a
 
 Now that we've properly outlined the meaning and context behind the internal and the external narratives, these two strands can be used to weave a narrative diagram for one agent:
 
-{{< figure title="Figure 1" src="https://adaburrows.com/writing/narratives-and-culture/images/4x/Figure%201%20-%20Internal%20vs.%20External%20Narrative@4x.png" >}}
+{{< figure title="Figure 1" src="images/4x/Figure%201%20-%20Internal%20vs.%20External%20Narrative@4x.png" >}}
 
 The main states any pair of narratives can occupy are either consonant or dissonant. The relative amount of space between narratives indicates the amount of consonance or dissonance. Sometimes there can be conflict between an agent's internal narrative and external narrative, as indicated by dissonance between the two narratives. This is created through divergence between internal and external narratives, optionally any number of "false" narratives may be present.
 
 {{< columns >}}
 
-{{< figure title="Figure 2" src="https://adaburrows.com/writing/narratives-and-culture/images/4x/Figure%202%20-%20Divergence@4x.png" >}}
+{{< figure title="Figure 2" src="images/4x/Figure%202%20-%20Divergence@4x.png" >}}
 
 <--->
 
-{{< figure title="Figure 3" src="https://adaburrows.com/writing/narratives-and-culture/images/4x/Figure%203%20-%20Convergence@4x.png" >}}
+{{< figure title="Figure 3" src="images/4x/Figure%203%20-%20Convergence@4x.png" >}}
 
 {{< /columns >}}
 
@@ -81,11 +81,11 @@ When two narratives go from being consonant to being dissonant, they are said to
 
 {{< columns >}}
 
-{{< figure title="Figure 4" src="https://adaburrows.com/writing/narratives-and-culture/images/4x/Figure%204%20-%20Consonance@4x.png" >}}
+{{< figure title="Figure 4" src="images/4x/Figure%204%20-%20Consonance@4x.png" >}}
 
 <--->
 
-{{< figure title="Figure 5" src="https://adaburrows.com/writing/narratives-and-culture/images/4x/Figure%205%20-%20Dissonance@4x.png" >}}
+{{< figure title="Figure 5" src="images/4x/Figure%205%20-%20Dissonance@4x.png" >}}
 
 {{< /columns >}}
 
@@ -94,11 +94,11 @@ Different kinds of false narratives can happen. A false narrative can either be 
 
 {{< columns >}}
 
-{{< figure title="Figure 6" src="https://adaburrows.com/writing/narratives-and-culture/images/4x/Figure%206%20-%20False%20Narrative%201@4x.png" >}}
+{{< figure title="Figure 6" src="images/4x/Figure%206%20-%20False%20Narrative%201@4x.png" >}}
 
 <--->
 
-{{< figure title="Figure 7" src="https://adaburrows.com/writing/narratives-and-culture/images/4x/Figure%207%20-%20False%20Narrative%202@4x.png" >}}
+{{< figure title="Figure 7" src="images/4x/Figure%207%20-%20False%20Narrative%202@4x.png" >}}
 
 {{< /columns >}}
 
@@ -118,7 +118,7 @@ This could also represent the beginning of stereotype threat, where one's intern
 
 How do these strands of narrative interact with other people's strands of narrative? This is where it gets interesting, because there are quite a few combinations. The basics are the same as laid out above. Instead of just one internal and external narrative, there become as many pairs as there are agents.
 
-{{< figure title="Figure 8" caption="Two agents' external narratives overlap in a shared perceptual field" src="https://adaburrows.com/writing/narratives-and-culture/images/4x/Figure%208%20-%20Dual%20Convergence@4x.png" >}}
+{{< figure title="Figure 8" caption="Two agents' external narratives overlap in a shared perceptual field" src="images/4x/Figure%208%20-%20Dual%20Convergence@4x.png" >}}
 
 Fig. 8 represents two people coming into the other's perceptual fields, sharing part of their physical reality, but not much of their inner reality. This is the equivalent of the visual field overlap illustrated in Image 1. Two fields of perception come close enough that there is enough information to map one onto the other, even if imperfectly. There's a lot of potential variation in these diagrams, especially if the inner narrative is allowed to cross over the external narrative to allow for people building similar thoughts and inner narratives.
 
@@ -132,85 +132,85 @@ The full set of possibilities is derived through the following rules:
     -   If the two agents can be transposed and it results in the same relationships between agents, then the state is symmetric.
     -   Clusters of consonances are typically always symmetrical, except that external narratives always represent a division into individuals so the order of the cluster does matter, since a transposition of the internal narrative across the external narratives is not symmetrical.
 
-{{< figure title="Figure 9" caption="The derivation of the 13 possible states from the rules described above" src="https://adaburrows.com/writing/narratives-and-culture/images/4x/Map@4x.png" >}}
+{{< figure title="Figure 9" caption="The derivation of the 13 possible states from the rules described above" src="images/4x/Map@4x.png" >}}
 
 These configurations represent the following 13 states:
 
 1.  Two agents with external experiences which are closely congruent with one another. Their internal narratives are consonant with their external narratives, but they may be thinking of different things.
 
-    ![](https://adaburrows.com/writing/narratives-and-culture/images/1x/a%20-%20Two%20Agents.png)
+    ![](images/1x/a%20-%20Two%20Agents.png)
 
     > This is a fairly common situation. It describes two people who have nearly overlapping spheres of perception, but yet are thinking about things which are different, yet may still reference the same objects in the possibly overlapping areas of their environment. This could be two people sitting at a counter in the same bar. They might even be talking to each other, but they haven't yet reached the state where their minds are closer than their bodies, as in j.
 
 2.  Two agents with external narratives which are dissonant with one another. Their internal narratives are congruent with their external narratives, but they are definitely having different experiences.
 
-    ![](https://adaburrows.com/writing/narratives-and-culture/images/1x/b%20-%20Two%20Agents.png)
+    ![](images/1x/b%20-%20Two%20Agents.png)
 
     > Wašté Wiŋ is riding her horse through a field completely engrossed in the glory of the shining sun at near noon and and the medicine she flys over while navigating the 6 directions. Her brother is sitting in a couch hidden in the shadows of their home's basement playing video games, he is similarly in a state of flow [but this narrator doesn't think it's as healthy].
 
 3.  Two agents with consonant external narratives. One agent's internal narrative is consonant with their external narratives, while the other agent's internal narrative is dissonant with the all other narratives.
 
-    ![](https://adaburrows.com/writing/narratives-and-culture/images/1x/c%20-%20Two%20Agents.png)
+    ![](images/1x/c%20-%20Two%20Agents.png)
 
     > Harriet and Oscar sit in their Scion as it glides across the mountain highway. Soon they will be at their destination. Harriet sits ponderously distant in the passenger seat while Oscar is immediately present taking curve around the mountain with ease.
 
 4.  Two agents with consonant external narratives. Each agent's internal narratives are dissonant with their external narratives.
 
-    ![](https://adaburrows.com/writing/narratives-and-culture/images/1x/d%20-%20Two%20Agents.png)
+    ![](images/1x/d%20-%20Two%20Agents.png)
 
     > Jillian and Sky sit side by side at the coffee shop. Though they are best friends, they have separate lives and each is focused on their tasks and emails whose invisible ties link them to friends and colleagues far away.
 
 5.  Two agents with dissonant external narratives. One agent's internal narrative is distinctly dissonant with their external narrative. One agent's internal narrative is consonant with their external narrative.
 
-    ![](https://adaburrows.com/writing/narratives-and-culture/images/1x/e%20-%20Two%20Agents.png)
+    ![](images/1x/e%20-%20Two%20Agents.png)
 
     > Far away from his sister Tiffany, Arnold is engrossed in World of Warcraft so much so he forgets about how much his butt and bladder actually hurts from sitting so long focused on the virtual campaign he's leading. Meanwhile, Tiffany is practicing yoga a state away, focusing on every bodily sensation and breath.
 
 6.  Two agents with dissonant external narratives. Each agent's internal narratives are also distinctly dissonant with their external narratives.
 
-    ![](https://adaburrows.com/writing/narratives-and-culture/images/1x/f%20-%20Two%20Agents.png)
+    ![](images/1x/f%20-%20Two%20Agents.png)
 
     > Jasmine reclines in her hammock in Mars Colony One's residence hall. She is dreaming of the vast cosmos and the most recent fast radio burst (FRB) which was detected. She ponders if there is another intelligence here in the universe. Meanwhile back on Earth her distant cousin Marta is laying on the reddish-brown clay soil next to the river and the red willows which surround her in her Nevada homelands. Her mind is thinking about how all of life is one organism, still sharing most of its original DNA and RNA, constantly searching out new forms and ways of being. She realizes she is just one branch of the tree turned sideways in time which we call humanity. Each part has something to offer and something to learn from every other part -- if we can really call anything an "other".
 
 7.  Two agents with consonant external narratives. Their internal narratives are more consonant with each other than their external narratives.
 
-    ![](https://adaburrows.com/writing/narratives-and-culture/images/1x/g%20-%20Two%20Agents.png)
+    ![](images/1x/g%20-%20Two%20Agents.png)
 
     > Eugene and Jackie are naked in bed on top of each other. Their minds are just as entwined in each other as their bodies are, each thinking of how in the moment to best pleasure the other. Their bodies writhe together in undulating passion.
 
 8.  Two agents with dissonant external narratives. Their internal narratives are consonant with each other and consonant with one external narrative.
 
-    ![](https://adaburrows.com/writing/narratives-and-culture/images/1x/h%20-%20Two%20Agents.png)
+    ![](images/1x/h%20-%20Two%20Agents.png)
 
     > Jared is a remote client joining a conference with Tina, the lead architect. She is screen sharing her laptop screen while she sits in an office conference room talking about the building design on her screen. Both are focused on what's going on in the conference room, and not what's happening at Jared's physical location.
 
 9.  Two agents with consonant external narratives. Their internal narratives are consonant with each other, but dissonant from their external narratives.
 
-    ![](https://adaburrows.com/writing/narratives-and-culture/images/1x/i%20-%20Two%20Agents.png)
+    ![](images/1x/i%20-%20Two%20Agents.png)
 
     > Mario and Luigi are playing their Sega Genesis, each embodying their in-game characters while they both sit on the couch. Both of their minds are occupied by the same in game experiences, while their bodies also share the same physical environment.
 
 10. Two agents with dissonant external narratives. Their internal narratives are more consonant with each other, but dissonant from their external narratives.
 
-    ![](https://adaburrows.com/writing/narratives-and-culture/images/1x/j%20-%20Two%20Agents.png)
+    ![](images/1x/j%20-%20Two%20Agents.png)
 
     > Janet and Manuel are each in different states on their distinct couches playing Second Life. They happen to be chatting in game at a bar. They haven't seen each other in a long time and are excited to catch up, even if it is just virtually.
 
 11. Two agents with dissonant external narratives and dissonant internal narratives. One agent's internal narrative is more closely consonant with the other agent's external narrative.
 
-    ![](https://adaburrows.com/writing/narratives-and-culture/images/1x/k%20-%20Two%20Agents.png)
+    ![](images/1x/k%20-%20Two%20Agents.png)
 
     > Justine, a web developer, sets up a livestream of herself coding. While she may be sitting in front of a computer programming, most of the abstract concepts she grapples with are very distant from the physical plane. Chris, who is not familiar with programming at all, tunes into the livestream to watch and get away from the worries of his life and puzzles over the livestream of someone typing at a desk before switching from YouTube to ESPN.
 
 12. Two agents with dissonant external narratives and dissonant internal narratives. Both agent's internal narratives are consonant with the other agent's external narrative.
 
-    ![](https://adaburrows.com/writing/narratives-and-culture/images/1x/l%20-%20Two%20Agents.png)
+    ![](images/1x/l%20-%20Two%20Agents.png)
 
     > Chadricia and Patwyn are are performing an experiment with VR and telepresence over Internet2. They are each in different countries: Chadricia is in London, UK while Patwin is in California, USA. They each wear a VR headset with a camera and x-y microphone setup. Instead of augmented reality where each person's perception is modified and then fed back to the same person, they are experiencing each other's perspective instead of their own.
 
 13. Two agents with consonant external narratives and dissonant internal narratives. Both agent's internal narratives are consonant with the other agent's external narrative.
 
-    ![](https://adaburrows.com/writing/narratives-and-culture/images/1x/m%20-Two%20Agents.png)
+    ![](images/1x/m%20-Two%20Agents.png)
 
     > Bianca wakes up next to her newborn son she just slept with outside her body for the first time, but realizes she is experiencing all the bodily sensations of her newborn and feels her own body pressing up against the tiny body she is experiencing. She thinks to herself, Could my baby be experiencing a dream of being older and having my form?
 
