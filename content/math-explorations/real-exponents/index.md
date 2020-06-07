@@ -1,5 +1,6 @@
 ---
 title: Real Exponents
+date: '2020-06-07'
 ---
 
 # Real Exponents
