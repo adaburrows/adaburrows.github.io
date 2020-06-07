@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Design on Jillian Ada Burrows</title>
+    <link>http://adaburrows.com/categories/design/</link>
+    <description>Recent content in Design on Jillian Ada Burrows</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://adaburrows.com/categories/design/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Star Trek or US Space Force?</title>
+      <link>http://adaburrows.com/medium-posts/2020-05-19-star-trek-or-us-space-force/</link>
+      <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://adaburrows.com/medium-posts/2020-05-19-star-trek-or-us-space-force/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

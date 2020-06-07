@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Emergence of Culture on Jillian Ada Burrows</title>
+    <link>http://adaburrows.com/docs/narrative-culture/</link>
+    <description>Recent content in The Emergence of Culture on Jillian Ada Burrows</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://adaburrows.com/docs/narrative-culture/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Perceptual &#43; Narrative Zones</title>
+      <link>http://adaburrows.com/docs/narrative-culture/perceptual-zones/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://adaburrows.com/docs/narrative-culture/perceptual-zones/</guid>
+      <description>This is a draft of what will likely become a book detailing how our minds form culture based on shared experiences and a Nash-like equilibrium of cultural dynamics.
+ Perceptual + Narrative Zones Perceptual Zones Each individual (an agent) has their own perceptual zone which differs from other people&amp;rsquo;s perceptual zones. The perceptual zones may overlap, but in many case they don&amp;rsquo;t. The perceptual zone is the combined whole of experience each individual is perceiving and sense-making at any given time.</description>
+    </item>
+    
+  </channel>
+</rss>

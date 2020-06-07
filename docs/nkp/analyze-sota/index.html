@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="This is a work in progress. It will likely become a book at some point.
+ Analyzing the State of the Art With todays applications, there is typically a focus on serving large numbers of people across multiple platforms. This is complicated by those various platforms requiring different languages and technologies in order to implement each part. Many languages have been focused on incremental improvements over previous languages. This is also the case for many web technologies.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Analyzing the State of the Art" />
+<meta property="og:description" content="This is a work in progress. It will likely become a book at some point.
+ Analyzing the State of the Art With todays applications, there is typically a focus on serving large numbers of people across multiple platforms. This is complicated by those various platforms requiring different languages and technologies in order to implement each part. Many languages have been focused on incremental improvements over previous languages. This is also the case for many web technologies." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://adaburrows.com/docs/nkp/analyze-sota/" />
+
+<title>Analyzing the State of the Art | Jillian Ada Burrows</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.6df681b0bb21155cba49f6078e3559216772d8e03e780d240c73ea21817ed5e5.css" integrity="sha256-bfaBsLshFVy6SfYHjjVZIWdy2OA&#43;eA0kDHPqIYF&#43;1eU=">
+<script defer src="/en.search.min.9bc4d50cbae0f14edeb746246fbb479b1784d061f1605cdc191478ce70928ad8.js" integrity="sha256-m8TVDLrg8U7et0Ykb7tHmxeE0GHxYFzcGRR4znCSitg="></script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-148152323-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Jillian Ada Burrows</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/resume/" class="">Resume</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ice-age/" class="">Ice Age Map</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/narrative-culture/" class="collapsed ">The Emergence of Culture</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/nkp/" class="collapsed ">A Matter of Programming</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/nkp/introduction/" class="">What is Programming About?</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/nkp/analyze-sota/" class="active">Analyzing the State of the Art</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/math-explorations/" class="collapsed ">Math Explorations</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/medium-posts/" >
+        Writing
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+<ul>
+  <li><a href="/support-me">Support Me</a></li>
+</ul>
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Analyzing the State of the Art</strong>
+
+  <label for="toc-control">
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#duplication-in-architecture">Duplication in Architecture</a></li>
+    <li><a href="#duplication-i-data-definitions-validations-and-serialization">Duplication I: Data Definitions, Validations, and Serialization</a></li>
+    <li><a href="#duplication-ii-business-and-workflow-logic">Duplication II: Business and Workflow Logic</a></li>
+    <li><a href="#duplication-iii-views-and-rendering">Duplication III: Views and Rendering</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><hr>
+<p><strong>This is a work in progress. It will likely become a book at some point.</strong></p>
+<hr>
+<h1 id="analyzing-the-state-of-the-art">Analyzing the State of the Art</h1>
+<p>With todays applications, there is typically a focus on serving large numbers of
+people across multiple platforms. This is complicated by those various platforms
+requiring different languages and technologies in order to implement each part.
+Many languages have been focused on incremental improvements over previous
+languages. This is also the case for many web technologies.</p>
+<p>We have a wide variety of languages which can be used on the server side. In
+fact, our choice on the server side is nearly unlimited and is only constrained
+by convenience or special needs. Clients can be written in many different
+languages, especially given the rise of transpilers. Generally, browser based
+apps are constrained to languages which readily allow usage of the libraries
+widely avaiable through NPM. Client apps on iOS are limited Objective C, Swift,
+and other web languages running in a web view. Android apps are limited to
+languages which run in the JVM, languages with a C interface, and web languages
+running in a web view.
++
+In the recent few years, web apps have started to mature in their approach to
+using components, data binding, and approaches to manipulating the DOM. Methods
+like Relay and GraphQL have also simplified the serialization of data for views.
+Other technologies like flat buffers on ArrayBuffers, service workers, and HTTP/2
+have allowed speeding up the tranfer of data.</p>
+<p>Despite all of these improvements, web application development is still not too
+far removed from where it was in the beginning when JavaScript and VBScript were
+just taking off in browsers. Programming is still stuck in low level thought,
+while apps are much broader in scope. Our languages and tools have not kept up
+with the complexity of what we try to accomplish. Most of our programming
+languages are still systems programming laguages leaving us to repeat oursleves
+over and over again.</p>
+<h2 id="duplication-in-architecture">Duplication in Architecture</h2>
+<p>Let&rsquo;s analyze a relative simple web application that could be something from real
+life. Each of the components may be physically duplicates and load balanced. We
+have a system composed of:</p>
+<ol>
+<li>Websever which serves front end code.</li>
+<li>Backend API service proxied through the webserver.</li>
+<li>Database which holds all the data for the system.</li>
+<li>Service which collects and aggregates statistics from the system in Redis.</li>
+<li>Redis keystore which stores the online aggregation of data and also stores
+the session data in another database.</li>
+</ol>
+<p><img src="./images/system-diagram.png" alt="" /></p>
+<blockquote class="book-hint info">
+  <p>We can see a lot duplication which should be examined in order to determine if
+there are any opportunities for reducing complexity. The first set of duplicates
+to bring attention to are the aspects of <strong>data modeling</strong> and <strong>validation</strong>.</p>
+<p>There&rsquo;s actually a decent level of complexity going on here which needs to be
+appreciated. Several other systems (not included here) likely interact with the
+backend service. In many systems around today, there is likely an additional
+service worker which handles longer running tasks. I&rsquo;m omitting all of that, just
+to focus on the core of the problem.</p>
+
+</blockquote>
+
+
+
+<script src="/mermaid.min.js"></script>
+<script>
+mermaid.initialize({
+  flowchart: { useMaxWidth:true }
+});
+</script>
+
+
+
+<p class="mermaid">
+sequenceDiagram
+	autonumber
+
+	participant A as Alice
+	participant B as Browser
+	participant WS as Web Server
+	participant API
+	participant S as Service
+	participant DB
+	participant R as Redis
+
+	A ->> B: Navigates to site
+	B ->> WS: Initial Request
+	activate WS
+	WS -->> B: Returns Frontend (FE) to Browser
+	deactivate WS
+	B ->> WS: Auth check
+	activate WS
+	WS ->> API: Auth check (cont.)
+	activate API
+	API ->> R: Retrieve session data
+	activate R
+	R -->> API: Session data
+	deactivate R
+	API -->> WS: Return session, if exists
+	deactivate API
+	WS -->> B: Session (cont.)
+	deactivate WS
+	B ->> WS: Asset request
+	activate WS
+	B ->> WS: Asset request
+	WS -->> B: Return asset
+	WS -->> B: Return asset
+	deactivate WS
+	B ->> A: Sees the UI
+
+	A ->> B: Requests with UI
+	B ->> WS: FE requests from API
+	activate WS
+	WS ->> API: Webserver proxies to API
+	activate API
+	API ->> DB: API requests data from DB
+	activate DB
+	DB -->> API: DB returns data to API
+	deactivate DB
+	API -->> WS: API proxies through webserver
+	deactivate API
+	WS -->> B: FE receives the data from the API
+	deactivate WS
+	B -->> A: Sees update
+
+	A ->> B: Requests with UI
+	B ->> WS: FE requests from API
+	activate WS
+	WS ->> API: Webserver proxies to API
+	activate API
+	API ->> S: API requests data from S
+	activate S
+	S ->> R: S requests data from Redis
+	activate R
+	R -->> S: Redis returns data to Service
+	deactivate R
+	S -->> API: Returns data to API
+	deactivate S
+	API -->> WS: API proxies through webserver
+	deactivate API
+	WS -->> B: FE receives the data from the API
+	deactivate WS
+	B -->> A: Sees update
+</p>
+
+<blockquote class="book-hint info">
+  With this diagram and the one above, we can begin to see the complexity of
+serializing, marshalling, and validating data and how it relates to the
+duplication of the data models across multiple systems.
+</blockquote>
+
+<h2 id="duplication-i-data-definitions-validations-and-serialization">Duplication I: Data Definitions, Validations, and Serialization</h2>
+<p>In this example let&rsquo;s assume the API is written in Ada, the FE is written
+in JavaScript, the Service is written in C++, and the database schema is in a
+MySQL dialect. This means that we have duplication of:</p>
+<ul>
+<li>the type specifications in four different languages.</li>
+<li>validation constraints in four different laguages.</li>
+<li>serialization of these models in three different languages (the DB already has
+a serialization format built in, but I&rsquo;m not counting it since we don&rsquo;t have to
+specify it or manually wire it).</li>
+</ul>
+<p>Let&rsquo;s take an overview of each of these. First, there&rsquo;s the SQL definition of the
+table. There&rsquo;s a few things we need to notice about this. It uses the database&rsquo;s
+built-in types. It specifies ranges on the length of certain fields. Curiously,
+besides basic type safety, it provides no actual verification of the data for
+patterns. If there was an <code>EMAIL</code> type in SQDL&rsquo;s DDL, it would be able to
+validate the form of the email address according to the RFC. This, of course,
+would be less than ideal given the latency in verifying the form of the data by
+going through two network connections, with one potentially having less than
+ideal properties. Additionally, since databases</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#75715e">-- Using types provided by the database which may be different than the types
+</span><span style="color:#75715e">-- provided by other languages.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> person (
+    id            INTEGER       <span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span>,
+    first_name    VARCHAR(<span style="color:#ae81ff">50</span>)   <span style="color:#66d9ef">not</span> <span style="color:#66d9ef">null</span>,
+    last_name     VARCHAR(<span style="color:#ae81ff">75</span>)   <span style="color:#66d9ef">not</span> <span style="color:#66d9ef">null</span>,
+    nick_name     VARCHAR(<span style="color:#ae81ff">50</span>)   <span style="color:#66d9ef">not</span> <span style="color:#66d9ef">null</span>,
+    dateofbirth   DATE          <span style="color:#66d9ef">not</span> <span style="color:#66d9ef">null</span>
+);
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ada" data-lang="ada"><span style="color:#75715e">-- Ada doesn&#39;t have a standard Date type, but if you know Ada it&#39;s really easy
+</span><span style="color:#75715e">-- to make your own date record type with bound checking. So assume we&#39;ve defined
+</span><span style="color:#75715e">-- a Date type in `SomeLibrary`.
+</span><span style="color:#75715e"></span><span style="color:#f92672">with</span> SomeLibrary.Date
+<span style="color:#66d9ef">type</span> <span style="color:#66d9ef">Person</span> <span style="color:#66d9ef">is</span> <span style="color:#66d9ef">record</span>
+    id          : <span style="color:#66d9ef">Integer</span>;
+    firstName   : <span style="color:#66d9ef">String</span>(<span style="color:#ae81ff">1</span> .. <span style="color:#ae81ff">50</span>);
+    lastName    : <span style="color:#66d9ef">String</span>(<span style="color:#ae81ff">1</span> .. <span style="color:#ae81ff">75</span>);
+    nickName    : <span style="color:#66d9ef">String</span>(<span style="color:#ae81ff">1</span> .. <span style="color:#ae81ff">50</span>);
+    dateOfBirth : SomeLibrary.Date;
+<span style="color:#66d9ef">end record</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#75715e">/*
+</span><span style="color:#75715e"> * C++ also doesn&#39;t have a built in Date type, but we could build one using
+</span><span style="color:#75715e"> * &lt;ctime&gt; and adding a bit of math. For simplicity&#39;s sake, lets assume we&#39;ve
+</span><span style="color:#75715e"> * already defined one in SomeLibrary.
+</span><span style="color:#75715e"> */</span>
+
+<span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;some_library.h&#34;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> SomeLibrary;
+ 
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Person</span> {
+	<span style="color:#66d9ef">int</span> id;
+	<span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> firstName;
+	<span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> lastName;
+	<span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> nickName;
+	Date dateOfBirth;
+}
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/*
+</span><span style="color:#75715e"> * While JavaScript has a built in Date object. It is not a type. We know this
+</span><span style="color:#75715e"> * because `typeof (new Date()) === &#39;object&#39;`. This is on top of JavaScript
+</span><span style="color:#75715e"> * not being a statically typed language, so it doesn&#39;t matter so much.
+</span><span style="color:#75715e"> */</span>
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Person</span> {
+	<span style="color:#a6e22e">id</span>;
+	<span style="color:#a6e22e">firstName</span>;
+	<span style="color:#a6e22e">lastName</span>;
+	<span style="color:#a6e22e">nickName</span>;
+	<span style="color:#a6e22e">dateOfBirth</span>;
+}
+</code></pre></div><h2 id="duplication-ii-business-and-workflow-logic">Duplication II: Business and Workflow Logic</h2>
+<h2 id="duplication-iii-views-and-rendering">Duplication III: Views and Rendering</h2>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#duplication-in-architecture">Duplication in Architecture</a></li>
+    <li><a href="#duplication-i-data-definitions-validations-and-serialization">Duplication I: Data Definitions, Validations, and Serialization</a></li>
+    <li><a href="#duplication-ii-business-and-workflow-logic">Duplication II: Business and Workflow Logic</a></li>
+    <li><a href="#duplication-iii-views-and-rendering">Duplication III: Views and Rendering</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

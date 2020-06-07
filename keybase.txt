@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/adaburrows
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://adaburrows.com
+  * I am adaburrows (https://keybase.io/adaburrows) on keybase.
+  * I have a public key ASCqs_fn3R4ZZiZuMcZM5gaoVTxIQpODR4x6HMFC_p_PRAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120c4eb0db2fcca08b3c9a19d113253a63b28c45eb27f56c233b6bd2102f4e682b50a",
+      "host": "keybase.io",
+      "kid": "0120aab3f7e7dd1e1966266e31c64ce606a8553c48429383478c7a1cc142fe9fcf440a",
+      "uid": "dcb6096501dd8d2dc87aa40a0a64a900",
+      "username": "adaburrows"
+    },
+    "merkle_root": {
+      "ctime": 1517775304,
+      "hash": "987c055e1094c065fc1d4c5bccde2f9a41aa02795007e147585f54453b25375fa47a4ea27e147e2e271c8eea26d66d529368343f15e9b2b235e9ecfe52d28379",
+      "hash_meta": "fe5c6efd519e719f97e6a5b8d1f0e80b82e6b04c87aafcdd16704b2b9d27e2d1",
+      "seqno": 2031974
+    },
+    "service": {
+      "hostname": "adaburrows.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.39"
+  },
+  "ctime": 1517775379,
+  "expire_in": 504576000,
+  "prev": "b8bd1685fe140b6aeb50ee282190ba70e6de0364af699d736f4e4a994951f703",
+  "seqno": 38,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgqrP3590eGWYmbjHGTOYGqFU8SEKTg0eMehzBQv6fz0QKp3BheWxvYWTFA0h7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwYzRlYjBkYjJmY2NhMDhiM2M5YTE5ZDExMzI1M2E2M2IyOGM0NWViMjdmNTZjMjMzYjZiZDIxMDJmNGU2ODJiNTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwYWFiM2Y3ZTdkZDFlMTk2NjI2NmUzMWM2NGNlNjA2YTg1NTNjNDg0MjkzODM0NzhjN2ExY2MxNDJmZTlmY2Y0NDBhIiwidWlkIjoiZGNiNjA5NjUwMWRkOGQyZGM4N2FhNDBhMGE2NGE5MDAiLCJ1c2VybmFtZSI6ImFkYWJ1cnJvd3MifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE1MTc3NzUzMDQsImhhc2giOiI5ODdjMDU1ZTEwOTRjMDY1ZmMxZDRjNWJjY2RlMmY5YTQxYWEwMjc5NTAwN2UxNDc1ODVmNTQ0NTNiMjUzNzVmYTQ3YTRlYTI3ZTE0N2UyZTI3MWM4ZWVhMjZkNjZkNTI5MzY4MzQzZjE1ZTliMmIyMzVlOWVjZmU1MmQyODM3OSIsImhhc2hfbWV0YSI6ImZlNWM2ZWZkNTE5ZTcxOWY5N2U2YTViOGQxZjBlODBiODJlNmIwNGM4N2FhZmNkZDE2NzA0YjJiOWQyN2UyZDEiLCJzZXFubyI6MjAzMTk3NH0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJhZGFidXJyb3dzLmNvbSIsInByb3RvY29sIjoiaHR0cDoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMzkifSwiY3RpbWUiOjE1MTc3NzUzNzksImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJwcmV2IjoiYjhiZDE2ODVmZTE0MGI2YWViNTBlZTI4MjE5MGJhNzBlNmRlMDM2NGFmNjk5ZDczNmY0ZTRhOTk0OTUxZjcwMyIsInNlcW5vIjozOCwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEBr8QsK6BgH46RNijLv2PvBs5chLa7rs0jMTiYn9mqcS0iccBgZ0JddWnO+uKJwfVjZfuubNYLHl02DfgiFld8PqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQg1scAturv1xNC3X7/T0Ts87B5sdEkhP2HcsI7SADjUqWjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/adaburrows
+
+==================================================================

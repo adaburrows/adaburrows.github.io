@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>History on Jillian Ada Burrows</title>
+    <link>http://adaburrows.com/categories/history/</link>
+    <description>Recent content in History on Jillian Ada Burrows</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://adaburrows.com/categories/history/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A History of Amazon Deforestation</title>
+      <link>http://adaburrows.com/medium-posts/2019-11-14-a-history-of-amazon-deforestation/</link>
+      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://adaburrows.com/medium-posts/2019-11-14-a-history-of-amazon-deforestation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Origin of Concentration Camps</title>
+      <link>http://adaburrows.com/medium-posts/2019-07-31-the-origin-of-concentration-camps/</link>
+      <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://adaburrows.com/medium-posts/2019-07-31-the-origin-of-concentration-camps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Martin Luther King Jr. Stares Towards the 16th Street Baptist Church</title>
+      <link>http://adaburrows.com/medium-posts/2019-01-22-mlkj-stares-towards-the-16th-street-baptist-church/</link>
+      <pubDate>Tue, 22 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://adaburrows.com/medium-posts/2019-01-22-mlkj-stares-towards-the-16th-street-baptist-church/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
