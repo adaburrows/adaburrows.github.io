@@ -1,44 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>A Matter of Programming on Jillian Ada Burrows</title>
-    <link>http://adaburrows.com/docs/nkp/</link>
-    <description>Recent content in A Matter of Programming on Jillian Ada Burrows</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="http://adaburrows.com/docs/nkp/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>What is Programming About?</title>
-      <link>http://adaburrows.com/docs/nkp/introduction/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://adaburrows.com/docs/nkp/introduction/</guid>
-      <description>Next
- This is a work in progress. It will likely become a book at some point.
- What is Programming About? Originally, computers were people hired by the government or other large business. They would do large numbers of potentially complicated computations by hand and file the results back and forth. &amp;ldquo;Programming&amp;rdquo; back then was figuring out how all of the work for a computation should be doled out to individuals or groups and how results from one group should be given to another group for further computation.</description>
-    </item>
-    
-    <item>
-      <title>Analyzing the State of the Art</title>
-      <link>http://adaburrows.com/docs/nkp/analyze-sota/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://adaburrows.com/docs/nkp/analyze-sota/</guid>
-      <description>This is a work in progress. It will likely become a book at some point.
- Analyzing the State of the Art With todays applications, there is typically a focus on serving large numbers of people across multiple platforms. This is complicated by those various platforms requiring different languages and technologies in order to implement each part. Many languages have been focused on incremental improvements over previous languages. This is also the case for many web technologies.</description>
-    </item>
-    
-    <item>
-      <title>Variables as UI</title>
-      <link>http://adaburrows.com/docs/nkp/variables/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://adaburrows.com/docs/nkp/variables/</guid>
-      <description></description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>A Matter of Programming on Jillian Ada Burrows</title><link>http://adaburrows.com/docs/nkp/</link><description>Recent content in A Matter of Programming on Jillian Ada Burrows</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="http://adaburrows.com/docs/nkp/index.xml" rel="self" type="application/rss+xml"/><item><title>What is Programming About?</title><link>http://adaburrows.com/docs/nkp/introduction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://adaburrows.com/docs/nkp/introduction/</guid><description>Next
+This is a work in progress. It will likely become a book at some point.
+What is Programming About? Originally, computers were people hired by the government or other large business. They would do large numbers of potentially complicated computations by hand and file the results back and forth. &amp;ldquo;Programming&amp;rdquo; back then was figuring out how all of the work for a computation should be doled out to individuals or groups and how results from one group should be given to another group for further computation.</description></item><item><title>Analyzing the State of the Art</title><link>http://adaburrows.com/docs/nkp/analyze-sota/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://adaburrows.com/docs/nkp/analyze-sota/</guid><description>This is a work in progress. It will likely become a book at some point.
+Analyzing the State of the Art With todays applications, there is typically a focus on serving large numbers of people across multiple platforms. This is complicated by those various platforms requiring different languages and technologies in order to implement each part. Many languages have been focused on incremental improvements over previous languages. This is also the case for many web technologies.</description></item><item><title>Variables as UI</title><link>http://adaburrows.com/docs/nkp/variables/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://adaburrows.com/docs/nkp/variables/</guid><description/></item></channel></rss>
