@@ -3,6 +3,10 @@ languageCode = "en-us"
 title = "Jillian Ada Burrows"
 googleAnalytics = "UA-148152323-1"
 theme = "book"
+enableGitInfo = true
+
+[params]
+  BookRepo = 'https://github.com/adaburrows/adaburrows.github.io'
 
 [markup.goldmark.renderer]
   unsafe = true
