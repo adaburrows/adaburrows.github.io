@@ -50,6 +50,10 @@ After college, I'd set up a system to help livestrem the audio of my friend's re
 
 Eventually I learned PHP, C#, Python, Ruby, Ada, Coffee Script, Clojure, Objective C, Scala, Haskell, Go, and I've looked at a lot of other languages. I keep seeing the same patterns creep up all the time. We keep repeating ourselves over and over again.
 
+## TOC
+
+{{<section>}}
+
 ---
 
 [Next]({{< ref "docs/nkp/introduction/index.md" >}})

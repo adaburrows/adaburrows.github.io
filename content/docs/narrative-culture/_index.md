@@ -31,7 +31,9 @@ These definitions seem to move from pure material culture and acheivement to the
 
 In some cases, the definition of culture could parallel the meaning that is used in regards to cultures of bacteria, molds, or fungi. It is something that has a distinct life as a collective which engenders specific internal conditions within individual organisms. Those internal conditions are dependent on the continuation and reproduction of the specific culture over time. The culture will evolve and change over time, but there will likely a distinct core of it. In some cases there may be an apparent discontinuity due to extreme circumstances (disease, foreign invasions, colonization, etc.).
 
+## TOC
 
+{{<section>}}
 
 ---
 

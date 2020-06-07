@@ -1,6 +1,7 @@
 ---
 weight: 1
 title: What is Programming About?
+description: "A historical look at the origin of programming."
 ---
 
 [Next]({{< ref "docs/nkp/analyze-sota/index.md" >}})
