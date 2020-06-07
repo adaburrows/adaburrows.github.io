@@ -1,0 +1,5 @@
+{{- if not (.Page.Scratch.Get "patreon") -}}
+<script defer src="//c6.patreon.com/becomePatronButton.bundle.js"></script>
+{{- .Page.Scratch.Set "patreon" true -}}
+{{- end -}}
+<a href="https://www.patreon.com/bePatron?u=24540836" data-patreon-widget-type="become-patron-button">Become a Patron!</a>

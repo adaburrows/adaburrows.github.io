@@ -1,0 +1,8 @@
+baseURL = "http://adaburrows.com/"
+languageCode = "en-us"
+title = "Jillian Ada Burrows"
+googleAnalytics = "UA-148152323-1"
+theme = "book"
+
+[markup.goldmark.renderer]
+  unsafe = true
