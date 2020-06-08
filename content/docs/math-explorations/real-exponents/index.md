@@ -21,7 +21,7 @@ Then I momentarily thought about square roots, because the square root of two ca
 
 {{< katex display >}}\sqrt{2} = 2^{\frac{1}{2}}{{< /katex >}}
 
-By looking at that with the mental framework my teachers had equiped me with it meant that two is being multiplied by itself one-half times. This of course, made no sense. How can one apply an operation a fractional amount of times? So then I wondered if looking at this in terms of addition would help, but that was a fractional amount too:
+By looking at that with the mental framework my teachers had equiped me with it meant that two is being multiplied by itself one-half times. This, of course, made no sense. How can one apply an operation a fractional amount of times? So then I wondered if looking at this in terms of addition would help, but that was a fractional amount too:
 
 {{< katex display >}}
 \begin{aligned}
@@ -147,7 +147,7 @@ Wait, actually, we need a more complicated formula:
 c^{a+b\imath} = e^{c \ln a} e^{\imath c \ln b} = e^{c \ln a} \left( \cos (c \ln b) +\imath\sin (c \ln b) \right) 
 {{< /katex >}}
 
-Since this has a periodic aspect to it, that means that there are infitely many loagrithms of a complex number. This is important to keep in mind, since some of the formulae above don't seem to mind this. For instance those hyperbolic identities above only give what is called the "principle value". This means the other infinitude of values are neglected, but can be computed from this. 
+Since this has a periodic aspect to it, that means that there are infinitely many loagrithms of a complex number. This is important to keep in mind, since some of the formulae above don't seem to mind this. For instance those hyperbolic identities above only give what is called the "principle value". This means the other infinitude of values are neglected, but can be computed from this.
 
 ## Putting It All Together
 
@@ -189,9 +189,9 @@ b^x = e^{x \ln b}
 
 ## What Does This Mean?
 
-My prefered way of thinking about this is integers are really a special case where our notational system happens to have the most simplicity for notating those numbers. They are points of minimal encoding, but they are just as complicated or information dense as any other algebraic number. This is how two infinite sums can be found in integer relationships to each other.
+My prefered way of thinking about this, is integers are really a special case where our notational system happens to have the most simplicity for notating those numbers. They are points of minimal encoding, but they are just as complicated or information dense as any other algebraic number. This is how two infinite sums can be found in integer relationships to each other.
 
-By asking the question I started out with &mdash; "How do we multiply a number by itself a fractional number of times?" &mdash; we can find out new things about our numbers and operations. It is questions and answers like this which make me wonder what is more fundamental in terms of operations. Are fields with addition and groups with multiplication realy fundamental? Or is everything that we do really just an approximation or convergence of an infinity of terms reducing to a point for as long as it's needed or convienient for our minds?
+By asking the question I started with &mdash; "How do we multiply a number by itself a fractional number of times?" &mdash; we can find out new things about our numbers and operations. It is questions and answers like this which make me wonder what is more fundamental in terms of operations. Are fields with addition and groups with multiplication realy fundamental? Or is everything that we do really just an approximation or convergence of an infinity of terms reducing to a point for as long as it's needed or convienient for our minds?
 
 Is anything as simple as {{<katex>}}2+1{{</katex>}}? Maybe it all is as complicated as:
 {{<katex display>}}
