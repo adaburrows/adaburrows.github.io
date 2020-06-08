@@ -13,7 +13,10 @@ When I was younger, I was told that exponentiation was repeated multiplication. 
 {{< katex display >}}
 \begin{aligned}
   2^5 & = 2 \times 2 \times 2 \times 2 \times 2 \\
-  2^5 & = 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2
+  2^5 & = 2 + 2 + 2 + 2 \\
+  & + 2 + 2 + 2 + 2 \\
+  & + 2 + 2 + 2 + 2 \\
+  & + 2 + 2 + 2 + 2 \\
 \end{aligned}
 {{< /katex >}}
 
@@ -25,14 +28,24 @@ Using the mental framework with which my teachers had equiped me, meant that two
 
 {{< katex display >}}
 \begin{aligned}
-  p & = b^m \text{, product is base raised to m} \\
-  p & = sb \text{, product is number of additions times base} \\
-  sb & = b^m \text{, number of additions times base equals base raised to m} \\
-  s & = b^{m-1} \text{, number of additions equals base raised to m less one} \\
+  p & = b^m \\
+  p & = sb \\
+  sb & = b^m \\
+  s & = b^{m-1} \\
 \end{aligned}
 {{< /katex >}}
 
-and specifically in base two:
+Lets check our original example of {{<katex>}}2^5{{</katex>}}
+
+{{< katex display >}}
+\begin{aligned}
+  m & = \log_2 2^5 = 5 \\
+  & \text{and} \\
+  s & = 2^{m-1} = 2^4 \\
+\end{aligned}
+{{< /katex >}}
+
+That checks out, but what about {{<katex>}}2^\frac{1}{2}{{</katex>}}?
 
 {{< katex display >}}
 \begin{aligned}
@@ -66,19 +79,20 @@ Additionally, they have the following relationships:
 Additionally, one can change the base of the logarithm simply by scaling the logarithm:
 
 {{< katex display >}}
-\begin{gathered}
-  \log_{b_2} y = \frac{\log_{b_1} y}{\log_{b_1} b_2} \\
-  \text{since, the base doesn't matter, we can use the natural logarithm} \\
-  \log_{b_2} y = \frac{\ln y}{\ln b_2} \\
-\end{gathered}
+\log_{b_2} y = \frac{\log_{b_1} y}{\log_{b_1} b_2}
+{{< /katex >}}
+
+Since, the base doesn't matter, we can use the natural logarithm:
+
+{{< katex display >}}
+\log_{b_2} y = \frac{\ln y}{\ln b_2}
 {{< /katex >}}
 
 The most commonly occuring logarithm is the natural logarithm, in base {{<katex>}}e{{</katex>}}:
 
 {{< katex display >}}
 \begin{aligned}
-  \operatorname{exp}(x) = e^x & \text{, the exponential function in base } e \\
-  x = \ln \operatorname{exp}(x) & \text{, the logarithm in base } e \\
+  x & = \ln e^x \\
 \end{aligned}
 {{< /katex >}}
 
@@ -126,13 +140,22 @@ Fortunately, there are easily found analytic definitions for these functions usi
 \end{aligned}
 {{< /katex >}}
 
-There are some other identities that can come in handy because they tend to converge quickly:
+There are some other identities that can come in handy because they tend to converge quickly. For when x falls with the complex unit circle:
 
 {{< katex display >}}
-\ln x = \begin{cases}
-  2\operatorname{artanh}\left(\frac{x-1}{x+1}\right) & = \sum_{k=0}^{\infty}\frac{1}{2k+1}\left(\frac{x-1}{x+1}\right)^{2k+1} & \text{if }x\text{ is within unit circle} \\
-  2\operatorname{arcoth}\left(\frac{x+1}{x-1}\right) & = \sum_{k=0}^{\infty}\frac{1}{2k+1}\left(\frac{x+1}{x-1}\right)^{-(2k+1)} & \text{if }x\text{ is outside unit circle} \\
-\end{cases}
+\begin{aligned}
+  \ln x & = 2\operatorname{artanh}\left(\frac{x-1}{x+1}\right) \\
+        & = \sum_{k=0}^{\infty}\frac{1}{2k+1}\left(\frac{x-1}{x+1}\right)^{2k+1}
+\end{aligned}
+{{< /katex >}}
+
+When x is outside the complex unit circle:
+
+{{< katex display >}}
+\begin{aligned}
+  \ln x & = 2\operatorname{arcoth}\left(\frac{x+1}{x-1}\right) \\
+        & = \sum_{k=0}^{\infty}\frac{1}{2k+1}\left(\frac{x+1}{x-1}\right)^{-(2k+1)}
+\end{aligned}
 {{< /katex >}}
 
 There are some issues to be aware of around complex logarithms. To demonstrate these issues, we need Euler's formula:
@@ -144,7 +167,10 @@ e^{\theta\imath} = \cos\theta +\imath\sin\theta
 Wait! We need a more complicated formula:
 
 {{< katex display >}}
-c^{a+b\imath} = e^{c \ln a} e^{\imath c \ln b} = e^{c \ln a} \left( \cos (c \ln b) +\imath\sin (c \ln b) \right) 
+\begin{aligned}
+  c^{a+b\imath} & = e^{c \ln a} e^{\imath c \ln b} \\
+                & = e^{c \ln a} \left( \cos (c \ln b) +\imath\sin (c \ln b) \right) 
+\end{aligned}
 {{< /katex >}}
 
 Since this has a periodic aspect to it, that means there are infinitely many loagrithms of a complex number. This is important to keep in mind, since some of the formulae above don't seem to mind this. For instance those hyperbolic identities above only give what is called the "principle value". This means the other infinitude of values are neglected, but can be computed from this.
