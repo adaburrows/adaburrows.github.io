@@ -109,7 +109,7 @@ This next graph is a combination of computing the area under the curve {{<katex>
 
 {{< figure src="images/graph.jpg" >}}
 
-As should be obvious from the chart above, the exponential and the logarithm are inverses of each other are are reflections along the values of {{<katex>}}y = x{{</katex>}}. This means that is we can calculate one of these we can calculate both just by transposing the coordinate values.
+As should be obvious from the chart above, the exponential and the logarithm are inverses of each other are are reflections along the values of {{<katex>}}y = x{{</katex>}}. This means that if we can calculate one of these we can calculate both just by transposing the coordinate values.
 
 There's a problem with this though. The above integral definition of {{<katex>}}\ln{{</katex>}} is very limited in some important ways:
 
@@ -147,7 +147,7 @@ Wait! We need a more complicated formula:
 c^{a+b\imath} = e^{c \ln a} e^{\imath c \ln b} = e^{c \ln a} \left( \cos (c \ln b) +\imath\sin (c \ln b) \right) 
 {{< /katex >}}
 
-Since this has a periodic aspect to it, that means that there are infinitely many loagrithms of a complex number. This is important to keep in mind, since some of the formulae above don't seem to mind this. For instance those hyperbolic identities above only give what is called the "principle value". This means the other infinitude of values are neglected, but can be computed from this.
+Since this has a periodic aspect to it, that means there are infinitely many loagrithms of a complex number. This is important to keep in mind, since some of the formulae above don't seem to mind this. For instance those hyperbolic identities above only give what is called the "principle value". This means the other infinitude of values are neglected, but can be computed from this.
 
 ## Putting It All Together
 
