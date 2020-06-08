@@ -21,7 +21,7 @@ Then I momentarily thought about square roots, because the square root of two ca
 
 {{< katex display >}}\sqrt{2} = 2^{\frac{1}{2}}{{< /katex >}}
 
-By looking at that with the mental framework my teachers had equiped me with it meant that two is being multiplied by itself one-half times. This, of course, made no sense. How can one apply an operation a fractional amount of times? So then I wondered if looking at this in terms of addition would help, but that was a fractional amount too:
+Using the mental framework with which my teachers had equiped me, meant that two is being multiplied by itself one-half times. This, of course, made no sense. How can one apply an operation a fractional amount of times? So then I wondered if looking at this in terms of addition would help, but that was a fractional amount too:
 
 {{< katex display >}}
 \begin{aligned}
@@ -46,7 +46,7 @@ Of course, this is even more mystical because how does one apply addition ~0.707
 
 ## Logarithms
 
-Logarithms are interesting concept. Base ten logarithms let us know what the magnitude of a decimal based number. A base two logarithm can let us know in which octave a frequency belongs. A base two logarithm can also let us know how many digits are needed to represent a number. Base two logarithms are found in measurements of entropy.
+Logarithms are interesting concept. Base ten logarithms let us know the magnitude of a decimal based number. A base two logarithm can let us know in which octave a frequency belongs. A base two logarithm can also let us know how many digits are needed to represent a number. Base two logarithms are found in measurements of entropy.
 
 Mathematically, logarithms are pretty simple. They form a mapping from multiplication to addition:
 
@@ -95,7 +95,7 @@ Using the identities above we can get:
 \end{aligned}
 {{< /katex >}} 
 
-This means that if we can figure out a way to compute {{<katex>}}\ln x{{</katex>}} and {{<katex>}}e^x{{</katex>}} for any value {{<katex>}}x{{</katex>}}, then we can compute any {{<katex>}}y = b^x{{</katex>}} by using {{<katex>}}y = e^{x \ln b}{{</katex>}}. Fortunately, using calculus we can figure out approximations for these functions. The process of doing so is analytic continuation.
+This means that if we can figure out a way to compute {{<katex>}}\ln x{{</katex>}} and {{<katex>}}e^x{{</katex>}} for any value {{<katex>}}x{{</katex>}}, then we can compute any {{<katex>}}y = b^x{{</katex>}} by using {{<katex>}}y = e^{x \ln b}{{</katex>}}. Fortunately, using calculus we can figure out approximations for these functions. The process of doing so is called analytic continuation.
 
 ## Analytic Continuation
 
@@ -135,13 +135,13 @@ There are some other identities that can come in handy because they tend to conv
 \end{cases}
 {{< /katex >}}
 
-There are some issues to be aware of around complex logarithms. To show this, we need Euler's formula:
+There are some issues to be aware of around complex logarithms. To demonstrate these issues, we need Euler's formula:
 
 {{< katex display >}}
 e^{\theta\imath} = \cos\theta +\imath\sin\theta 
 {{< /katex >}}
 
-Wait, actually, we need a more complicated formula:
+Wait! We need a more complicated formula:
 
 {{< katex display >}}
 c^{a+b\imath} = e^{c \ln a} e^{\imath c \ln b} = e^{c \ln a} \left( \cos (c \ln b) +\imath\sin (c \ln b) \right) 
