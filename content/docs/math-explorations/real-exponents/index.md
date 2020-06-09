@@ -215,7 +215,7 @@ b^x = e^{x \ln b}
 
 ## What Does This Mean?
 
-My prefered way of thinking about this, is integers are really a special case where our notational system happens to have the most simplicity for notating those numbers. They are points of minimal encoding, but they are just as complicated or information dense as any other algebraic number. This is how two infinite sums can be found in integer relationships to each other.
+My preferred way of thinking about this, is integers are really a special case where our notational system happens to have the most simplicity for notating those numbers. They are points of minimal encoding, but they are just as complicated or information dense as any other algebraic number. This is how two infinite sums can be found in integer relationships to each other.
 
 By asking the question I started with &mdash; "How do we multiply a number by itself a fractional number of times?" &mdash; we can find out new things about our numbers and operations. It is questions and answers like this which make me wonder what is more fundamental in terms of operations. Are fields with addition and groups with multiplication realy fundamental? Or is everything that we do really just an approximation or convergence of an infinity of terms reducing to a point for as long as it's needed or convienient for our minds?
 
