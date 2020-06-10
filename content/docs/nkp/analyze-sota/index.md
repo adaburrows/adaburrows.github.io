@@ -24,10 +24,11 @@ We have a wide variety of languages which can be used on the server side. In
 fact, our choice on the server side is nearly unlimited and is only constrained
 by convenience or special needs. Clients can be written in many different
 languages, especially given the rise of transpilers. Generally, browser based
-apps are constrained to languages which readily allow usage of the libraries
-widely avaiable through NPM. Client apps on iOS are limited Objective C, Swift,
-and other web languages running in a web view. Android apps are limited to
-languages which run in the JVM, languages with a C interface, and web languages
+apps are constrained to languages which readily allow usage of JavaScript
+libraries. Client apps on iOS are limited Objective C, Swift, and other 
+languages which transpile to Javascipt running in a web view. Android apps are
+limited to languages which run in the JVM, languages with a C interface which
+can be called from within the JVM, and languages which transpile to JavaScript
 running in a web view.
 +
 In the recent few years, web apps have started to mature in their approach to
