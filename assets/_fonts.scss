@@ -26,3 +26,21 @@ body, nav ul a {
 code {
   font-family: 'Source Code Pro', monospace;
 }
+
+@media print {
+	.no-print, nav, header.book-header {
+		display: none;
+	}
+	.print-only {
+		display: inherit;
+	}
+}
+
+@media screen {
+	.no-print, nav, header.book-header {
+		display: inherit;
+	}
+	.print-only {
+		display: none;
+	}
+}

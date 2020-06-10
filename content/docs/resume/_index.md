@@ -4,7 +4,7 @@ weight: 1
 aliases: ["/resume/"]
 ---
 
-[![](/icons/adobe-pdf.png) Download as a PDF](/resume-download.pdf)
+<span class="no-print">[![](/icons/adobe-pdf.png) Download as a PDF](/resume-download.pdf)<span>
 
 ## Summary
 
@@ -15,7 +15,7 @@ Experienced full-stack software developer, technical consultant, and project man
 ### Crowd Supply, Portland, OR <span class="job-position">— Lead Architect</span>
 <span class="date">APR 2018 - SEP 2019</span>
 
-Responsible for the main Crowd Supply website and system administration. Streamlined our shipping pipeline by building a new system to print shipping labels directly to a Zebra printer within the Crowd Supply admin interface. Increased site reliability by offloading tasks to a job queue. Rebuilt the reporting pipeline. Began the process of integrating our systems with Mouser Electronics. Created the check-in software for the our Teardown conference. Created one of the logic puzzles for Crowd Supply’s annual conference, Teardown 2019 [see [the final assembly](https://www.instagram.com/p/BzEYKXlBN2w/) and the [puzzle in action](https://www.instagram.com/p/BzFBlGFB-I8/)].
+Responsible for the main Crowd Supply website and system administration. Streamlined our shipping pipeline by building a new system to print shipping labels directly to a Zebra printer within the Crowd Supply admin interface. Increased site reliability by offloading tasks to a job queue. Rebuilt the reporting pipeline. Began the process of integrating our systems with Mouser Electronics. Created the check-in software for the our Teardown conference. Created one of the logic puzzles for Crowd Supply’s annual conference, Teardown 2019<span class="no-print"> [see [the final assembly](https://www.instagram.com/p/BzEYKXlBN2w/) and the [puzzle in action](https://www.instagram.com/p/BzFBlGFB-I8/)]</span>.
 
 ### Geeks Without Bounds, Planet Earth <span class="job-position">— Technologist & Trainer</span>
 <span class="date">JUL 2017 - 2019</span>
