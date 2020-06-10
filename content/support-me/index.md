@@ -8,7 +8,11 @@ title: Support My Work
 
 # Support My Work
 
-There are numerous way you can help me meet my living needs. You can support me with a Patreon membership which includes two of my best photographs emailed to you each month. Beyond the basic membership, you'll get a handwritten thank you letter.
+There are numerous way you can help me meet my living needs.
+
+## Patreon
+
+You can support me with a Patreon membership which includes two of my best photographs emailed to you each month. Beyond the basic membership, you'll get a handwritten thank you letter.
 
 ![Sample Photos from Patreon.](/images/patreon_photo_sample.png)
 
@@ -17,6 +21,8 @@ There are numerous way you can help me meet my living needs. You can support me 
 {{< /button >}}
 
 ---
+
+## One-time
 
 If you're feeling more like just giving a one time infusion of money, you can use the following methods:
 
