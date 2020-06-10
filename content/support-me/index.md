@@ -1,8 +1,12 @@
 ---
-title: Support Me
+menu:
+  after:
+    name: support-me
+    weight: 8
+title: Support My Work
 ---
 
-# Support Me
+# Support My Work
 
 There are numerous way you can help me meet my living needs. You can support me with a Patreon membership which includes two of my best photographs emailed to you each month. Beyond the basic membership, you'll get a handwritten thank you letter.
 
