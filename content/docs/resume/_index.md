@@ -1,6 +1,7 @@
 ---
 title: Resume
 weight: 1
+aliases: ["/resume/"]
 ---
 
 [![](/icons/adobe-pdf.png) Download as a PDF](/resume-download.pdf)
