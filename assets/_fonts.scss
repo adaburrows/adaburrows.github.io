@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Antic', sans-serif;
+}
+
+nav {
+  font-family: 'Antic', sans-serif;
+  font-size: 1.25em;
+}
+
+span.date, div.post-meta h4 {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: bold;
+  font-size: 0.66em;
+  text-transform: uppercase;
+}
+
+body, nav ul a {
+  font-family: "Alegreya Sans", sans-serif
+}
+
+code {
+  font-family: 'Source Code Pro', monospace;
+}
