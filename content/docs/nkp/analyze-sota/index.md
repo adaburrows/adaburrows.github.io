@@ -167,10 +167,13 @@ table. There's a few things we need to notice about this. It uses the database's
 built-in types. It specifies ranges on the length of certain fields. Curiously,
 besides basic type safety, it provides no actual verification of the data for
 patterns. If there was an `EMAIL` type in SQDL's DDL, it would be able to
-validate the form of the email address according to the RFC. This, of course, 
-would be less than ideal given the latency in verifying the form of the data by
-going through two network connections, with one potentially having less than
-ideal properties. Additionally, since databases 
+validate the form of the email address according to the RFC. Having the database
+perform all the validation would be less than ideal given the latency in verifying
+the form of the data by going through at least two network connections, with one
+potentially having less than ideal properties. Additionally, since databases often
+do not have the same data types as programming languages, most stored values are
+converted into their actual types. This is especially common now with noSQL
+document stores. This means that validation is especially a bad match for DBs.
 
 ```sql
 -- Using types provided by the database which may be different than the types
