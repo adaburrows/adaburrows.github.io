@@ -4,9 +4,33 @@
 
   {{ range sort .Paginator.Pages }}
   <article class="markdown book-post">
+    {{ $link := urls.Parse .Params.link }}
+    {{ $host := $link.Host}}
+    {{ $icon := "" }}
+    {{ if eq $host "medium.com" }}
+      {{ $icon = "fab fa-medium" }}
+    {{ else if eq $host "jburrows.wordpress.com" }}
+      {{ $icon = "fab fa-wordpress" }}
+    {{ else if eq $host "evernote.com" }}
+      {{ $icon = "fab fa-evernote" }}
+    {{ else if eq $host "soundcloud.com" }}
+      {{ $icon = "fab fa-soundcloud" }}
+    {{ else if eq $host "news.ycombinator.com" }}
+      {{ $icon = "fab fa-y-combinator" }}
+    {{ else if eq $host "wikipedia.com" }}
+      {{ $icon = "fab fa-wikipedia-w" }}
+    {{ else if eq $host "github.com" }}
+      {{ $icon = "fab fa-github" }}
+    {{ else if eq $host "youtube.com" }}
+      {{ $icon = "fab fa-youtube" }}
+    {{ else if eq $host "vimeo.com" }}
+      {{ $icon = "fab fa-vimeo" }}
+    {{ else }}
+      {{ $icon = "fas fa-marker" }}
+    {{ end }}
     <header>
       <h2>
-        <a href="{{ .Params.link }}">{{ .Title }}</a>
+        <i class="{{$icon}}"></i>&nbsp;<a href="{{ .Params.link }}">{{ .Title }}</a>
       </h2>
       <div class="post-meta"><span class="date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span></div>
     </header>
