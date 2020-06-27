@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+  {{- .Content -}}
+
+  {{ range sort .Paginator.Pages }}
+  <article class="markdown book-post">
+    <header>
+      <h2>
+        <a href="{{ .Params.link }}">{{ .Title }}</a>
+      </h2>
+      <div class="post-meta"><span class="date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span></div>
+    </header>
+    <p>
+      {{- .Summary -}}
+    </p>
+    <footer>
+    {{ if .Params.link }}
+      <a href='{{ .Params.link }}'><nobr>Read more →</nobr></a>
+    {{ else }}
+      <a href="{{ .RelPermalink }}"><nobr>Read more →</nobr></a>
+    {{ end }}
+    </footer>
+  </article>
+  {{ end }}
+
+  {{ template "_internal/pagination.html" . }}
+{{ end }}

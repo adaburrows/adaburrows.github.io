@@ -1,0 +1,22 @@
+@import "fa/fontawesome";
+@import "fa/regular";
+@import "fa/solid";
+@import "fa/brands";
+
+@media print {
+	.no-print, nav, header.book-header {
+		display: none;
+	}
+	.print-only {
+		display: inherit;
+	}
+}
+
+@media screen {
+	.no-print, nav, header.book-header {
+		display: inherit;
+	}
+	.print-only {
+		display: none;
+	}
+}

@@ -27,3 +27,5 @@ This means that if we apply he same logic to finding square roots of these "sign
 {{< katex display >}}
 \sqrt{a^x} = a^{\frac{x}{2}}
 {{< /katex >}}
+
+We know that a positive sign is equivalent to 0 and 
