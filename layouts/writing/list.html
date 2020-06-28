@@ -28,9 +28,14 @@
     {{ else }}
       {{ $icon = "fas fa-marker" }}
     {{ end }}
+
+    {{ $relUrl := .RelPermalink }}
+    {{ if .Params.link }}
+      {{ $relUrl = .Params.link }}
+    {{ end }}
     <header>
       <h2>
-        <i class="{{$icon}}"></i>&nbsp;<a href="{{ .Params.link }}">{{ .Title }}</a>
+        <i class="{{$icon}}"></i>&nbsp;<a href="{{ $relUrl }}">{{ .Title }}</a>
       </h2>
       <div class="post-meta"><span class="date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span></div>
     </header>
@@ -38,11 +43,7 @@
       {{- .Summary -}}
     </p>
     <footer>
-    {{ if .Params.link }}
-      <a href='{{ .Params.link }}'><nobr>Read more →</nobr></a>
-    {{ else }}
-      <a href="{{ .RelPermalink }}"><nobr>Read more →</nobr></a>
-    {{ end }}
+      <a href="{{ $relUrl }}"><nobr>Read more →</nobr></a>
     </footer>
   </article>
   {{ end }}
