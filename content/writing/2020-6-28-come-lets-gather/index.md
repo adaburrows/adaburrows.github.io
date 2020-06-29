@@ -15,7 +15,7 @@ Please, sit down with me. Gather round and form a circle. If there are too many 
 
 ## Center
 
-If you're comfortable with it, please close your eyes while we do a litle settling in. Staying relaxed, lets do five forward shoulder rolls. Now five backward shoulder rolls. Now, lets properly stretch our neck. First, pretend like your trying to touch your ear to your right shoulder. It's ok to lean into the direction a little bit. Bring your head back to normal. Do the same for the left side.
+If you're comfortable with it, please close your eyes while we do a little settling in. Staying relaxed, lets do five forward shoulder rolls. Now five backward shoulder rolls. Now, lets properly stretch our neck. First, pretend like your trying to touch your ear to your right shoulder. It's ok to lean into the direction a little bit. Bring your head back to normal. Do the same for the left side.
 
 Be mindful of the division between the left side and right side of your neck. Lean your head towards your right shoulder. Let your neck relax and return the center of your body so your head is bowed and stop in the center. Bring your head back to its normal position. Repeat for the left side. From an upright position, lean to the right and stretch. Return to center. Lean to the left and stretch. Return to center. Keep your back relatively straight and bend forward to feel a slight stretch in your lower back. Return to center.
 
