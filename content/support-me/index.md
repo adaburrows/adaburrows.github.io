@@ -4,6 +4,7 @@ menu:
     name: support-me
     weight: 8
 title: Support My Work
+images: ["/images/patreon_photo_sample.png"]
 ---
 
 # Support My Work

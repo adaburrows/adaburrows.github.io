@@ -2,6 +2,7 @@
 title: Resume
 weight: 1
 aliases: ["/resume/"]
+images: ["https://s.gravatar.com/avatar/44645c684eb67fc38f700fdf5ff4ff2c?s=400"]
 ---
 
 <span class="no-print">[![](/icons/adobe-pdf.png) Download as a PDF](/resume-download.pdf)<span>

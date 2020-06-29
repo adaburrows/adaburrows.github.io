@@ -2,6 +2,7 @@
 title: Home
 type: docs
 bookToc: false
+images: ["https://s.gravatar.com/avatar/44645c684eb67fc38f700fdf5ff4ff2c?s=400"]
 ---
 
 

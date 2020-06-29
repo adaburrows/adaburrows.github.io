@@ -4,6 +4,8 @@ name: real-exponents
 draft: false
 description: "Ever wondered how anyone could raise an integer to a fractional or irrational power?"
 weight: 1
+images:
+ - "/docs/math-explorations/real-exponents/images/graph2.jpg"
 ---
 
 # Fractional, Real, Imaginary and Complex Exponents
