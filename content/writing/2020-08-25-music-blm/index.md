@@ -5,6 +5,7 @@ summary: ''
 link: ''
 categories: []
 draft: false
+monetize: true
 images: []
 ---
 

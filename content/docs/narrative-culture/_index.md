@@ -2,6 +2,7 @@
 bookCollapseSection: true
 title: The Emergence of Culture
 weight: 3
+monetize: true
 images: ["/docs/narrative-culture/perceptual-zones/images/Two%20Viewpoints.jpeg"]
 ---
 

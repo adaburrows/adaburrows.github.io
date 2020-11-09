@@ -2,6 +2,7 @@
 weight: 1
 title: "Perceptual + Narrative Zones"
 description: "Each individual (an agent) has their own perceptual zone which differs from other people's perceptual zones. The perceptual zones may overlap, but in many case they don't. The perceptual zone is the combined whole of experience each individual is perceiving and sense-making at any given time."
+monetize: true
 aliases: ["/writing/narratives-and-culture/"]
 images: ["/docs/narrative-culture/perceptual-zones/images/Two%20Viewpoints.jpeg"]
 ---

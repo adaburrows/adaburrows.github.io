@@ -2,6 +2,7 @@
 weight: 2
 title: "Analyzing the State of the Art"
 description: "Here we analyze a fairly standard architecture."
+monetize: true
 ---
 
 

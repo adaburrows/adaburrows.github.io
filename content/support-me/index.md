@@ -41,6 +41,12 @@ If you're feeling more like just giving a one time infusion of money, you can us
 
 {{< cash-app >}}
 
+---
+
+Tip me with XRP (Ripple):<br />
+Account: rMdG3ju8pgyVh29ELPWaDuA74CpWW6Fxns<br />
+Destination tag: 2715781560
+
 <--->
 
 {{< button href="https://venmo.com/code?user_id=2414406159826944299" >}}
@@ -48,5 +54,9 @@ If you're feeling more like just giving a one time infusion of money, you can us
 {{< /button >}}
 
 ![](images/venmo.png)
+
+---
+
+Tip me with my interledger payment pointer: $ilp.uphold.com/hB63LB3EwfW3
 
 {{< /columns >}}

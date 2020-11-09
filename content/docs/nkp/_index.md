@@ -2,6 +2,7 @@
 bookCollapseSection: true
 bookHidden: false
 weight: 4
+monetize: true
 title: "A Matter of Programming"
 ---
 

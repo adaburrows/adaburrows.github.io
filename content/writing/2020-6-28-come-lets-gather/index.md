@@ -5,6 +5,7 @@ summary: ''
 link: ''
 categories: []
 draft: false
+monetize: true
 images:
  - "/writing/2020-6-28-come-lets-gather/images/picture.jpg"
 ---

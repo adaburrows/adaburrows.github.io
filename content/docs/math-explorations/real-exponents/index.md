@@ -2,6 +2,7 @@
 title: Fractional, Real, Imaginary and Complex Exponents
 name: real-exponents
 draft: false
+monetize: true
 description: "Ever wondered how anyone could raise an integer to a fractional or irrational power?"
 weight: 1
 images:

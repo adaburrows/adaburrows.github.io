@@ -1,6 +1,7 @@
 ---
 title: Ice Age Map
 weight: 2
+monetize: true
 aliases: ["/ice-age/"]
 images: ["/docs/ice-age/images/ice-age.jpeg"]
 ---
