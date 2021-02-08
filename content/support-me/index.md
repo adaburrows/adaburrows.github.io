@@ -47,6 +47,10 @@ Tip me with XRP (Ripple):<br />
 Account: rMdG3ju8pgyVh29ELPWaDuA74CpWW6Fxns<br />
 Destination tag: 2715781560
 
+---
+
+Tip me with ethereum: 0xb10633e0a0DcF3B2Bb579A4957B6ceFF52209104
+
 <--->
 
 {{< button href="https://venmo.com/code?user_id=2414406159826944299" >}}
@@ -57,6 +61,6 @@ Destination tag: 2715781560
 
 ---
 
-Tip me with my interledger payment pointer: $ilp.uphold.com/hB63LB3EwfW3
+Tip me with bitcoin: 3Fwk84YP1SRrHph6pPmF1iHUjpdUjDEo3i
 
 {{< /columns >}}
