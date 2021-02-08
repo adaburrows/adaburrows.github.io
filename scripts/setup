@@ -1,0 +1,9 @@
+#!/bin/sh
+
+WD=`git rev-parse --show-toplevel`
+cd $WD
+git worktree add ./public origin/master
+cd -
+cd $WD/public
+git checkout -b master
+cd -

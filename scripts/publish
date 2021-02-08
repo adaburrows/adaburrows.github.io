@@ -1,0 +1,12 @@
+#!/bin/sh
+
+WD=`git rev-parse --show-toplevel`
+echo $WD
+cd $WD
+hugo --minify
+cd -
+cd $WD/public
+git add --all
+git commit -m 'publishing'
+git push origin master
+cd -
