@@ -98,13 +98,13 @@ I'd like to thank [Skyler Reed Corbett-Hecocta](https://skylerwrites.substack.co
 
 [Kinkade, M. D. (1997). Cowlitz (Salish) Place Names. Working Papers for the Thirty Second International Conference on Salish and Neighbouring Languages.](https://lingpapers.sites.olt.ubc.ca/files/2018/03/1997_Kinkade.pdf)
 
-[Klallam Word of the Day. [KWOTD1] (2018, June 30) x̣aykʷəyéʔč (http://goo.gl/Xy03q) 'mountain, mountain range'. The root here means 'backbone'. [Facebook status update]. Retreived from https://www.facebook.com/KlallamWOTD/posts/10155885629067029](www.facebook.com/KlallamWOTD/posts/10155885629067029)
+[Klallam Word of the Day. [KWOTD1] (2018, June 30) x̣aykʷəyéʔč (http://goo.gl/Xy03q) 'mountain, mountain range'. The root here means 'backbone'. [Facebook status update]. Retrieved from https://www.facebook.com/KlallamWOTD/posts/10155885629067029](www.facebook.com/KlallamWOTD/posts/10155885629067029)
 
-[Klallam Word of the Day. [KWOTD2] (2017, November 8) sx̣ə́kʷaʔ (http://goo.gl/eSM9v) 'ribs, rib cage'. This can also refer to a serving of fish backbone. [Facebook status update]. Retreived from https://www.facebook.com/KlallamWOTD/posts/10155292881132029](https://www.facebook.com/KlallamWOTD/posts/10155292881132029)
+[Klallam Word of the Day. [KWOTD2] (2017, November 8) sx̣ə́kʷaʔ (http://goo.gl/eSM9v) 'ribs, rib cage'. This can also refer to a serving of fish backbone. [Facebook status update]. Retrieved from https://www.facebook.com/KlallamWOTD/posts/10155292881132029](https://www.facebook.com/KlallamWOTD/posts/10155292881132029)
 
-[Klallam Word of the Day. [KWOTD3] (2019, December 10) sxʷc̕aʔmícən () 'backbone, vertebrae'. Root c̕úm̕ 'bone' and suffix -icən 'back'. http://goo.gl/GnN9 [Facebook status update]. Retreived from https://www.facebook.com/KlallamWOTD/posts/10157123488612029](https://www.facebook.com/KlallamWOTD/posts/10157123488612029)
+[Klallam Word of the Day. [KWOTD3] (2019, December 10) sxʷc̕aʔmícən () 'backbone, vertebrae'. Root c̕úm̕ 'bone' and suffix -icən 'back'. http://goo.gl/GnN9 [Facebook status update]. Retrieved from https://www.facebook.com/KlallamWOTD/posts/10157123488612029](https://www.facebook.com/KlallamWOTD/posts/10157123488612029)
 
-[Klallam Word of the Day. [KWOTD4] (2018, January 31) ʔáʔašit 'Olympic mountains south of Crescent Bay and Port Angeles.' [Facebook status update]. Retreived from https://www.facebook.com/KlallamWOTD/posts/10155516286022029](https://www.facebook.com/KlallamWOTD/posts/10155516286022029)
+[Klallam Word of the Day. [KWOTD4] (2018, January 31) ʔáʔašit 'Olympic mountains south of Crescent Bay and Port Angeles.' [Facebook status update]. Retrieved from https://www.facebook.com/KlallamWOTD/posts/10155516286022029](https://www.facebook.com/KlallamWOTD/posts/10155516286022029)
 
 [Meany, E. S. (1923). Origin of Washington Geographic Names. United States: University of Washington Press.](https://journals.lib.washington.edu/index.php/WHQ/article/viewFile/6142/5216)
 
@@ -126,9 +126,9 @@ I'd like to thank [Skyler Reed Corbett-Hecocta](https://skylerwrites.substack.co
 
 [Rude, N. (2014). Umatilla Dictionary: A Project of the Confederated Tribes of the Umatilla Indian Reservation and Noel Rude. United Kingdom: Confederated Tribes of the Umatilla Indian Reservation.](https://dictionary.ctuir.org/)
 
-[Samish Indian Nation [Samish1]. Mountain, Rock. Nature. Samish Word Library. Retreived March 20, 2021 from https://www.samishtribe.nsn.us/departments/language/Samish-Word-Library/nature/mountain-rock](https://www.samishtribe.nsn.us/departments/language/Samish-Word-Library/nature/mountain-rock)
+[Samish Indian Nation [Samish1]. Mountain, Rock. Nature. Samish Word Library. Retrieved March 20, 2021 from https://www.samishtribe.nsn.us/departments/language/Samish-Word-Library/nature/mountain-rock](https://www.samishtribe.nsn.us/departments/language/Samish-Word-Library/nature/mountain-rock)
 
-[Samish Indian Nation [Samish2]. On top of the mountain. Nature. Samish Word Library. Retreived March 20, 2021 from https://www.samishtribe.nsn.us/departments/language/Samish-Word-Library/nature/on-top-of-the-mountain](https://www.samishtribe.nsn.us/departments/language/Samish-Word-Library/nature/on-top-of-the-mountain)
+[Samish Indian Nation [Samish2]. On top of the mountain. Nature. Samish Word Library. Retrieved March 20, 2021 from https://www.samishtribe.nsn.us/departments/language/Samish-Word-Library/nature/on-top-of-the-mountain](https://www.samishtribe.nsn.us/departments/language/Samish-Word-Library/nature/on-top-of-the-mountain)
 
 [SLCC. (2016) History. Squamish Lil’wat Cultural Centre. June 28. Retrieved March 19, 2021 from https://slcc.ca/history/](https://slcc.ca/history/)
 
