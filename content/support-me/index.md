@@ -49,7 +49,7 @@ Destination tag: 2715781560
 
 ---
 
-Tip me with ethereum: 0xb10633e0a0DcF3B2Bb579A4957B6ceFF52209104
+Tip me with ethereum: 0x20103b0C6fD22cc4BfA41E7437D84AB8A3F805c6
 
 <--->
 
@@ -61,6 +61,6 @@ Tip me with ethereum: 0xb10633e0a0DcF3B2Bb579A4957B6ceFF52209104
 
 ---
 
-Tip me with bitcoin: 3Fwk84YP1SRrHph6pPmF1iHUjpdUjDEo3i
+Tip me with bitcoin: 32kiQeTxDjfkobo1mKsgjUJnWdQZcp4k12
 
 {{< /columns >}}
