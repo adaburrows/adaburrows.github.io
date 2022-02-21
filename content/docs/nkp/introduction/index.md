@@ -75,6 +75,7 @@ The physical basis of computing is intriguing, because we were building similar,
 * _5000 BCE_ &mdash; Sumerians start recording inventories, loans, taxes, business transactions, or [even complaints](https://en.wikipedia.org/wiki/Complaint_tablet_to_Ea-nasir). For a longer overview of logistics through the ages see [Tepić, J., Tanackov, I., & Stojić, G. (2011). Ancient logistics–historical timeline and etymology. Tehnički vjesnik, 18(3), 379-384.](https://pdfs.semanticscholar.org/fb9f/f927aa0472a4df2635b8b221c4c67d567046.pdf)
 * _4000 BCE_ &mdash; Egyptians use various methods of planning and organizing labor. There is evidence of this also happening near the coast of Peru ([irrigation canals of Zaña Valley](https://en.wikipedia.org/wiki/Za%C3%B1a_Valley), [the Aspero complex in Peru](https://www.academia.edu/11124090/Bandurria._Arena_Mar_y_Humedal_en_el_Surgimiento_de_la_Civilizaci%C3%B3n_Andina)). Unfortunately, what happened with in the central Andes of Peru is typically never figured into the history because of how imperial conquests typically go.
 * _1721_ &mdash; John Lombe's water powered silk mill.
+* _1758_ &mdash; François Quesnay develops the Tableau économique. This was used by Marx for his discussion of circulation in Das Kapital II.
 * _1765_ &mdash; Europe starts using interchangeable parts again. This was a concept used before 200BCE, but it never really seems to have taken off except in times of war.
 * _1766_ &mdash; Matthew Bolton's Soho Manufactory.
 * _1776_ &mdash; _The Wealth of Nations_ lays out how division of labor is responsible for economic growth. This is most definitely not the first dicussion of division of labor, as it has been discussed in multiple locales since at least 1100 BC. This kind of thinking of single purpose laborers leads to thoughts about floor plan optimization, communication between distant parts of a business, and the shape of the human "computers" and their work follows from this thought. Even the layout of modern processors also follows from this thought.
@@ -92,12 +93,16 @@ The physical basis of computing is intriguing, because we were building similar,
 * _1917-1919_ &mdash; Knoeppel Publishes six volumes under the title _Organization and administration_.
 * _1920s_ &mdash; Mary Parker Follett's understanding of lateral processes within hierarchical orgs led to a matrix organization at DuPont. Charles Bedaux built on the work of Frederick Winslow Taylor and Charles Edward Knoeppel.
 * _1921_ &mdash; Lillian + Frank Gilbreth introduce flow process charts in "Process Charts, First Steps in Finding the One Best Way to Do Work".
-* _1922_ &mdash; Leon P. Alford starts pushing systematic management. Later he works with Alexander Hamilton Church and some of there ideas were extensions of Charles Babbage's thought.
+* _1922_ &mdash; Leon P. Alford starts pushing systematic management. Later he works with Alexander Hamilton Church and some of their ideas were extensions of Charles Babbage's thought.
 * _1924_ &mdash; Walter A. Shrewhart at Bell Labs invents the control chart. That same year or the next, W. Edwards Deming learns of this new method and takes it with him at the United States Department of Agriculture, United States Census Bureau, and eventually became a statistical consultant to the Supreme Commander for the Allied Powers during WWII.
 * _1931_ &mdash; Wassily Leontief moves from the Institute for the World Economy to the US National Bureau of Economic Research and during WWII served as a consultant to the US Office of Strategic Services. He developed Input-Output analysis, for which he earned the Nobel Prize in Economics.
 * _1937_ &mdash; Operations Research became an embryonic field as Great Britain geared up for WWII.
 * _1939_ &mdash; Leonid Kantorovich intruduces the concepts behind linear programming. Kantorovich, L.V. (1939). "Mathematical Methods of Organizing and Planning Production". Management Science. 6 (4): 366–422. doi:10.1287/mnsc.6.4.366. [JSTOR 2627082](https://www.jstor.org/stable/2627082?seq=1).
+* _1940_ &mdash; Lord Blackett began work in the British Anti-Aircraft Command which became the field of Operational Research one year later.
+* _1947_ &mdash; George Dantzig leaves his positions as head of the combat analysis branch of the Headquarters Statistical Control for the Army Air Forces. He develops the Simplex algorithm for linear programming built on the work of Kantorovich.
 * _1949_ &mdash; Wassily Leontief uses the Harvard Mark II to model the US economy based on various sectors of industry.
+* _1956_ &mdash; Stafford Beer joined United Steel and founded the Department of Operations Research and Cybernetics. Beer had previously been part of the Human factors branch of Operations Research at the War Office.
+* _1967_ &mdash; Management Science is summarized by Stafford Beer as "the business use of operations research". It integrates work in mathematical modeling, probability, statistics, systems theory, game theory, psychology, project management, logistics, and other fields.
 
 ### Mathematics Basis
 
