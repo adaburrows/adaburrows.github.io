@@ -1,79 +1,8 @@
-<!doctype html><html lang=en>
-<head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Here we analyze a fairly standard architecture.">
-<meta name=theme-color content="#FFFFFF"><meta property="og:title" content="Analyzing the State of the Art">
-<meta property="og:description" content="Here we analyze a fairly standard architecture.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="http://adaburrows.com/docs/nkp/analyze-sota/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2020-11-09T00:58:16-08:00">
-<title>Analyzing the State of the Art | Jillian Ada Burrows</title><link rel=manifest href=/manifest.json>
-<link rel=icon href=/favicon.png type=image/x-icon>
-<link rel=stylesheet href=/book.min.b5176eb0ca2cd8435f2fe099b1d858f5676ab2cb70001398eb62e5fa2bb99977.css integrity="sha256-tRdusMos2ENfL+CZsdhY9WdqsstwABOY62Ll+iu5mXc=">
-<script defer src=/en.search.min.42ffb247d279fbdbcb04fc2662cdbbf693936c53b5ce8262df5e10e1225a6af6.js integrity="sha256-Qv+yR9J5+9vLBPwmYs279pOTbFO1zoJi314Q4SJaavY="></script>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-148152323-1","auto"),ga("send","pageview"))</script>
-<script async src=https://www.google-analytics.com/analytics.js></script>
-<meta name=monetization content="$ilp.uphold.com/fejEUG7Beey6">
-</head><body>
-<input type=checkbox class=hidden id=menu-control>
-<main class="container flex">
-<aside class=book-menu>
-<nav>
-<h2 class=book-brand>
-<a href=/><span>Jillian Ada Burrows</span>
-</a>
-</h2><div class=book-search>
-<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
-<div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul>
-<li>
-<a href=/docs/resume/>Resume</a>
-<ul>
-</ul></li><li>
-<a href=/docs/ice-age/>Ice Age Map</a>
-</li><li>
-<a href=/docs/narrative-culture/ class=collapsed>The Emergence of Culture</a>
-</li><li>
-<a href=/docs/nkp/ class=collapsed>A Matter of Programming</a>
-<ul>
-<li>
-<a href=/docs/nkp/introduction/>What is Programming About?</a>
-</li><li>
-<a href=/docs/nkp/analyze-sota/ class=active>Analyzing the State of the Art</a>
-</li></ul></li><li>
-<a href=/docs/math-explorations/ class=collapsed>Math Explorations</a>
-</li></ul><ul>
-<li>
-<a href=/writing/>
-Writing
-</a>
-</li><li>
-<a href=/support-me/>
-Support My Work
-</a>
-</li></ul><br>
-<ul class=social>
-<li><a rel=me href=https://instagram.com/adaburrows><i class="fab fa-instagram"></i>&nbsp;Instagram</a></li><li><a rel=me href=https://www.facebook.com/jillburrows.writer/><i class="fab fa-facebook-square"></i>&nbsp;Facebook</a></li><li><a rel=me href=https://twitter.com/jburrows><i class="fab fa-twitter-square"></i>&nbsp;Twitter</a></li><li><a rel=me href=https://www.linkedin.com/in/adaburrows/><i class="fab fa-linkedin"></i>&nbsp;Linkedin</a></li><li><a href=https://t.me/adaburrows><i class="fab fa-telegram"></i>&nbsp;Telegram</a></li><li><a href=https://discord.gg/mgtQBHV><i class="fab fa-discord"></i>&nbsp;Discord</a></li><li><a rel=me href=https://github.com/adaburrows/><i class="fab fa-github-square"></i>&nbsp;Github</a></li></ul></nav><script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
-</aside><div class=book-page>
-<header class=book-header>
-<div class="flex align-center justify-between">
-<label for=menu-control>
-<img src=/svg/menu.svg class=book-icon alt=Menu>
-</label>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Here we analyze a fairly standard architecture."><meta name=theme-color content="#FFFFFF"><meta property="og:title" content="Analyzing the State of the Art"><meta property="og:description" content="Here we analyze a fairly standard architecture."><meta property="og:type" content="article"><meta property="og:url" content="http://adaburrows.com/docs/nkp/analyze-sota/"><meta property="article:section" content="docs"><meta property="article:modified_time" content="2020-11-09T00:58:16-08:00"><title>Analyzing the State of the Art | Jillian Ada Burrows</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.b5176eb0ca2cd8435f2fe099b1d858f5676ab2cb70001398eb62e5fa2bb99977.css integrity="sha256-tRdusMos2ENfL+CZsdhY9WdqsstwABOY62Ll+iu5mXc="><script defer src=/en.search.min.6a3a999d3a5a654a98d2b18e554c128ac3011bf116622464db7a22e455a82597.js integrity="sha256-ajqZnTpaZUqY0rGOVUwSisMBG/EWYiRk23oi5FWoJZc="></script>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-148152323-1","auto"),ga("send","pageview"))</script><script async src=https://www.google-analytics.com/analytics.js></script><meta name=monetization content="$ilp.uphold.com/fejEUG7Beey6"></head><body><input type=checkbox class=hidden id=menu-control><main class="container flex"><aside class=book-menu><nav><h2 class=book-brand><a href=/><span>Jillian Ada Burrows</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li><a href=/docs/resume/>Resume</a><ul></ul></li><li><a href=/docs/ice-age/>Ice Age Map</a></li><li><a href=/docs/narrative-culture/ class=collapsed>The Emergence of Culture</a></li><li><a href=/docs/nkp/ class=collapsed>A Matter of Programming</a><ul><li><a href=/docs/nkp/introduction/>What is Programming About?</a></li><li><a href=/docs/nkp/analyze-sota/ class=active>Analyzing the State of the Art</a></li></ul></li><li><a href=/docs/math-explorations/ class=collapsed>Math Explorations</a></li></ul><ul><li><a href=/writing/>Writing</a></li><li><a href=/support-me/>Support My Work</a></li></ul><br><ul class=social><li><a rel=me href=https://instagram.com/adaburrows><i class="fab fa-instagram"></i>&nbsp;Instagram</a></li><li><a rel=me href=https://www.facebook.com/jillburrows.writer/><i class="fab fa-facebook-square"></i>&nbsp;Facebook</a></li><li><a rel=me href=https://twitter.com/jburrows><i class="fab fa-twitter-square"></i>&nbsp;Twitter</a></li><li><a rel=me href=https://www.linkedin.com/in/adaburrows/><i class="fab fa-linkedin"></i>&nbsp;Linkedin</a></li><li><a href=https://t.me/adaburrows><i class="fab fa-telegram"></i>&nbsp;Telegram</a></li><li><a href=https://discord.gg/mgtQBHV><i class="fab fa-discord"></i>&nbsp;Discord</a></li><li><a rel=me href=https://github.com/adaburrows/><i class="fab fa-github-square"></i>&nbsp;Github</a></li></ul></nav><script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
 <strong>Analyzing the State of the Art</strong>
-<label for=toc-control>
-<img src=/svg/toc.svg class=book-icon alt="Table of Contents">
-</label>
-</div><input type=checkbox class=hidden id=toc-control>
-<aside class="hidden clearfix">
-<nav id=TableOfContents>
-<ul>
-<li><a href=#duplication-in-architecture>Duplication in Architecture</a></li><li><a href=#duplication-i-data-definitions-validations-and-serialization>Duplication I: Data Definitions, Validations, and Serialization</a></li><li><a href=#duplication-ii-business-and-workflow-logic>Duplication II: Business and Workflow Logic</a></li><li><a href=#duplication-iii-views-and-rendering>Duplication III: Views and Rendering</a></li></ul></nav></aside></header><article class=markdown><hr>
-<p><strong>This is a work in progress. It will likely become a book at some point.</strong></p><hr>
-<h1 id=analyzing-the-state-of-the-art>
-Analyzing the State of the Art
-<a class=anchor href=#analyzing-the-state-of-the-art>#</a>
-</h1><p>With todays applications, there is typically a focus on serving large numbers of
+<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><input type=checkbox class=hidden id=toc-control><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#duplication-in-architecture>Duplication in Architecture</a></li><li><a href=#duplication-i-data-definitions-validations-and-serialization>Duplication I: Data Definitions, Validations, and Serialization</a></li><li><a href=#duplication-ii-business-and-workflow-logic>Duplication II: Business and Workflow Logic</a></li><li><a href=#duplication-iii-views-and-rendering>Duplication III: Views and Rendering</a></li></ul></nav></aside></header><article class=markdown><hr><p><strong>This is a work in progress. It will likely become a book at some point.</strong></p><hr><h1 id=analyzing-the-state-of-the-art>Analyzing the State of the Art
+<a class=anchor href=#analyzing-the-state-of-the-art>#</a></h1><p>With todays applications, there is typically a focus on serving large numbers of
 people across multiple platforms. This is complicated by those various platforms
 requiring different languages and technologies in order to implement each part.
 Many languages have been focused on incremental improvements over previous
@@ -98,24 +27,18 @@ just taking off in browsers. Programming is still stuck in low level thought,
 while apps are much broader in scope. Our languages and tools have not kept up
 with the complexity of what we try to accomplish. Most of our programming
 languages are still systems programming laguages leaving us to repeat oursleves
-over and over again.</p><h2 id=duplication-in-architecture>
-Duplication in Architecture
-<a class=anchor href=#duplication-in-architecture>#</a>
-</h2><p>Let&rsquo;s analyze a relative simple web application that could be something from real
+over and over again.</p><h2 id=duplication-in-architecture>Duplication in Architecture
+<a class=anchor href=#duplication-in-architecture>#</a></h2><p>Let&rsquo;s analyze a relative simple web application that could be something from real
 life. Each of the components may be physically duplicates and load balanced. We
-have a system composed of:</p><ol>
-<li>Websever which serves front end code.</li><li>Backend API service proxied through the webserver.</li><li>Database which holds all the data for the system.</li><li>Service which collects and aggregates statistics from the system in Redis.</li><li>Redis keystore which stores the online aggregation of data and also stores
-the session data in another database.</li></ol><p><img src=./images/system-diagram.png alt></p><blockquote class="book-hint info">
-<p>We can see a lot duplication which should be examined in order to determine if
+have a system composed of:</p><ol><li>Websever which serves front end code.</li><li>Backend API service proxied through the webserver.</li><li>Database which holds all the data for the system.</li><li>Service which collects and aggregates statistics from the system in Redis.</li><li>Redis keystore which stores the online aggregation of data and also stores
+the session data in another database.</li></ol><p><img src=./images/system-diagram.png alt></p><blockquote class="book-hint info"><p>We can see a lot duplication which should be examined in order to determine if
 there are any opportunities for reducing complexity. The first set of duplicates
 to bring attention to are the aspects of <strong>data modeling</strong> and <strong>validation</strong>.</p><p>There&rsquo;s actually a decent level of complexity going on here which needs to be
 appreciated. Several other systems (not included here) likely interact with the
 backend service. In many systems around today, there is likely an additional
 service worker which handles longer running tasks. I&rsquo;m omitting all of that, just
 to focus on the core of the problem.</p></blockquote><script src=/mermaid.min.js></script>
-<script>mermaid.initialize({flowchart:{useMaxWidth:!0}})</script>
-<p class=mermaid>
-sequenceDiagram
+<script>mermaid.initialize({flowchart:{useMaxWidth:!0}})</script><p class=mermaid>sequenceDiagram
 autonumber
 participant A as Alice
 participant B as Browser
@@ -179,18 +102,12 @@ API -->> WS: API proxies through webserver
 deactivate API
 WS -->> B: FE receives the data from the API
 deactivate WS
-B -->> A: Sees update
-</p><blockquote class="book-hint info">
-With this diagram and the one above, we can begin to see the complexity of
+B -->> A: Sees update</p><blockquote class="book-hint info">With this diagram and the one above, we can begin to see the complexity of
 serializing, marshalling, and validating data and how it relates to the
-duplication of the data models across multiple systems.
-</blockquote><h2 id=duplication-i-data-definitions-validations-and-serialization>
-Duplication I: Data Definitions, Validations, and Serialization
-<a class=anchor href=#duplication-i-data-definitions-validations-and-serialization>#</a>
-</h2><p>In this example let&rsquo;s assume the API is written in Ada, the FE is written
+duplication of the data models across multiple systems.</blockquote><h2 id=duplication-i-data-definitions-validations-and-serialization>Duplication I: Data Definitions, Validations, and Serialization
+<a class=anchor href=#duplication-i-data-definitions-validations-and-serialization>#</a></h2><p>In this example let&rsquo;s assume the API is written in Ada, the FE is written
 in JavaScript, the Service is written in C++, and the database schema is in a
-MySQL dialect. This means that we have duplication of:</p><ul>
-<li>the type specifications in four different languages.</li><li>validation constraints in four different laguages.</li><li>serialization of these models in three different languages (the DB already has
+MySQL dialect. This means that we have duplication of:</p><ul><li>the type specifications in four different languages.</li><li>validation constraints in four different laguages.</li><li>serialization of these models in three different languages (the DB already has
 a serialization format built in, but I&rsquo;m not counting it since we don&rsquo;t have to
 specify it or manually wire it).</li></ul><p>Let&rsquo;s take an overview of each of these. First, there&rsquo;s the SQL definition of the
 table. There&rsquo;s a few things we need to notice about this. It uses the database&rsquo;s
@@ -252,21 +169,7 @@ document stores. This means that validation is especially a bad match for DBs.</
 </span></span><span style=display:flex><span>	<span style=color:#a6e22e>nickName</span>;
 </span></span><span style=display:flex><span>	<span style=color:#a6e22e>dateOfBirth</span>;
 </span></span><span style=display:flex><span>}
-</span></span></code></pre></div><h2 id=duplication-ii-business-and-workflow-logic>
-Duplication II: Business and Workflow Logic
-<a class=anchor href=#duplication-ii-business-and-workflow-logic>#</a>
-</h2><h2 id=duplication-iii-views-and-rendering>
-Duplication III: Views and Rendering
-<a class=anchor href=#duplication-iii-views-and-rendering>#</a>
-</h2></article><footer class=book-footer>
-<div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/adaburrows/adaburrows.github.io/commit/49b126fcb7c120b84be6610ea785a5c419b155a3 title="Last modified by Jillian Ada Burrows | November 9, 2020" target=_blank rel=noopener>
-<img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>November 9, 2020</span>
-</a>
-</div></div><p><i class="fas fa-recycle"></i>&nbsp;Please remember to recycle this page. <i class="fas fa-radiation"></i>&nbsp;<a style=color:#000 href=https://www.nj.gov/llrwsb/radwrld.htm>May contain trace amounts of radioactive materials.</a> <i class="fas fa-hands-wash"></i>&nbsp;Don't forget to wash your hands. <i class="fas fa-transgender-alt"></i>&nbsp;<a style=color:#000 href=https://transequality.org/issues/resources/supporting-the-transgender-people-in-your-life-a-guide-to-being-a-good-ally>Support your friendly trans people.</a> <a style=color:#000 href=https://blacklivesmatter.com/>#BlackLivesMatter</a> <a style=color:#000 href=https://resourcegeneration.org/land-reparations-indigenous-solidarity-action-guide/>#LandBack</a> <a style=color:#000 href=https://news.umiamihealth.org/en/your-questions-about-cloth-face-coverings-answered/>#MasksSaveLives</a></p></footer><div class=book-comments>
-</div><label for=menu-control class="hidden book-menu-overlay"></label>
-</div><aside class=book-toc>
-<nav id=TableOfContents>
-<ul>
-<li><a href=#duplication-in-architecture>Duplication in Architecture</a></li><li><a href=#duplication-i-data-definitions-validations-and-serialization>Duplication I: Data Definitions, Validations, and Serialization</a></li><li><a href=#duplication-ii-business-and-workflow-logic>Duplication II: Business and Workflow Logic</a></li><li><a href=#duplication-iii-views-and-rendering>Duplication III: Views and Rendering</a></li></ul></nav></aside></main></body></html>
+</span></span></code></pre></div><h2 id=duplication-ii-business-and-workflow-logic>Duplication II: Business and Workflow Logic
+<a class=anchor href=#duplication-ii-business-and-workflow-logic>#</a></h2><h2 id=duplication-iii-views-and-rendering>Duplication III: Views and Rendering
+<a class=anchor href=#duplication-iii-views-and-rendering>#</a></h2></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/adaburrows/adaburrows.github.io/commit/49b126fcb7c120b84be6610ea785a5c419b155a3 title="Last modified by Jillian Ada Burrows | November 9, 2020" target=_blank rel=noopener><img src=/svg/calendar.svg class=book-icon alt=Calendar>
+<span>November 9, 2020</span></a></div></div><p><i class="fas fa-recycle"></i>&nbsp;Please remember to recycle this page. <i class="fas fa-radiation"></i>&nbsp;<a style=color:#000 href=https://www.nj.gov/llrwsb/radwrld.htm>May contain trace amounts of radioactive materials.</a> <i class="fas fa-hands-wash"></i>&nbsp;Don't forget to wash your hands. <i class="fas fa-transgender-alt"></i>&nbsp;<a style=color:#000 href=https://transequality.org/issues/resources/supporting-the-transgender-people-in-your-life-a-guide-to-being-a-good-ally>Support your friendly trans people.</a> <a style=color:#000 href=https://blacklivesmatter.com/>#BlackLivesMatter</a> <a style=color:#000 href=https://resourcegeneration.org/land-reparations-indigenous-solidarity-action-guide/>#LandBack</a> <a style=color:#000 href=https://news.umiamihealth.org/en/your-questions-about-cloth-face-coverings-answered/>#MasksSaveLives</a></p></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><nav id=TableOfContents><ul><li><a href=#duplication-in-architecture>Duplication in Architecture</a></li><li><a href=#duplication-i-data-definitions-validations-and-serialization>Duplication I: Data Definitions, Validations, and Serialization</a></li><li><a href=#duplication-ii-business-and-workflow-logic>Duplication II: Business and Workflow Logic</a></li><li><a href=#duplication-iii-views-and-rendering>Duplication III: Views and Rendering</a></li></ul></nav></aside></main></body></html>
