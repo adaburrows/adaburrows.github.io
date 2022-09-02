@@ -21,7 +21,7 @@ My name is <span itemprop="givenName" class="given-name">Jillian</span> <span it
 
 I'm an autodidact and have many interests. I'm also an emergent epiphenomenon chaotically jostling through the dynamic relationships which we project reality onto. I'm insatiably curious and that's where my interest in math, physics, music, psychology, culture, history, and my family's genealogy stems from.
 
-There's a lot to read here on this site. In case you run out of things to read, I've got links to writing elsewhere in the navigation.
+There's a [lot to read here on this site](/writing/). In case you run out of things to read, I've got links to writing elsewhere in the navigation.
 
 {{< /columns >}}
 
