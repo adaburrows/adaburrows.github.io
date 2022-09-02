@@ -7,7 +7,7 @@ categories: []
 draft: false
 monetize: true
 images:
-- "/writing/2022-05-09-h10-optane-recovery/images/holonix-compile.png"
+- "/writing/2022-09-02-nix-rosetta-fix/images/holonix-compile.png"
 ---
 
 {{< figure caption="Opening the disk image in `hexedit`." src="images/holonix-compile.png" link="images/holonix-compile.png">}}
