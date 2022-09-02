@@ -10,7 +10,7 @@ images:
 - "/writing/2022-09-02-nix-rosetta-fix/images/holonix-compile.png"
 ---
 
-{{< figure caption="Opening the disk image in `hexedit`." src="images/holonix-compile.png" link="images/holonix-compile.png">}}
+{{< figure caption="Compiling Holochain on Holonix running in Rosetta." src="images/holonix-compile.png" link="images/holonix-compile.png">}}
 
 ## The Situation
 
