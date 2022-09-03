@@ -1,6 +1,6 @@
 ---
 title: "How to ensure all of Nix works on Apple silicon"
-date: 2022-05-09
+date: 2022-09-02
 summary: "Make sure it builds under Rosetta"
 link: ''
 categories: []
