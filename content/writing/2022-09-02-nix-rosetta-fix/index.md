@@ -118,3 +118,33 @@ Then follow the install instructions on the Nix install page again.
 ## Use Nix from any terminal
 
 Once Nix is installed and bootstrapped, every executable it builds should be using the Intel architecture running on Rosetta. This means you can use any terminal you want. it doesn't need to be running on Rosetta.
+
+## Updates on the original problem
+
+*[added on 2022/9/6. -JB]*
+
+*TLDR; as of 2022/9/1 the `unstable` channel should work out of the box. But I haven't taken the time to test it, now that I have a working system.*
+
+The core of the problem was the cycle in the filesystem that threw Nix for a loop. There are several tickets on github that happen to deal with this. The relevant aspects of this process seem to be merged in. The fun is seeing if the nixpkgs have been updated to include these fixes.
+
+* [haskell packages with separate bin outputs fail due to a reference cycle on aarch64-darwin #140774](https://github.com/NixOS/nixpkgs/issues/140774)
+* [ghc8107: fix seperate bin outputs on aarch64-darwin #154046](https://github.com/NixOS/nixpkgs/pull/154046)
+* [haskell.compiler.ghc902: fix seperate bin outputs on aarch64-darwin #167895](https://github.com/NixOS/nixpkgs/pull/167895)
+* [Add cabal-paths patch for ghc 9.2.3 #184041](https://github.com/NixOS/nixpkgs/pull/184041)
+
+Digging through through the nixpkgs for Haskell, and it turns out that in in channel [`22.05`](https://raw.githubusercontent.com/NixOS/nixpkgs/nixos-22.05/pkgs/development/haskell-modules/hackage-packages.nix) it still uses ghc 9.2.2, which does not have the correct fixes. Whereas in [`unstable`](https://raw.githubusercontent.com/NixOS/nixpkgs/nixos-unstable/pkgs/development/haskell-modules/hackage-packages.nix) it uses ghc 9.2.4, which does have the correct fixes.
+
+These updates were merged into master Monday, 29 August:
+```
+ab0f52080fd - Merge pull request #187575 from NixOS/haskell-updates (9 days ago) <Ellie Hermaszewska>
+214c9d5cef4 - Merge pull request #184194 from NixOS/haskell-updates (5 weeks ago) <sternenseemann>
+7f909b041b9 - haskell.compiler: ghc923 -> ghc924 (6 weeks ago) <sternenseemann>
+```
+
+Looking at the `nixpkgs-unstable` branch, it was last cut on Thursday, 1 September &mdash; which is just a few days after I last tried this excercise.
+
+```
+2da64a81275 - (origin/nixos-unstable, nixos-unstable) Merge #188383: ngtcp2-gnutls: init at 0.7.0 and use in knot-dns (6 days ago) <Vladimír Čunát>
+```
+
+This means, going forward, everything in my blog post should not be required. If you're running the most recent `unstable` channel it should actually just work out of the box. It looks like this should all be in the next stable release, too.
