@@ -127,7 +127,7 @@ Tip me with Ethereum: 0x20103b0C6fD22cc4BfA41E7437D84AB8A3F805c6
 
 Tip me with LINK: 0x7B7Ae6A5B315265554FC140C2358cfbD5bbb955D
 
-![](images/link.png)
+![](images/LINK.png)
 <br />
 <br />
 <br />
