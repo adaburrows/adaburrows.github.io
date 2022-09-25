@@ -27,13 +27,13 @@ You can support me with a Patreon membership which includes two of my best photo
 
 If you're feeling more like just giving a one time infusion of money, you can use the following methods:
 
-{{< columns >}}
+### Paypal
 
 {{< button href="https://www.paypal.me/adaburrows" >}}
   Tip me with {{< paypal >}}.
 {{< /button >}}
 
----
+### Cash.app
 
 {{< button href="https://cash.app/$jillburrows" >}}
   Tip me with cash.app.
@@ -41,26 +41,72 @@ If you're feeling more like just giving a one time infusion of money, you can us
 
 {{< cash-app >}}
 
----
-
-Tip me with XRP (Ripple):<br />
-Account: rMdG3ju8pgyVh29ELPWaDuA74CpWW6Fxns<br />
-Destination tag: 2715781560
-
----
-
-Tip me with ethereum: 0x20103b0C6fD22cc4BfA41E7437D84AB8A3F805c6
-
-<--->
+### Venmo
 
 {{< button href="https://venmo.com/code?user_id=2414406159826944299" >}}
   Tip me with Venmo.
 {{< /button >}}
 
 ![](images/venmo.png)
+<br />
+<br />
+<br />
+<br />
+<br />
 
----
+### Cardano (ADA)
 
-Tip me with bitcoin: 32kiQeTxDjfkobo1mKsgjUJnWdQZcp4k12
+Tip me with ADA: addr1qxp44l7nz03guc62f4pdt5pevdu2rxy7f8eg7jdya2snglxfeqzunfuzdvas294dmd6d265aep7u87eg8ypwx4flq84qjz3k9r
 
-{{< /columns >}}
+![](images/ada.png)
+<br />
+<br />
+<br />
+<br />
+<br />
+
+### Ripple (XRP)
+
+Tip me with XRP (Ripple):<br />
+Account: rMdG3ju8pgyVh29ELPWaDuA74CpWW6Fxns<br />
+Destination tag: 2715781560
+
+![](images/xrp.png)
+<br />
+<br />
+<br />
+<br />
+<br />
+
+### Ethereum (ETH)
+
+Tip me with Ethereum: 0x20103b0C6fD22cc4BfA41E7437D84AB8A3F805c6
+
+![](images/eth.png)
+<br />
+<br />
+<br />
+<br />
+<br />
+
+### Chainlink (LINK)
+
+Tip me with LINK: 0x7B7Ae6A5B315265554FC140C2358cfbD5bbb955D
+
+![](images/LINK.png)
+<br />
+<br />
+<br />
+<br />
+<br />
+
+### Bitcoin (BTC)
+
+Tip me with bitcoin: 12btx2Kjymx4VWJMJ6q7Z6cu3r1QGRVCLd
+
+![](images/btc.png)
+<br />
+<br />
+<br />
+<br />
+<br />
