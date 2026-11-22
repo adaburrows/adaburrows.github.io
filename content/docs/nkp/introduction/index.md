@@ -5,13 +5,9 @@ description: "A historical look at the origin of programming."
 monetize: true
 ---
 
-[Next]({{< ref "docs/nkp/analyze-sota/index.md" >}})
-
----
-
-**This is a work in progress. It will likely become a book at some point.**
-
----
+{{< hint warning >}}
+This is a work in progress. It will likely become a book at some point.
+{{< /hint >}}
 
 ## What is Programming About?
 
@@ -233,7 +229,3 @@ Fundamentally, nothing about programming interfaces has changed since 1997. Data
 We have an acronym to remind us not to do this: DRY, Don't Repeat Yourself. It is the maxim most programmers live by. It is why we build standard libraries, garbage collectors, frameworks, reusable bits of code, isomorphic coding, and many other things. However, there are certain things that always seem to need to be repeated with a few changes each time we add a new screen or form to an application. Things do not wire themselves into finished products.
 
 {{< figure src="//imgs.xkcd.com/comics/ineffective_sorts.png" title="XKCD: \"StackSort connects to StackOverflow, searches for 'sort a list', and downloads and runs code snippets until the list is sorted.\"" >}}
-
----
-
-[Next]({{< ref "docs/nkp/analyze-sota/index.md" >}})

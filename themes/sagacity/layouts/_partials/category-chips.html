@@ -1,0 +1,10 @@
+{{- /* Category filter chips. Context: the current page. */}}
+{{- $cur := . }}
+{{- with site.Taxonomies.categories }}
+<ul class="chips" aria-label="Categories">
+  <li><a href="{{ "writing/" | relURL }}"{{ if eq $cur.Section "writing" }} aria-current="page"{{ end }}>All</a></li>
+  {{- range .ByCount }}
+  <li><a href="{{ .Page.RelPermalink }}"{{ if eq $cur.RelPermalink .Page.RelPermalink }} aria-current="page"{{ end }}>{{ .Page.LinkTitle }} <span class="count">{{ .Count }}</span></a></li>
+  {{- end }}
+</ul>
+{{- end }}

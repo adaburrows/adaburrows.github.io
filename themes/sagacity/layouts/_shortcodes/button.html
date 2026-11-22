@@ -1,0 +1,4 @@
+{{- /* {{< button href="..." >}}label{{< /button >}} */ -}}
+{{- $href := .Get "href" | default (.Get 0) }}
+{{- with .Get "relref" }}{{ $href = relref $.Page . }}{{ end -}}
+<a class="button" href="{{ $href }}"{{ if strings.HasPrefix $href "http" }} rel="noopener"{{ end }}>{{ strings.TrimSpace .Inner | .Page.RenderString }}</a>

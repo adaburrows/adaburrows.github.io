@@ -5,15 +5,9 @@ description: "Here we analyze a fairly standard architecture."
 monetize: true
 ---
 
-
-
----
-
-**This is a work in progress. It will likely become a book at some point.**
-
----
-
-# Analyzing the State of the Art
+{{< hint warning >}}
+This is a work in progress. It will likely become a book at some point.
+{{< /hint >}}
 
 With todays applications, there is typically a focus on serving large numbers of
 people across multiple platforms. This is complicated by those various platforms
@@ -242,6 +236,3 @@ class Person {
 
 
 ## Duplication III: Views and Rendering
-
-
-

@@ -1,0 +1,7 @@
+{{- /* Breadcrumbs for pages nested two or more levels deep (book chapters). */}}
+{{- $chain := slice }}
+{{- $p := .Parent }}
+{{- range seq 5 }}{{ with $p }}{{ if and (not .IsHome) (ne .RelPermalink "/docs/") }}{{ $chain = $chain | append . }}{{ end }}{{ $p = .Parent }}{{ end }}{{ end }}
+{{- if and $chain (ne .Section "writing") }}
+<p class="crumbs">{{ range $i, $c := collections.Reverse $chain }}{{ if $i }} &rsaquo; {{ end }}<a href="{{ $c.RelPermalink }}">{{ $c.LinkTitle }}</a>{{ end }}</p>
+{{- end }}

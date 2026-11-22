@@ -1,0 +1,11 @@
+{{ define "main" }}
+<article class="content-area">
+  <header class="page-head">
+    <p class="crumbs"><a href="{{ "writing/" | relURL }}">Writing</a> &rsaquo; <a href="{{ .Parent.RelPermalink }}">{{ .Parent.LinkTitle }}</a></p>
+    <h1>{{ .Title }}</h1>
+    {{- partial "category-chips.html" . }}
+  </header>
+  {{- with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+  {{- partial "post-list.html" .Pages }}
+</article>
+{{ end }}

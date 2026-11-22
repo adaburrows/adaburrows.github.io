@@ -1,0 +1,14 @@
+{{- /* Title block shared by single pages and section indexes. */}}
+<header class="page-head">
+  {{- partial "crumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  {{- if and .IsPage (eq .Section "writing") }}
+  <div class="meta">
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+    {{- with .ReadingTime }}{{ if gt . 1 }} &middot; {{ . }} min read{{ end }}{{ end }}
+  </div>
+  {{- with .GetTerms "categories" }}
+  <ul class="chips">{{ range . }}<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>{{ end }}</ul>
+  {{- end }}
+  {{- end }}
+</header>

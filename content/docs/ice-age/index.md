@@ -6,7 +6,6 @@ aliases: ["/ice-age/"]
 images: ["/docs/ice-age/images/ice-age.jpeg"]
 ---
 
-# Ice Age Map
 
 {{< figure src="images/ice-age.jpeg">}}
 
@@ -27,5 +26,9 @@ To see the techologies and other sources of data which I'll likely use to build 
 {{< /columns >}}
 
 If you are interested in this project, please consider [supporting me](/support-me/).
+
+## Explore the map
+
+The map now lives on its own site, [ice-age-tiles.adaburrows.com](https://ice-age-tiles.adaburrows.com/). Drag to spin the globe and scroll to zoom.
 
 {{< ice-age >}}

@@ -1,0 +1,111 @@
+baseURL = "https://adaburrows.com/"
+locale = "en-US"
+title = "Jillian Ada Burrows"
+theme = "sagacity"
+enableGitInfo = true
+enableRobotsTXT = false
+
+[pagination]
+  pagerSize = 1000
+
+[taxonomies]
+  category = "categories"
+
+[params]
+  subtitle = "Creative Sagacity"
+  description = "Jillian Ada Burrows: software engineer, writer, mathematician, musician."
+  repo = "https://github.com/adaburrows/adaburrows.github.io"
+  avatar = "https://s.gravatar.com/avatar/44645c684eb67fc38f700fdf5ff4ff2c?s=400"
+
+  # Shown in the About menu and the footer.
+  [[params.social]]
+    name = "GitHub"
+    url = "https://github.com/adaburrows/"
+  [[params.social]]
+    name = "Medium"
+    url = "https://medium.com/@adaburrows"
+  [[params.social]]
+    name = "Bluesky"
+    url = "https://bsky.app/profile/adaburrows.bsky.social"
+  [[params.social]]
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/adaburrows/"
+  [[params.social]]
+    name = "Instagram"
+    url = "https://instagram.com/adaburrows"
+  [[params.social]]
+    name = "Facebook"
+    url = "https://www.facebook.com/jillburrows.writer/"
+  [[params.social]]
+    name = "Twitter / X"
+    url = "https://twitter.com/jburrows"
+  [[params.social]]
+    name = "Telegram"
+    url = "https://t.me/adaburrows"
+  [[params.social]]
+    name = "Discord"
+    url = "https://discord.gg/mgtQBHV"
+
+# One menu, the same on every screen size. Entries with children render as
+# CSS-only dropdowns (<details>); the rest are plain links.
+[menus]
+  [[menus.main]]
+    name = "Writing"
+    pageRef = "/writing"
+    weight = 10
+  [[menus.main]]
+    name = "Books"
+    identifier = "books"
+    weight = 20
+  [[menus.main]]
+    name = "The Emergence of Culture"
+    pageRef = "/docs/narrative-culture"
+    parent = "books"
+    weight = 1
+    [menus.main.params]
+      note = "How shared experience forms culture"
+  [[menus.main]]
+    name = "A Matter of Programming"
+    pageRef = "/docs/nkp"
+    parent = "books"
+    weight = 2
+    [menus.main.params]
+      note = "What programming is really about"
+  [[menus.main]]
+    name = "Ice Age Map"
+    pageRef = "/docs/ice-age"
+    weight = 30
+  [[menus.main]]
+    name = "About"
+    identifier = "about"
+    weight = 40
+    [menus.main.params]
+      social = true
+  [[menus.main]]
+    name = "Home"
+    pageRef = "/"
+    parent = "about"
+    weight = 1
+  [[menus.main]]
+    name = "Resume"
+    pageRef = "/docs/resume"
+    parent = "about"
+    weight = 2
+  [[menus.main]]
+    name = "Support my work"
+    pageRef = "/support-me"
+    parent = "about"
+    weight = 3
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    noClasses = false
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+
+[outputs]
+  home = ["html", "rss"]
+  section = ["html", "rss"]

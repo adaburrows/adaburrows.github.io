@@ -1,0 +1,4 @@
+{{- /* {{< hint info|warning|danger|tip >}}markdown{{< /hint >}} */ -}}
+<aside class="hint {{ .Get 0 | default "info" }}">
+{{ .InnerDeindent | .Page.RenderString (dict "display" "block") }}
+</aside>

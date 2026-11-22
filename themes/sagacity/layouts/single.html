@@ -1,0 +1,17 @@
+{{ define "main" }}
+<article class="content-area">
+  {{- partial "page-head.html" . }}
+  {{- partial "toc.html" . }}
+  <div class="prose">
+    {{ .Content }}
+  </div>
+  {{- with .Params.link }}
+  {{- $u := urls.Parse . }}
+  <p class="read-elsewhere">
+    {{- if $.Content }}Originally published on <strong>{{ $u.Host | strings.TrimPrefix "www." }}</strong>. {{ else }}{{ with $.Params.summary }}{{ . | $.RenderString }}</p><p class="read-elsewhere">{{ end }}{{ end -}}
+    <a class="ext" href="{{ . }}">Read it on {{ $u.Host | strings.TrimPrefix "www." }}</a>
+  </p>
+  {{- end }}
+</article>
+{{- partial "pager.html" . }}
+{{ end }}

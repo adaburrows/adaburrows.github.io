@@ -7,13 +7,9 @@ aliases: ["/writing/narratives-and-culture/"]
 images: ["/docs/narrative-culture/perceptual-zones/images/Two%20Viewpoints.jpeg"]
 ---
 
----
-
-**This is a draft of what will likely become a book detailing how our minds form culture based on shared experiences and a Nash-like equilibrium of cultural dynamics.**
-
----
-
-# Perceptual + Narrative Zones
+{{< hint warning >}}
+This is a draft of what will likely become a book detailing how our minds form culture based on shared experiences and a Nash-like equilibrium of cultural dynamics.
+{{< /hint >}}
 
 ## Perceptual Zones
 

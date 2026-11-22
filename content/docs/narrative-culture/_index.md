@@ -6,15 +6,9 @@ monetize: true
 images: ["/docs/narrative-culture/perceptual-zones/images/Two%20Viewpoints.jpeg"]
 ---
 
-[Next]({{< ref "docs/narrative-culture/perceptual-zones/index.md" >}})
-
----
-
-**This is a draft of what will likely become a book detailing how our minds form culture based on shared experiences and a Nash-like equilibrium of cultural dynamics.**
-
----
-
-# The Emergence of Culture
+{{< hint warning >}}
+This is a draft of what will likely become a book detailing how our minds form culture based on shared experiences and a Nash-like equilibrium of cultural dynamics.
+{{< /hint >}}
 
 Most of us are very deeply embedded in our cultures. Most of us only have one culture and we are typically blind to how it shapes our thoughts and feelings. Culture is one of the filters through which we see the world. It is one of the deepest ways we make sense of the world rooted in our experiences and intergenerational ways of thinking. Culture shapes how language is understood. Culture shapes what actions are considered acceptible. Culture forms how we relate to every other entity in the universe.
 
@@ -77,7 +71,3 @@ These example situations show how culture perpetuates itself. It also shows how 
 ## TOC
 
 {{<section>}}
-
----
-
-[Next]({{< ref "docs/narrative-culture/perceptual-zones/index.md" >}})

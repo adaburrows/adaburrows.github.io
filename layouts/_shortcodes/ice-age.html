@@ -1,0 +1,6 @@
+{{- /* The map is its own site (separate repo): https://ice-age-tiles.adaburrows.com/ */ -}}
+{{- $src := .Get "src" | default "https://ice-age-tiles.adaburrows.com/" }}
+<div class="embed tall">
+  <iframe src="{{ $src }}" title="Ice Age Map: an interactive globe of the last glacial maximum" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
+</div>
+<p class="meta"><a class="ext" href="{{ $src }}">Open the map full screen</a></p>

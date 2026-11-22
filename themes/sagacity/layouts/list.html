@@ -1,0 +1,18 @@
+{{ define "main" }}
+<article class="content-area">
+  {{- partial "page-head.html" . }}
+  <div class="prose">
+    {{ .Content }}
+  </div>
+  {{- if not (strings.Contains .RawContent "{{<section") | and (not (strings.Contains .RawContent "{{< section")) }}
+  {{- with .Pages.ByWeight }}
+  <ul class="section-list">
+    {{- range . }}
+    <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ with .Description }}<span class="note">{{ . }}</span>{{ end }}</li>
+    {{- end }}
+  </ul>
+  {{- end }}
+  {{- end }}
+</article>
+{{- partial "pager.html" . }}
+{{ end }}

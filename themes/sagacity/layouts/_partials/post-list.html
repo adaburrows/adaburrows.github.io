@@ -1,0 +1,21 @@
+{{- /* A list of posts grouped by year. Context: a Pages collection. */}}
+{{- range .GroupByDate "2006" }}
+<h2 class="year" id="y{{ .Key }}">{{ .Key }}</h2>
+<ul class="posts">
+  {{- range .Pages }}
+  {{- $href := .RelPermalink }}{{ $host := "" }}
+  {{- with .Params.link }}{{ $href = . }}{{ $host = (urls.Parse .).Host | strings.TrimPrefix "www." }}{{ end }}
+  <li class="post">
+    <h3 class="post-title"><a href="{{ $href }}"{{ if $host }} class="ext"{{ end }}>{{ .LinkTitle }}</a></h3>
+    <div class="meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2" }}</time>
+      {{- with $host }}<span class="via">on {{ . }}</span>{{ end }}
+      {{- with .GetTerms "categories" }}<span>{{ range $i, $t := . }}{{ if $i }}, {{ end }}<a href="{{ $t.RelPermalink }}">{{ $t.LinkTitle }}</a>{{ end }}</span>{{ end }}
+    </div>
+    {{- with or .Params.summary .Description .Summary }}
+    <p class="summary">{{ . | plainify | htmlUnescape | truncate 280 }}</p>
+    {{- end }}
+  </li>
+  {{- end }}
+</ul>
+{{- end }}

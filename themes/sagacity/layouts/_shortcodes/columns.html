@@ -1,0 +1,6 @@
+{{- /* {{< columns >}} a <---> b <---> c {{< /columns >}} */ -}}
+<div class="columns">
+{{- range split .Inner "<--->" }}
+  <div>{{ . | $.Page.RenderString (dict "display" "block") }}</div>
+{{- end }}
+</div>

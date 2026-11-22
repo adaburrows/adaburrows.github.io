@@ -1,13 +1,8 @@
 ---
-menu:
-  after:
-    name: support-me
-    weight: 8
 title: Support My Work
 images: ["/images/patreon_photo_sample.png"]
 ---
 
-# Support My Work
 
 There are numerous way you can help me meet my living needs.
 

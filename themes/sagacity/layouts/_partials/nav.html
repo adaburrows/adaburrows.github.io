@@ -1,0 +1,30 @@
+{{- $page := . }}
+<nav class="site-nav" aria-label="Site">
+  <ul>
+  {{- range site.Menus.main }}
+    {{- $active := or ($page.IsMenuCurrent "main" .) ($page.HasMenuCurrent "main" .) }}
+    {{- with .Page }}{{ if and (not .IsHome) ($page.IsDescendant .) }}{{ $active = true }}{{ end }}{{ end }}
+    {{- range .Children }}{{ with .Page }}{{ if and (not .IsHome) ($page.IsDescendant .) }}{{ $active = true }}{{ end }}{{ end }}{{ end }}
+    {{- if .HasChildren }}
+    <li class="top dd{{ if $active }} current{{ end }}">
+      <details>
+        <summary>{{ .Name }}</summary>
+        <ul class="panel">
+          {{- range .Children }}
+          <li><a href="{{ .URL }}"{{ if $page.IsMenuCurrent "main" . }} aria-current="page"{{ end }}>{{ .Name }}{{ with .Params.note }}<span class="note">{{ . }}</span>{{ end }}</a></li>
+          {{- end }}
+          {{- if .Params.social }}
+          <li class="group">Elsewhere</li>
+          <li><ul class="social">
+            {{- range site.Params.social }}<li><a href="{{ .url }}" rel="me noopener">{{ .name }}</a></li>{{ end }}
+          </ul></li>
+          {{- end }}
+        </ul>
+      </details>
+    </li>
+    {{- else }}
+    <li class="top{{ if $active }} current{{ end }}"><a href="{{ .URL }}"{{ if $page.IsMenuCurrent "main" . }} aria-current="page"{{ end }}>{{ .Name }}</a></li>
+    {{- end }}
+  {{- end }}
+  </ul>
+</nav>

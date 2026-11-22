@@ -6,15 +6,9 @@ monetize: true
 title: "A Matter of Programming"
 ---
 
-[Next]({{< ref "docs/nkp/introduction/index.md" >}})
-
----
-
-**This is a work in progress. It will likely become a book at some point.**
-
----
-
-# A Matter of Programming
+{{< hint warning >}}
+This is a work in progress. It will likely become a book at some point.
+{{< /hint >}}
 
 I've started to put a lot of thought into writing this and in many senses it will be the columniation of 26 years of experience in technology. The experiences have ranged from electronics and math, to building a simple computer out of logic gates when I was 11, to programming professionally since 2009 when I was 25. I hope you find everything in here to be enlightening.
 
@@ -53,7 +47,3 @@ Over the course of all that time, I learned PHP, C#, Python, Ruby, Ada, Coffee S
 ## TOC
 
 {{<section>}}
-
----
-
-[Next]({{< ref "docs/nkp/introduction/index.md" >}})

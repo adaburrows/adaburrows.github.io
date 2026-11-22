@@ -1,0 +1,37 @@
+{{ define "main" }}
+<section class="content-area">
+  <div class="intro">
+    {{- with site.Params.avatar }}<img class="avatar" src="{{ . }}" alt="Jillian Ada Burrows" width="400" height="400">{{ end }}
+    <div class="prose">{{ .Content }}</div>
+  </div>
+</section>
+<div class="cards">
+  <section class="content-area">
+    <h2>Recent writing</h2>
+    <ul class="section-list">
+      {{- range first 5 (where site.RegularPages "Section" "writing") }}
+      {{- $href := .RelPermalink }}{{ with .Params.link }}{{ $href = . }}{{ end }}
+      <li><a href="{{ $href }}"{{ if .Params.link }} class="ext"{{ end }}>{{ .LinkTitle }}</a><span class="note">{{ .Date.Format "January 2006" }}</span></li>
+      {{- end }}
+    </ul>
+    <p class="more"><a href="{{ "writing/" | relURL }}">All writing &rarr;</a></p>
+  </section>
+  <section class="content-area">
+    <h2>Books &amp; projects</h2>
+    <ul class="section-list">
+      {{- range site.Menus.main }}{{ if eq .Identifier "books" }}{{ range .Children }}
+      <li><a href="{{ .URL }}">{{ .Name }}</a>{{ with .Params.note }}<span class="note">{{ . }}</span>{{ end }}</li>
+      {{- end }}{{ end }}{{ end }}
+      {{- with site.GetPage "/docs/ice-age" }}
+      <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a><span class="note">An explorable map of the world during the last ice age</span></li>
+      {{- end }}
+    </ul>
+  </section>
+  <section class="content-area">
+    <h2>Connect</h2>
+    <p>On most networks I'm <span class="mono">adaburrows</span> or <span class="mono">jburrows</span>.</p>
+    <ul class="social-list">{{ range site.Params.social }}<li><a href="{{ .url }}" rel="me noopener">{{ .name }}</a></li>{{ end }}</ul>
+    {{- with site.GetPage "/support-me" }}<p class="more"><a href="{{ .RelPermalink }}">Support my work &rarr;</a></p>{{ end }}
+  </section>
+</div>
+{{ end }}

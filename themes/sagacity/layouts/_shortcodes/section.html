@@ -1,0 +1,6 @@
+{{- /* Lists the pages in the current section, by weight. */ -}}
+<ul class="section-list">
+{{- range .Page.Pages.ByWeight }}
+  <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ with .Description }}<span class="note">{{ . }}</span>{{ end }}</li>
+{{- end }}
+</ul>

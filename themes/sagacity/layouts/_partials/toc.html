@@ -1,0 +1,9 @@
+{{- if and (ne .Params.toc false) (ne .Params.bookToc false) (ge (len .Fragments.Headings) 1) }}
+{{- $n := 0 }}{{ range .Fragments.HeadingsMap }}{{ if and (ge .Level 2) (le .Level 3) }}{{ $n = add $n 1 }}{{ end }}{{ end }}
+{{- if ge $n 4 }}
+<details class="toc">
+  <summary>Contents</summary>
+  {{ .TableOfContents }}
+</details>
+{{- end }}
+{{- end }}

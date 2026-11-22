@@ -1,0 +1,22 @@
+{{- /* Previous / next within the section: chapters by weight, posts by date. */}}
+{{- $prev := "" }}{{ $next := "" }}
+{{- if eq .Section "writing" }}
+  {{- $prev = .NextInSection }}{{ $next = .PrevInSection }}
+  {{- if or $prev $next }}
+<nav class="pager" aria-label="More writing">
+  {{- with $prev }}<a class="prev" href="{{ .RelPermalink }}"><span class="k">&larr; Newer</span><span class="t">{{ .LinkTitle }}</span></a>{{ end }}
+  {{- with $next }}<a class="next" href="{{ .RelPermalink }}"><span class="k">Older &rarr;</span><span class="t">{{ .LinkTitle }}</span></a>{{ end }}
+</nav>
+  {{- end }}
+{{- else if and .Parent (ne .Parent.RelPermalink "/docs/") (not .Parent.IsHome) }}
+  {{- $pages := .Parent.Pages.ByWeight }}
+  {{- $me := . }}{{ $i := -1 }}
+  {{- range $k, $p := $pages }}{{ if eq $p $me }}{{ $i = $k }}{{ end }}{{ end }}
+  {{- if gt $i 0 }}{{ $prev = index $pages (sub $i 1) }}{{ end }}
+  {{- if and (ge $i 0) (lt (add $i 1) (len $pages)) }}{{ $next = index $pages (add $i 1) }}{{ end }}
+  {{- if not $prev }}{{ $prev = .Parent }}{{ end }}
+<nav class="pager" aria-label="Chapters">
+  {{- with $prev }}<a class="prev" href="{{ .RelPermalink }}"><span class="k">&larr; Previous</span><span class="t">{{ .LinkTitle }}</span></a>{{ end }}
+  {{- with $next }}<a class="next" href="{{ .RelPermalink }}"><span class="k">Next &rarr;</span><span class="t">{{ .LinkTitle }}</span></a>{{ end }}
+</nav>
+{{- end }}

@@ -1,0 +1,3 @@
+{{- /* Hugo removed its tweet shortcode; X embeds need a build-time network call, so link instead. */ -}}
+{{- $id := .Get "id" | default (.Get 0) }}
+<blockquote class="tweet"><p><a class="ext" href="https://twitter.com/i/web/status/{{ $id }}">View this post on X / Twitter</a></p></blockquote>

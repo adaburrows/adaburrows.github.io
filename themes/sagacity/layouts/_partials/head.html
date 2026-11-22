@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{- $title := cond .IsHome site.Title (printf "%s | %s" .Title site.Title) }}
+<title>{{ $title }}</title>
+{{- /* Set the theme before first paint so dark readers never see a light flash. */}}
+<script>(function(){var r=document.documentElement,s=null;try{s=localStorage.getItem("theme")}catch(e){}r.setAttribute("data-theme",s==="dark"||s==="light"?s:(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"))})()</script>
+{{- $desc := or .Description (.Params.summary | plainify) .Summary site.Params.description | plainify | truncate 200 }}
+<meta name="description" content="{{ $desc }}">
+<meta name="theme-color" content="#8aadd3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#192f46" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="icon" href="{{ "favicon.ico" | relURL }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patua+One&family=Spinnaker&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap">
+{{- $css := slice (resources.Get "css/site.css") (resources.Get "css/syntax.css") | resources.Concat "css/sagacity.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{- range .AlternativeOutputFormats }}
+<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ site.Title }}">
+{{- end }}
+{{- /* Open Graph / social cards */}}
+<meta property="og:title" content="{{ .Title | default site.Title }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:type" content="{{ cond .IsPage "article" "website" }}">
+<meta property="og:url" content="{{ .Permalink }}">
+{{- with or (index (.Params.images | default slice) 0) site.Params.avatar }}
+<meta property="og:image" content="{{ . | absURL }}">
+<meta name="twitter:card" content="summary_large_image">
+{{- end }}
+{{- partial "head-extra.html" . }}

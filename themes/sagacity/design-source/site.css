@@ -1,0 +1,105 @@
+/* Shared site style for every operator artifact page (know-operator-artifact-style), inlined by
+   build-page.py ahead of each page's own <style>, so pages cannot drift apart.
+   adaburrows.com, Creative Sagacity: fixed leaf photograph, a white header strip with the title
+   right-aligned and the round logo over its edge, translucent rounded cards. Dark: every colour
+   token keeps its light hue and meaning, in a lighter shade that passes WCAG AA (4.5:1) on the
+   dark card over the brightest pixel of the river photograph (operator 2026-11-05; it replaced
+   the 2026-10-15 RGB complement, which turned green purple and red cyan). Cards and strip at 0.7
+   alpha, the logo recoloured with a sunset-orange disc, diagrams rendered twice (light and a
+   hue-keeping dark recolour, assets/diagram-dark.js) with one shown per theme, and the background
+   the John Day / Columbia River photograph shown as-is. Page CSS uses these tokens only, so it
+   reads in both themes. */
+:root {
+  --sky: #8aadd3;
+  --card: rgba(255,255,255,0.93);
+  --strip: rgba(255,255,255,0.90);
+  --ink: #1f2328;
+  --muted: #5d6166;
+  --strong: #000000;
+  --on-accent: #ffffff; /* text on a solid accent background */
+  --red: #cc3322;
+  --gold: #cc9900;
+  --rose: #dd6666;
+  --green: #338833;
+  --blue: #2a5d8f;
+  --tint: rgba(0,0,0,0.035);
+  --code-bg: rgba(0,0,0,0.06);
+  --rule: rgba(0,0,0,0.14);
+  --shadow: 3px 3px 7px rgba(0,0,0,0.33);
+  --glow: rgba(0,0,0,0.33);
+  --chip: #ffffff; /* paper: inputs, buttons, code blocks, diagram ground */
+  --photo: url(data:image/jpeg;base64,{{LEAF}});
+  --measure: 64rem;
+  --script: "Patua One", Rockwell, "Roboto Slab", Georgia, serif;
+  --body: "Spinnaker", "Trebuchet MS", system-ui, sans-serif;
+  --mono: "Courier Prime", ui-monospace, Menlo, Consolas, monospace;
+  color-scheme: light;
+}
+:root[data-nh="dark"] {
+  --sky: #192f46; /* the light sky's blue at night; shows only where the photo has not painted */
+  --card: rgba(0,0,0,0.7); /* operator 2026-10-15: dark cards and strip at 0.7 over the river */
+  --strip: rgba(0,0,0,0.7);
+  --ink: #d6dbe2;
+  --muted: #a1a5aa;
+  --strong: #ffffff;
+  --on-accent: #000000; /* every dark accent is light: >= 7.2:1 under black text */
+  --red: #ff705b;
+  --gold: #e9b539;
+  --rose: #fb9895;
+  --green: #6fbe6c;
+  --blue: #7aace1;
+  --tint: rgba(255,255,255,0.035);
+  --code-bg: rgba(255,255,255,0.06);
+  --rule: rgba(255,255,255,0.14);
+  --shadow: 3px 3px 7px rgba(255,255,255,0.33);
+  --glow: rgba(255,255,255,0.33);
+  --chip: #000000;
+  --photo: url(data:image/jpeg;base64,{{RIVER}});
+  color-scheme: dark;
+}
+html { background: var(--sky); }
+body {
+  margin: 0; background: transparent; /* the sky colour is on html, the photo on the fixed layer */
+  color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.6;
+  padding-block: 2.5rem 5rem; position: relative;
+}
+/* The photograph sits on its own fixed layer; the theme picks which one (--photo). */
+body::before {
+  content: ""; position: fixed; inset: 0; z-index: -1;
+  background: var(--sky) var(--photo) no-repeat center / cover;
+}
+.strip { background: var(--strip); box-shadow: var(--shadow); margin: 0 0 2.5rem; }
+.strip .wrap { max-width: var(--measure); margin: 0 auto; padding: .4rem 16px .6rem; display: flex; align-items: center; justify-content: flex-end; gap: 1rem; }
+.strip .heading { text-align: right; min-width: 0; }
+.strip h1 { font: 400 1.82rem/1.1 var(--script); letter-spacing: .01em; color: var(--red); text-shadow: 1px 1px 7px var(--glow); margin: 0; text-wrap: balance; }
+.strip h3 { font: 400 .94rem var(--script); letter-spacing: .01em; color: var(--ink); text-shadow: 1px 1px 7px var(--glow); margin: .1rem 0 0; }
+.strip .meta { margin: .15rem 0 0; }
+.strip img.logo { width: 120px; height: 120px; border-radius: 60px; box-shadow: var(--shadow); margin: -1.6rem 0 -1.6rem .5rem; flex: none; }
+/* Dark shows the logo recoloured, not inverted: its black disc becomes the river photo's
+   sunset orange #f9774e and its white lettering black (assets/logo-dark.png, made by
+   recolor-logo.cjs; operator 2026-10-15). */
+.strip img.logo-dark { display: none; }
+:root[data-nh="dark"] .strip img.logo-light { display: none; }
+:root[data-nh="dark"] .strip img.logo-dark { display: block; }
+.strip button.toggle { font: .8rem var(--mono); color: var(--ink); background: var(--chip); border: 1px solid var(--rule); border-radius: 2em; padding: .2rem .7rem; cursor: pointer; margin-top: .35rem; }
+main { max-width: var(--measure); margin: 0 auto; padding-inline: 16px; display: grid; gap: 1.1rem; }
+.content-area { background: var(--card); box-shadow: var(--shadow); border-radius: 1em; padding: 1.15rem 1.4rem; min-width: 0; overflow-wrap: break-word; }
+h2 { font: 400 1.4rem/1.2 var(--script); letter-spacing: .01em; margin: 0 0 .45rem; color: var(--green); text-wrap: balance; scroll-margin-top: 1rem; }
+h4 { font: 400 .95rem var(--script); letter-spacing: .01em; color: var(--gold); margin: 1rem 0 .25rem; }
+p { max-width: 70ch; margin: .55rem 0; }
+.meta { font: .82rem var(--mono); color: var(--muted); }
+a { color: var(--blue); }
+a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+code, .mono { font-family: var(--mono); font-size: .92em; }
+/* Diagrams are static SVG (render-svg.cjs), each rendered light and dark; the theme shows one. */
+.diagram { overflow-x: auto; background: var(--chip); border: 1px dotted var(--rule); border-radius: .6em; padding: .75rem; margin: .7rem 0; }
+.diagram .svgwrap { width: max-content; min-width: 100%; }
+.svgwrap svg { display: block; max-width: none; height: auto; margin: 0 auto; background: var(--chip); }
+.svgwrap .dg-dark { display: none; }
+:root[data-nh="dark"] .svgwrap .dg-light { display: none; }
+:root[data-nh="dark"] .svgwrap .dg-dark { display: block; }
+@media (max-width: 640px) {
+  body { font-size: 15px; } .strip h1 { font-size: 1.4rem; } .strip img.logo { width: 84px; height: 84px; }
+  .content-area { padding: 1rem; }
+}
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
