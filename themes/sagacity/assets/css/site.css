@@ -280,6 +280,7 @@ pre.mermaid { background: var(--chip); text-align: center; }
 .site-footer .content-area { font-size: .85rem; color: var(--muted); }
 .site-footer a { color: inherit; }
 .site-footer p { max-width: none; margin: .35rem 0; }
+svg.fa { display: inline-block; width: auto; height: 1em; vertical-align: -.125em; }
 .site-footer .social-list a { font-size: .8rem; color: var(--ink); }
 
 /* ---------- small screens ---------- */

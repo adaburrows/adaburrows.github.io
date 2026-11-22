@@ -1,0 +1,4 @@
+{{- /* Inline Font Awesome glyph from data/icons.json: {{ partial "icon.html" "recycle" }} */ -}}
+{{- with index site.Data.icons (replace . "-" "_") -}}
+<svg class="fa" viewBox="0 0 {{ .w }} 512" aria-hidden="true" focusable="false"><path transform="matrix(1 0 0 -1 0 448)" fill="currentColor" d="{{ .d }}"/></svg>
+{{- end -}}
