@@ -20,30 +20,39 @@ enableRobotsTXT = false
   # Shown in the About menu and the footer.
   [[params.social]]
     name = "GitHub"
+    icon = "github-square"
     url = "https://github.com/adaburrows/"
   [[params.social]]
     name = "Medium"
+    icon = "medium"
     url = "https://medium.com/@adaburrows"
   [[params.social]]
     name = "Bluesky"
+    icon = "bluesky"
     url = "https://bsky.app/profile/adaburrows.bsky.social"
   [[params.social]]
     name = "LinkedIn"
+    icon = "linkedin"
     url = "https://www.linkedin.com/in/adaburrows/"
   [[params.social]]
     name = "Instagram"
+    icon = "instagram"
     url = "https://instagram.com/adaburrows"
   [[params.social]]
     name = "Facebook"
+    icon = "facebook-square"
     url = "https://www.facebook.com/jillburrows.writer/"
   [[params.social]]
     name = "Twitter / X"
+    icon = "twitter-square"
     url = "https://twitter.com/jburrows"
   [[params.social]]
     name = "Telegram"
+    icon = "telegram"
     url = "https://t.me/adaburrows"
   [[params.social]]
     name = "Discord"
+    icon = "discord"
     url = "https://discord.gg/mgtQBHV"
 
 # One menu, the same on every screen size. Entries with children render as

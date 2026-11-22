@@ -2,7 +2,7 @@
   <div class="content-area">
     {{- partial "footer-text.html" . }}
     {{- with site.Params.social }}
-    <ul class="social-list">{{ range . }}<li><a href="{{ .url }}" rel="me noopener">{{ .name }}</a></li>{{ end }}</ul>
+    <ul class="social-list">{{ range . }}<li><a href="{{ .url }}" rel="me noopener">{{ with .icon }}{{ partial "icon.html" . }}{{ end }}{{ .name }}</a></li>{{ end }}</ul>
     {{- end }}
     <p>&copy; {{ now.Year }} {{ site.Title }}{{ with site.Params.repo }} &middot; <a href="{{ . }}">Source on GitHub</a>{{ end }}{{ if and .GitInfo .IsPage }} &middot; Updated {{ .Lastmod.Format "Jan 2, 2006" }}{{ end }}</p>
   </div>

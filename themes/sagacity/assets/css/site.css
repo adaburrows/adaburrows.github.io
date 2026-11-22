@@ -281,7 +281,8 @@ pre.mermaid { background: var(--chip); text-align: center; }
 .site-footer a { color: inherit; }
 .site-footer p { max-width: none; margin: .35rem 0; }
 svg.fa { display: inline-block; width: auto; height: 1em; vertical-align: -.125em; }
-.site-footer .social-list a { font-size: .8rem; color: var(--ink); }
+.site-footer .social-list a { font-size: .8rem; color: var(--ink); display: inline-flex; align-items: center; gap: .35em; }
+.site-footer .social-list svg.fa { height: 1.15em; vertical-align: 0; }
 
 /* ---------- small screens ---------- */
 @media (max-width: 640px) {
