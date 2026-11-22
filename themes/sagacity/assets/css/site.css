@@ -158,8 +158,9 @@ button.toggle { font: .8rem var(--mono); color: var(--ink); background: var(--ch
 @media (max-width: 640px) {
   .site-nav .dd { position: static; }
   .site-nav .panel { left: .4rem; right: .4rem; top: calc(100% + .3rem); min-width: 0; max-width: none; }
-  .site-nav > ul { gap: 0; padding: .25rem; justify-content: space-between; }
-  .site-nav .top > a, .site-nav summary { padding: .35rem .45rem; font-size: .95rem; gap: .2rem; }
+  .site-nav > ul { gap: 0; padding: .2rem; }
+  .site-nav .top > a, .site-nav summary { padding: .35rem .4rem; font-size: .9rem; gap: .15rem; letter-spacing: 0; }
+  .site-nav summary::after { width: .4em; height: .4em; }
 }
 
 /* ---------- content ---------- */
