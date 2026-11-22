@@ -130,6 +130,7 @@ button.toggle { font: .8rem var(--mono); color: var(--ink); background: var(--ch
   text-decoration: none; cursor: pointer; user-select: none; white-space: nowrap;
 }
 .site-nav summary { list-style: none; }
+.site-nav .icon { flex: none; display: block; }
 .site-nav summary::-webkit-details-marker { display: none; }
 .site-nav summary::after {
   content: ""; width: .45em; height: .45em; margin-left: .1rem;
@@ -159,8 +160,10 @@ button.toggle { font: .8rem var(--mono); color: var(--ink); background: var(--ch
   .site-nav .dd { position: static; }
   .site-nav .panel { left: .4rem; right: .4rem; top: calc(100% + .3rem); min-width: 0; max-width: none; }
   .site-nav > ul { gap: 0; padding: .2rem; }
-  .site-nav .top > a, .site-nav summary { padding: .35rem .4rem; font-size: .9rem; gap: .15rem; letter-spacing: 0; }
+  .site-nav .top > a, .site-nav summary { padding: .35rem .25rem; font-size: .88rem; gap: .15rem; letter-spacing: 0; }
   .site-nav summary::after { width: .4em; height: .4em; }
+  /* Home is icon-only on phones; the label stays for screen readers. */
+  .site-nav .has-icon .label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 }
 
 /* ---------- content ---------- */

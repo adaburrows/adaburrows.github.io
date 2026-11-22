@@ -50,6 +50,12 @@ enableRobotsTXT = false
 # CSS-only dropdowns (<details>); the rest are plain links.
 [menus]
   [[menus.main]]
+    name = "Home"
+    pageRef = "/"
+    weight = 1
+    [menus.main.params]
+      icon = "home"
+  [[menus.main]]
     name = "Writing"
     pageRef = "/writing"
     weight = 10
@@ -81,11 +87,6 @@ enableRobotsTXT = false
     weight = 40
     [menus.main.params]
       social = true
-  [[menus.main]]
-    name = "Home"
-    pageRef = "/"
-    parent = "about"
-    weight = 1
   [[menus.main]]
     name = "Resume"
     pageRef = "/docs/resume"

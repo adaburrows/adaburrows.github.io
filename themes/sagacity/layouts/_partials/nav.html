@@ -23,7 +23,9 @@
       </details>
     </li>
     {{- else }}
-    <li class="top{{ if $active }} current{{ end }}"><a href="{{ .URL }}"{{ if $page.IsMenuCurrent "main" . }} aria-current="page"{{ end }}>{{ .Name }}</a></li>
+    <li class="top{{ if $active }} current{{ end }}"><a href="{{ .URL }}"{{ if $page.IsMenuCurrent "main" . }} aria-current="page"{{ end }}{{ if .Params.icon }} class="has-icon"{{ end }}>
+      {{- if eq .Params.icon "home" }}<svg class="icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M3 11.5 12 4l9 7.5M5.5 9.5V20h5v-6h3v6h5V9.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>{{ end -}}
+      <span class="label">{{ .Name }}</span></a></li>
     {{- end }}
   {{- end }}
   </ul>
