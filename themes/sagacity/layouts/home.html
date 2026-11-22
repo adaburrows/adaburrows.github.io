@@ -17,7 +17,7 @@
     <p class="more"><a href="{{ "writing/" | relURL }}">All writing &rarr;</a></p>
   </section>
   <section class="content-area">
-    <h2>Books &amp; projects</h2>
+    <h2>Explorations</h2>
     <ul class="section-list">
       {{- range site.Menus.main }}{{ if eq .Identifier "books" }}{{ range .Children }}
       <li><a href="{{ .URL }}">{{ .Name }}</a>{{ with .Params.note }}<span class="note">{{ . }}</span>{{ end }}</li>

@@ -54,7 +54,7 @@ enableRobotsTXT = false
     pageRef = "/writing"
     weight = 10
   [[menus.main]]
-    name = "Books"
+    name = "Explorations"
     identifier = "books"
     weight = 20
   [[menus.main]]
