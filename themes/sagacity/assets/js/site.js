@@ -44,3 +44,14 @@
     });
   });
 })();
+
+// Caption labels: give each one its own hand-placed tilt by its order on the page (the CSS cycle
+// is keyed to sibling position, which repeats inside column layouts). Titles up to 6.5deg.
+(function () {
+  var title = [-4, 3, -6.5, 5, -2, 6, -3, 1.5, -5.5, 2.5], text = [1.2, -1.6, .7, -1, 2, -.6, 1.5, -2];
+  document.querySelectorAll("figcaption").forEach(function (c, i) {
+    var h = c.querySelector("h4"), p = c.querySelector("p");
+    if (h) h.style.setProperty("--tilt", title[i % title.length] + "deg");
+    if (p) p.style.setProperty("--tilt", text[i % text.length] + "deg");
+  });
+})();

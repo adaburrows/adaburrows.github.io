@@ -215,9 +215,17 @@ th { font-family: var(--script); font-weight: 400; color: var(--green); }
 .crumbs a { color: inherit; }
 /* Category tags as embossed label-maker (Dymo) tape: flat dark-green plastic, square-cut ends, a pale bottom edge, and
    bold monospace capitals pressed up out of the tape, stress-whitened, lit from the top left. */
-.chips { display: flex; flex-wrap: wrap; gap: .55rem .5rem; list-style: none; padding: 0; margin: .6rem 0 1.1rem; }
-.chips li:nth-child(3n+1) a { transform: rotate(-.6deg); }
-.chips li:nth-child(3n+2) a { transform: rotate(.4deg); }
+.chips { display: flex; flex-wrap: wrap; gap: .75rem .55rem; list-style: none; padding: 0; margin: .6rem 0 1.1rem; }
+/* Hand-placed look: tags cycle through seven small tilts, kept under 4 degrees so long labels in a
+   row don't collide; caption titles are short and tilt further, up to 6.5 degrees. */
+.chips a, figcaption h4, figcaption p { --tilt: 0deg; transform: rotate(var(--tilt)); }
+.chips li:nth-child(7n+1) a { --tilt: -1.5deg; }
+.chips li:nth-child(7n+2) a { --tilt: 2.2deg; }
+.chips li:nth-child(7n+3) a { --tilt: -3.4deg; }
+.chips li:nth-child(7n+4) a { --tilt: .8deg; }
+.chips li:nth-child(7n+5) a { --tilt: 3.8deg; }
+.chips li:nth-child(7n+6) a { --tilt: -.6deg; }
+.chips li:nth-child(7n+7) a { --tilt: -2.6deg; }
 .chips a, .chip, figcaption h4, figcaption p {
   display: inline-flex; align-items: baseline; gap: .6em;
   font: 700 .74rem/1 var(--mono); text-transform: uppercase; letter-spacing: .2em;
@@ -235,7 +243,12 @@ th { font-family: var(--script); font-weight: 400; color: var(--green); }
 .chips.mini { margin: 0; gap: .35rem; align-items: center; }
 .chips.mini a { font-size: .64rem; }
 /* Figure captions use the same tape: the title, then the caption as its own strip (wraps cleanly). */
-figcaption h4, figcaption p { display: inline; margin: 0 .2rem; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+figcaption h4, figcaption p { display: inline-block; margin: .15rem .25rem; max-width: 100%; line-height: 1.5; }
+figure:nth-child(5n+1) figcaption h4 { --tilt: -4deg; }   figure:nth-child(5n+1) figcaption p { --tilt: 1.2deg; }
+figure:nth-child(5n+2) figcaption h4 { --tilt: 3deg; }    figure:nth-child(5n+2) figcaption p { --tilt: -1.6deg; }
+figure:nth-child(5n+3) figcaption h4 { --tilt: -6.5deg; } figure:nth-child(5n+3) figcaption p { --tilt: .7deg; }
+figure:nth-child(5n+4) figcaption h4 { --tilt: 5deg; }    figure:nth-child(5n+4) figcaption p { --tilt: -1deg; }
+figure:nth-child(5n+5) figcaption h4 { --tilt: -2deg; }   figure:nth-child(5n+5) figcaption p { --tilt: 2deg; }
 figcaption p { font-size: .66rem; }
 
 /* table of contents */
