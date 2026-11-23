@@ -214,12 +214,12 @@ th { font-family: var(--script); font-weight: 400; color: var(--green); }
 .page-head h1 { margin-bottom: .2rem; }
 .crumbs { font: .82rem var(--mono); color: var(--muted); margin: 0 0 .35rem; }
 .crumbs a { color: inherit; }
-/* Category tags as embossed label-maker (Dymo) tape: flat plastic (green in light, blue in dark), square-cut ends, a pale bottom edge, and
+/* Category tags (and the social links) as embossed label-maker (Dymo) tape: flat plastic (green in light, blue in dark), square-cut ends, a pale bottom edge, and
    bold monospace capitals pressed up out of the tape, stress-whitened, lit from the top left. */
 .chips { display: flex; flex-wrap: wrap; gap: .75rem .55rem; list-style: none; padding: 0; margin: .6rem 0 1.1rem; }
 /* Hand-placed look: site.js tilts every label on the page (tags and caption strips) from one shared
    sequence in document order, at most 2.5 degrees. This 7-step cycle is the no-script fallback. */
-.chips a, figcaption h4, figcaption p { --tilt: 0deg; transform: rotate(var(--tilt)); }
+.chips a, .social-list a, figcaption h4, figcaption p { --tilt: 0deg; transform: rotate(var(--tilt)); }
 .chips li:nth-child(7n+1) a { --tilt: -.75deg; }
 .chips li:nth-child(7n+2) a { --tilt: 1.1deg; }
 .chips li:nth-child(7n+3) a { --tilt: -1.7deg; }
@@ -227,7 +227,7 @@ th { font-family: var(--script); font-weight: 400; color: var(--green); }
 .chips li:nth-child(7n+5) a { --tilt: 1.9deg; }
 .chips li:nth-child(7n+6) a { --tilt: -.3deg; }
 .chips li:nth-child(7n+7) a { --tilt: -1.3deg; }
-.chips a, .chip, figcaption h4, figcaption p {
+.chips a, .chip, .social-list a, figcaption h4, figcaption p {
   display: inline-flex; align-items: baseline; gap: .6em;
   font: 700 .74rem/1 var(--mono); text-transform: uppercase; letter-spacing: .2em;
   padding: .42em .5em .38em .7em; border-radius: 1px;
@@ -237,8 +237,8 @@ th { font-family: var(--script); font-weight: 400; color: var(--green); }
   border-bottom: 1px solid rgba(255,255,255,.75);
   transition: transform .12s ease;
 }
-.chips a:hover { color: #fff; transform: translateY(-1px) rotate(0); }
-.chips a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+.chips a:hover, .social-list a:hover { color: #fff; transform: translateY(-1px) rotate(0); }
+.chips a:focus-visible, .social-list a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
 .chips a[aria-current="page"] { background-color: var(--tape-hot); }
 .chips .count { opacity: .75; letter-spacing: .1em; }
 .chips.mini { margin: 0; gap: .35rem; align-items: center; }
@@ -285,9 +285,8 @@ details.toc li { margin: .15rem 0; }
 .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1.1rem; }
 .cards .content-area h2 { margin-top: 0; }
 .more { font: .85rem var(--mono); }
-.social-list { display: flex; flex-wrap: wrap; gap: .4rem; list-style: none; padding: 0; margin: .5rem 0 0; }
-.social-list a { display: inline-block; font-size: .9rem; padding: .2rem .7rem; border-radius: 2em; border: 1px solid var(--rule); background: var(--chip); text-decoration: none; color: var(--ink); }
-.social-list a:hover { border-color: var(--blue); color: var(--blue); }
+.social-list { display: flex; flex-wrap: wrap; gap: .7rem .55rem; list-style: none; padding: 0; margin: .6rem 0 0; }
+.social-list a { align-items: center; }
 
 /* ---------- shortcodes ---------- */
 .hint { margin: 1rem 0; padding: .7rem 1rem; border-left: 4px solid var(--blue); border-radius: 0 .6em .6em 0; background: color-mix(in srgb, var(--blue) 8%, transparent); }
@@ -317,8 +316,8 @@ pre.mermaid { background: var(--chip); text-align: center; }
 .site-footer a { color: inherit; }
 .site-footer p { max-width: none; margin: .35rem 0; }
 svg.fa { display: inline-block; width: auto; height: 1em; vertical-align: -.125em; }
-.site-footer .social-list a { font-size: .8rem; color: var(--ink); display: inline-flex; align-items: center; gap: .35em; }
-.site-footer .social-list svg.fa { height: 1.15em; vertical-align: 0; }
+.site-footer .social-list a { font-size: .68rem; gap: .5em; }
+.site-footer .social-list svg.fa { height: 1.3em; vertical-align: 0; filter: drop-shadow(1px 1px 0 rgba(0,0,0,.6)); }
 
 /* ---------- small screens ---------- */
 @media (max-width: 640px) {
