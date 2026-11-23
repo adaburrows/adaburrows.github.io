@@ -16,9 +16,9 @@ images:
 
 A few weeks ago, my year and a half old Dell Inspiron 2-in-1 laptop decided to just stop working. I came back from the kitchen, where I made some tea, but my screen was blank and the computer was unresponsive. I tried turning it off and on again, but all I got was a keyboard blinking every 5 or 3 seconds and the charging LED blinking white once every 7 seconds. I couldn't find anything to help me diagnose what was going wrong, but it seemed like it was a logic board failure.
 
-I still had files on the computer I wanted off. I had been putting off sorting thorugh duplicate files and merging my old organization system with my new one, but it turns out, that is not a good reason to not make a back-up. Fortunately, I know enough about the low-level details of what I found to figure out how to get my files off.
+I still had files on the computer I wanted off. I had been putting off sorting through duplicate files and merging my old organization system with my new one, but it turns out, that is not a good reason to not make a back-up. Fortunately, I know enough about the low-level details of what I found to figure out how to get my files off.
 
-To start, I bought two external M.2 NVME SSD drive enclosures and a new 2 TB SSD. I needed to create a backup disk image. I also needed space to put the files I wanted saved after I successfully retreived them. I also needed a live distro of Linux to use. I just so happened to use Kali Linux, but there's plenty of live distros to choose from.
+To start, I bought two external M.2 NVME SSD drive enclosures and a new 2 TB SSD. I needed to create a backup disk image. I also needed space to put the files I wanted saved after I successfully retrieved them. I also needed a live distro of Linux to use. I just so happened to use Kali Linux, but there's plenty of live distros to choose from.
 
 ## Inspect the drive
 
@@ -36,7 +36,7 @@ gparted /media/kali/F7FD-F507/disk0.img
 
 {{< figure src="images/gparted.png">}}
 
-Hmm, I didn't have a raid configured.
+Hmm, I didn't have a RAID configured.
 
 ```
 blkid /media/kali/F7FD-F507/disk0.img
@@ -78,9 +78,9 @@ Alright, now we're getting somewhere. This looks like a GPT style drive with som
     * `0x1C2` -- `0xEE` (GPT partition)
     * `0x1C3` -- `0xFEBFD6`
         * `0b11111110 10 111111 11010110` =>
-        * `0b11111110` (Head: 254) `0b111111` (Sector: 63) `0b1011010110` (Cyclinder: 726)
+        * `0b11111110` (Head: 254) `0b111111` (Sector: 63) `0b1011010110` (Cylinder: 726)
         * (((726 * 255) + 254) * 63) + 63 = 11679255 sectors, 5.9 GB, 5.56 GiB
-    * `0x1C6` -- `0x01000000` (Preceeded by one relative sector, this one)
+    * `0x1C6` -- `0x01000000` (Preceded by one relative sector, this one)
     * `0x1CA` -- `0xFFFFFFF` (Ending sector, 2.2 TB, 1.99 TiB)
     * `0x1FE` -- `0x55AA` (MBR Magic)
 * EFI PART?
@@ -136,7 +136,7 @@ Alright, now we're getting somewhere. This looks like a GPT style drive with som
     * `0x773C019F80` -- `0x773C01A000` -- Recovery
     * `0x773C01A000` -- `0x773C01A080` -- Recovery
     * `0x773C01A080` -- `0x773C01A100` -- Recovery
-* `0x773C01DE00` -- `0x773C01E000` -- GPT Header (enitre raw data below w/o offset)
+* `0x773C01DE00` -- `0x773C01E000` -- GPT Header (entire raw data below w/o offset)
     * `0x4546492050415254` // `EFI PART`
     * `0x00000100` // Revision
     * `0x5C000000` // GPT header size
@@ -167,7 +167,7 @@ Alright, now we're getting somewhere. This looks like a GPT style drive with som
 
 ## Retrieving the data
 
-Now that we've decoded all the relevant records and partition tables, verified our partitions look right, and they are on the disk where the backup partition table says the should be, we can copy off the partition we want:
+Now that we've decoded all the relevant records and partition tables, verified our partitions look right, and they are on the disk where the backup partition table says they should be, we can copy off the partition we want:
 
 ```
 dd if=/media/kali/F7FD-F507/disk0.img of=/media/kali/F7FD-F507/bitlocker.dd bs=512 skip=571392 count=962512895
@@ -176,7 +176,7 @@ blkid /media/kali/F7FD-F507/bitlocker.dd
 
 {{< figure src="images/blkid-bitlocker.png">}}
 
-That looks right. It's detecting a bitlocker partition. Next, we can use `dislocker` to decrypt the disk using the recovery key and check to make sure it worked and there's an NTFS volume:
+That looks right. It's detecting a BitLocker partition. Next, we can use `dislocker` to decrypt the disk using the recovery key and check to make sure it worked and there's an NTFS volume:
 
 ```
 sudo mkdir -p /media/bitlocker/disk
@@ -193,7 +193,7 @@ udisksctl loop-setup -f /media/bitlocker/disk/dislocker-file
 udisksctl mount -b /dev/loop1
 ```
 
-Then lets check to see if the files are there:
+Then let's check to see if the files are there:
 
 ```
 ll /media/kali/OS/Users/jill/
@@ -225,7 +225,7 @@ sudo cp -ar /media/vhdx/home/adaburrows/workspace /media/kali/F7FD-F507/
 sudo guestunmount /media/vhdx
 ```
 
-Success! Thankfully no parts of the partition had been mangled during the logic circuit malfunction. I'm sure there's other ways this could have failed which would make it much harder to ge the data off the chip on the SSD board.
+Success! Thankfully no parts of the partition had been mangled during the logic circuit malfunction. I'm sure there's other ways this could have failed which would make it much harder to get the data off the chip on the SSD board.
 
 ## Possibilities
 
@@ -234,11 +234,11 @@ If there's demand for this sort of thing, I could write a program that takes car
 * Check for the structure of the with MBR and GPT partition tables (maybe see if there's any useful info in the newer isw metadata).
 * If one of the GPT partition tables is present and correct (seems to match what is on the disk),
   * then write the correct GPT header and partition tables,
-  * else scan the disk and try to determine the correct partition table and the write the correct headers and partition tables. 
+  * else scan the disk and try to determine the correct partition table and then write the correct headers and partition tables. 
 * Remove the isw_raid_member sector.
 * Remove the protective MBR partition that prevents the computer from booting off the disk.
 
-That should be enough to get a non-damaged disk up a running again. For my purposes, I just needed this data and not a fully working disk.
+That should be enough to get a non-damaged disk up and running again. For my purposes, I just needed this data and not a fully working disk.
 
 ## Further Reading
 

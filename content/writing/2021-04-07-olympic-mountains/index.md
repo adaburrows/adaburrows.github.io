@@ -14,13 +14,13 @@ images:
 
 Most people looking for the Native name for Mt. Olympus will find the name "Sun-a-do".  If you look up the Wikipedia articles on Mt. Olympus and the Olympic Mountains, it will tell you so. Unfortunately, that is not really the name. Those articles take an old, potentially unreliable, yet official looking source, and use it to justify their claims that "The local Native American name for the peak is Sunh-a-do" and "The mountains were originally called "Sun-a-do" by the Duwamish Indians...". However, let's analyze what is claimed and what can actually be substantiated with their citation.
 
-The favorite citation for people wanting to justify the "Sun-a-do" name is Edmond Meany's 1923 publication "Origin of Washington Geographic names." The Wikipedia article uses this as it's sole justification. Looking at the provided evidence leaves much to be desired:
+The favorite citation for people wanting to justify the "Sun-a-do" name is Edmond Meany's 1923 publication "Origin of Washington Geographic names." The Wikipedia article uses this as its sole justification. Looking at the provided evidence leaves much to be desired:
 
 > "(The Canoe and the Saddle, John H. Williams Edition, pages 23-24.) Later, on page 278, he declares that the Victoria Indians called the Olympian Mountains "S'ngazanelf." J. A. Costello says the Duwamish Indians used the name "Sun-a-do." (The Siwash, Seattle, 1895.)"
 
-This appears to cite Costello 1895, but that work contains no reference to the name "sun-a-do". Unless it was personal communication with Costello, this is bogus. Maybe there's a furtive kernel of truth in this low fidelity recording of a word. Many other notations of the names of places in various Native languages are equally egregious, but after analyzing the languages representative in an area one can peice together a likely origin. Many of the sounds on the Salish Sea are not found in Spanish, French, or English, so it's understandable that people would struggle to write down words using only a Latin alphabet.
+This appears to cite Costello 1895, but that work contains no reference to the name "sun-a-do". Unless it was personal communication with Costello, this is bogus. Maybe there's a furtive kernel of truth in this low fidelity recording of a word. Many other notations of the names of places in various Native languages are equally egregious, but after analyzing the languages representative in an area one can piece together a likely origin. Many of the sounds on the Salish Sea are not found in Spanish, French, or English, so it's understandable that people would struggle to write down words using only a Latin alphabet.
 
-No one seems to bother with the other name recorded here, "S'ngazanelf" (Withrop & Heavey 1913). It doesn't match up well with any modern written othography, but seems to at least make a more concerted effort to record speach with some fidelity. Again, it's possible to take a look at language found in an area to try to peice together a possible origin.
+No one seems to bother with the other name recorded here, "S'ngazanelf" (Winthrop & Williams 1913). It doesn't match up well with any modern written orthography, but seems to at least make a more concerted effort to record speech with some fidelity. Again, it's possible to take a look at language found in an area to try to piece together a possible origin.
 
 The words for mountain in the language area are:
 * Halq'eméylemqel [χalq'eme:ilemqel] / Halkomelem language
@@ -31,19 +31,19 @@ The words for mountain in the language area are:
   * skʷatač [skʷatətʃ] &mdash; 'mountain' (Zahir 2018)
 * Lhéchalosem [ɬətʃəlɔsəm] / Nooksack
   * smanit &mdash; 'mountain' (Nooksack1)
-* Straights Salish Group
+* Straits Salish Group
   * XWLEMI'CHOSEN [xʷləmiʔčósən/xʷləmiʔtʃɔsən] / Lummi
     * sŋgánt &mdash; 'any rock, stone, mountain' (Gibbs 1863)
   * Xws7ámeshqen [xʷsʔámešqen/xʷsʔámeʃqen] / Samish
     * sŋgá:nt &mdash; 'rock, mountain'; sts’áts’e e te sngánet 'On top of the mountain' (Samish1, Samish2)
   * SENĆOŦEN [sənčaθən/səntʃɔθən] / Saanich
-    * SṈÁNET [sŋénət] &mdash; 'any rock, stone, mountain' (SannichNature)
+    * SṈÁNET [sŋénət] &mdash; 'any rock, stone, mountain' (SaanichNature)
   * nəxʷsƛ̕ay̕əmúcən [nəxʷsʔtɬʼaiəmɔtsən] / Klallam
     * sŋánt &mdash; 'any rock, stone', sx̣əy̕kʷəy̕éʔč [χeikʷəiéʔtʃ] 'mountain, from backbone [or ribcage]' (KlallamNature, KWOTD1, KWOTD2, KWOTD3)
 * ƛ̕əxʷəlməš [ʔtɬʼəχʷəlməʃ] / Lower Chehalis
   * sma:nəč [sma:nətʃ] &mdash; 'mountain' (Snow 1969)
 * sƛ̕əpúlmx [sʔtɬʼəpəlmx] / Cowlitz
-  * sá:kʷ or nšsá:kʷ &mdash; 'Mt St Helens' (Kincade 1997) [might mean "mountain", but need dictionary or elder to confirm]
+  * sá:kʷ or nšsá:kʷ &mdash; 'Mt St Helens' (Kinkade 1997) [might mean "mountain", but need dictionary or elder to confirm]
 
 Given the grammar, it's entirely possible that "S'ngazanelf" is something like sŋgaŋgá:nt, meaning "mountains" (Frachtenberg 1917). Given the similarity of the languages of SENĆOŦEN and nəxʷsƛ̕ay̕əmúcən, it could be using the durative ending |-əɬ| (Montler 1986). This would form sŋgaŋgá:ntəɬ, meaning 'Those are mountains'. If my grammar is wrong (and it likely is), then the -t- at the end might be dropped with the durative ending. Then, "S'ngazanelf" is actually not a half-hearted representation of the sounds of sŋgaŋgá:nəɬ.
 
@@ -51,15 +51,15 @@ We can imagine those past interactions between explorer and Klallam unfolding th
 
 > Explorer asks "What are those called?"
 >
-> Klallam person (being helpful, thinking maybe they don't have those were they come from) replies "sŋgaŋgá:nəɬ (Those are mountains)."
+> Klallam person (being helpful, thinking maybe they don't have those where they come from) replies "sŋgaŋgá:nəɬ (Those are mountains)."
 >
 > Explorer, thinking that's the proper name, writes down what he can make of the phrase and fastidiously writes "S'ngazanelf" unaware that could apply to any group of mountains.
 
-Embeded in these interactions are assumptions: Everything has an exact name and everything must be named. Also, communication between the two languages has zero impedance and that each person's conceptualization of the world is identitical. These cannot be assumptions because even if two people speak the same language impedance can be high and no two people have the same conceptualization of the world. Of course, people can always say it was just a misunderstanding. Maybe it was, but if people wanted to know more than quick answers to misunderstood questions by proxy of translation, they could have learned the language.
+Embedded in these interactions are assumptions: Everything has an exact name and everything must be named. Also, communication between the two languages has zero impedance and that each person's conceptualization of the world is identical. These cannot be assumptions because even if two people speak the same language impedance can be high and no two people have the same conceptualization of the world. Of course, people can always say it was just a misunderstanding. Maybe it was, but if people wanted to know more than quick answers to misunderstood questions by proxy of translation, they could have learned the language.
 
 What about "sun-a-do"? If one squints at the sounds just right, "sun-a-do" sounds kind of like a terrible representation of how mountain, sŋánt, is said in nəxʷsƛ̕ay̕əmúcən. When listening to the recording of the word, we can hear the first two pairs of morphemes match up well (sŋ ~ sun, án ~ a), but the last two do not (t ~ do). But what does the original source say about "sun-a-do"? It says that it is Duwamish. However, we have clear linguistic evidence this classification is also wrong. It is not Duwamish (a Lushootseed language), it is nəxʷsƛ̕ay̕əmúcən [nəxʷsʔtɬʼaiəmɔtsən] / Klallam.
 
-This shows the ignorance these colonizers had. They didn't even bother to know which language a word was in. They didn't even bother to find out if the mountains were on traditional territory of the people they were asking or if the mountains were even important to them. They most definitely didn't bother to even ask about the conceptualiztion of what a mountain was to Native people.
+This shows the ignorance these colonizers had. They didn't even bother to know which language a word was in. They didn't even bother to find out if the mountains were on traditional territory of the people they were asking or if the mountains were even important to them. They most definitely didn't bother to even ask about the conceptualization of what a mountain was to Native people.
 
 It is worth noting there are also very specific names for the two ranges of mountains within the Klallam territory:
 
@@ -70,15 +70,15 @@ In spite of only finding out that most people just called them "rocks" or "mount
 
 > t́ist́iláalati - "Thunderbird's Lair" or "place of Thunderbird"
 
-The reference specifically calls it The Blue Glacier (Powell & Penn 1972), but it's acutally the name for the whole region and the subterranian region beneath the snow cap/glacier (Wray 2013). This isn't the only mountain in the PNW named this way. In Canada, the Squamish Nation (Sk̲wx̲wú7mesh Úxumixw [skʷχʷoʔmeʃ oχomiχʷ]) call Black Tusk mountain t'ak't'ak mu'yin t'la in7inyaxa7en [tʼakʼtʼak muʔjin t'la inʔinjáχaʔen] or "Landing Place of the Thunderbird" (Reimer 2018, SLCC 2016, Khelsilem 2015).
+The reference specifically calls it The Blue Glacier (Powell & Penn 1972), but it's actually the name for the whole region and the subterranean region beneath the snow cap/glacier (Wray 2013). This isn't the only mountain in the PNW named this way. In Canada, the Squamish Nation (Sk̲wx̲wú7mesh Úxumixw [skʷχʷoʔmeʃ oχomiχʷ]) call Black Tusk mountain t'ak't'ak mu'yin t'la in7inyaxa7en [tʼakʼtʼak muʔjin t'la inʔinjáχaʔen] or "Landing Place of the Thunderbird" (Reimer 2018, SLCC 2016, Khelsilem 2015).
 
 It's common for snow capped mountains/glaciers to be named in place of the whole mountain. This can be seen in the words for snow covered mountain in both Lushootseed təqʷuʔmaʔ / təqʷuʔbəd (spuyaləpabš) and Yakama, pátu (Rude 2014). This misunderstanding of Native ontologies around mountains carried over, keeping the actual name for the Olympic Mountains buried to this day.
 
 Despite the best intentions to understand and record the names of the mountains in the area, there were many misunderstandings and omissions. There was also quite a lot left to be desired from the fidelity of recorded words. Perhaps this is to be expected of an era of settlers all trying to tell the biggest stories and show off the most knowledge, no matter how wrong or misunderstood it was.
 
-Additionally, it wasn't until 1880 that John Wesley Powell started using a better fitting set of phonetic symbols. Eventually, Franz Boas used a variation of that character set. It was further expended upon by the American Anthropological Society in 1916 and became the Americanist phonetic notation. Simultaneously, around 1890 the International Phonetic Alphabet came into existence. However, only people with linguistic training would have used either of these. Consequently, only trained linguists around the 1900s would likely create higher fidelity written representations with audio recordings being the best source.
+Additionally, it wasn't until 1880 that John Wesley Powell started using a better fitting set of phonetic symbols. Eventually, Franz Boas used a variation of that character set. It was further expanded upon by the American Anthropological Society in 1916 and became the Americanist phonetic notation. Simultaneously, around 1890 the International Phonetic Alphabet came into existence. However, only people with linguistic training would have used either of these. Consequently, only trained linguists around the 1900s would likely create higher fidelity written representations with audio recordings being the best source.
 
-The above compilation of words from the people who have inhabited this region since time immemorial should show that it is still preferable to go directly to the source instead of relying on innacurate and careless transciptions of the Native tongues of this land in a foreign language. Despite some of these cultures loosing their elders who spoke the language, their language lives on in recordings and much of the modern work done to restore their languages from the brink of extinction. The collective knowledge of the tribe and recordings of the elders should still be held in high regard and should be open for their respective tribal citizens to hear and learn.
+The above compilation of words from the people who have inhabited this region since time immemorial should show that it is still preferable to go directly to the source instead of relying on inaccurate and careless transcriptions of the Native tongues of this land in a foreign language. Despite some of these cultures losing their elders who spoke the language, their language lives on in recordings and much of the modern work done to restore their languages from the brink of extinction. The collective knowledge of the tribe and recordings of the elders should still be held in high regard and should be open for their respective tribal citizens to hear and learn.
 
 **Acknowledgments**
 
@@ -108,7 +108,7 @@ I'd like to thank [Skyler Reed Corbett-Hecocta](https://skylerwrites.substack.co
 
 [Meany, E. S. (1923). Origin of Washington Geographic Names. United States: University of Washington Press.](https://journals.lib.washington.edu/index.php/WHQ/article/viewFile/6142/5216)
 
-[Montler, T. (1986) An Outline of the Morphology and Phonology of Saanich, North Straights Salish. Occasional Papers in Linguistics. No.4. Missoula: University of Montana Linguistics Laboratory.](http://saanich.montler.net/Outline/index.htm)
+[Montler, T. (1986) An Outline of the Morphology and Phonology of Saanich, North Straits Salish. Occasional Papers in Linguistics. No.4. Missoula: University of Montana Linguistics Laboratory.](http://saanich.montler.net/Outline/index.htm)
 
 [Montler, T [SaanichNature]. Nature Wordlist. SENĆOŦEN. Retrieved March 19, 2021 from https://itservices.cas.unt.edu/~montler/saanich/wordlist/nature.html](https://itservices.cas.unt.edu/~montler/saanich/wordlist/nature.html)
 
@@ -132,7 +132,7 @@ I'd like to thank [Skyler Reed Corbett-Hecocta](https://skylerwrites.substack.co
 
 [SLCC. (2016) History. Squamish Lil’wat Cultural Centre. June 28. Retrieved March 19, 2021 from https://slcc.ca/history/](https://slcc.ca/history/)
 
-[Snow, C.T. (1969) A Lower Chehalis Phonology [Masters Thesis, University ot Kansas]. KU ScholarWorks. http://hdl.handle.net/1808/26715](http://hdl.handle.net/1808/26715)
+[Snow, C.T. (1969) A Lower Chehalis Phonology [Masters Thesis, University of Kansas]. KU ScholarWorks. http://hdl.handle.net/1808/26715](http://hdl.handle.net/1808/26715)
 
 [Staff [FirstVoices]. "Halq'eméylemqel". Halq'eméylem. FirstVoices. Retrieved March 20, 2021 from https://www.firstvoices.com/explore/FV/sections/Data/Salish/Halkomelem/Halq'em%C3%A9ylem/learn/words/e6f4ceaf-78bb-41ca-88f9-689f560faa43](https://www.firstvoices.com/explore/FV/sections/Data/Salish/Halkomelem/Halq'em%C3%A9ylem/learn/words/e6f4ceaf-78bb-41ca-88f9-689f560faa43)
 
@@ -144,10 +144,10 @@ I'd like to thank [Skyler Reed Corbett-Hecocta](https://skylerwrites.substack.co
 
 [Wikipedia contributors. (2021, March 18). Olympic Mountains. In Wikipedia, The Free Encyclopedia. Retrieved 00:02, March 23, 2021, from https://en.wikipedia.org/w/index.php?title=Olympic_Mountains&oldid=1012877068](https://en.wikipedia.org/w/index.php?title=Olympic_Mountains&oldid=1012877068)
 
-[Winthrop, T., Williams, J. Harvey. (1913). The canoe and the saddle: or, Klalam and Klickatat. Tacoma: J. H. Williams.](https://babel.hathitrust.org/cgi/pt?id=loc.ark:/13960/t6qz3dq5j&view=1up&seq=454)
+[Winthrop, T., Williams, J. H. (Ed.). (1913). The canoe and the saddle: or, Klalam and Klickatat. Tacoma: J. H. Williams.](https://babel.hathitrust.org/cgi/pt?id=loc.ark:/13960/t6qz3dq5j&view=1up&seq=454)
 
 [Wray, J. (2013). Native Peoples of the Olympic Peninsula: Who We Are. (n.p.): University of Oklahoma Press.](https://www.google.com/books/edition/Native_Peoples_of_the_Olympic_Peninsula/IHcQZQIopyEC?hl=en&gbpv=1&dq=Hoh%20tribe%20lived%20on%20Mount%20Olympus%2C%20in%20a%20den%20under%20Blue%20Glacier&pg=PT169&printsec=frontcover&bsq=Hoh%20tribe%20lived%20on%20Mount%20Olympus%2C%20in%20a%20den%20under%20Blue%20Glacier)
 
 [Zahir, Z. (2009) A Lushootseed Analysis of a 1877 Dictionary by George Gibbs. Zahir Consulting Services.](https://www.puyalluptriballanguage.org/resources/GibbsFinal4.pdf)
 
-[Zahir, Z. (2018) Elements of Lushootseed Gramar in Discourse Perspective [Doctoral Dissertation, University of Oregon]. University of Oregon Scholar's Bank. http://hdl.handle.net/1794/24542](http://hdl.handle.net/1794/24542)
+[Zahir, Z. (2018) Elements of Lushootseed Grammar in Discourse Perspective [Doctoral Dissertation, University of Oregon]. University of Oregon Scholar's Bank. http://hdl.handle.net/1794/24542](http://hdl.handle.net/1794/24542)

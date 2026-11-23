@@ -4,7 +4,7 @@ images: ["/images/patreon_photo_sample.png"]
 ---
 
 
-There are numerous way you can help me meet my living needs.
+There are numerous ways you can help me meet my living needs.
 
 ## Patreon
 
@@ -22,7 +22,7 @@ You can support me with a Patreon membership which includes two of my best photo
 
 If you're feeling more like just giving a one time infusion of money, you can use the following methods:
 
-### Paypal
+### PayPal
 
 {{< button href="https://www.paypal.me/adaburrows" >}}
   Tip me with {{< paypal >}}.

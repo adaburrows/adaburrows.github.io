@@ -16,7 +16,7 @@ images:
 
 When I first got my new M1 based computer, there were some time limitations on getting my dev environment set up. I was developing [a Holochain project using Holonix](https://github.com/lightningrodlabs/rea-playspace) (a Nix based environment) to get all of the required binaries set up. I timeboxed myself to a maximum of four hours, and ended up getting stuck when compiling the [Niv dependency manager for Nix](https://github.com/nmattia/niv). When I compiled it natively there was a filesystem cycle that Nix did not like and it would just abort (there may be a quick patch for the compiler that could fix this, but I haven't seen it).
 
-I gave up after following a few different "How-to" guides that all ended it the same pain. I ended up installing the Holochain tools manually, which worked until Holochain 0.0.47, but I lost track of the dependencies after the upgrade to the version including Holochain Deterministic Integrity. So I bought an Intel based Mac to not lose more time.
+I gave up after following a few different "How-to" guides that all ended in the same pain. I ended up installing the Holochain tools manually, which worked until Holochain 0.0.47, but I lost track of the dependencies after the upgrade to the version including Holochain Deterministic Integrity. So I bought an Intel based Mac to not lose more time.
 
 As I recently learned from a new friend, there's a small detail which must be observed: the terminal emulator used to install Nix must be running in Rosetta when installing Nix.
 
@@ -93,7 +93,7 @@ Then remove `/nix`:
 
 ## Make a copy of Terminal that runs under Rosetta
 
-* In a finder window, navigate to the folder that contains Terminal.
+* In a Finder window, navigate to the folder that contains Terminal.
 * Control-click on Terminal and click `Duplicate`.
 * Rename the duplicate app to `Terminal (Rosetta)`.
 * Control-click and select `Get Info`.
@@ -117,7 +117,7 @@ Then follow the install instructions on the Nix install page again.
 
 ## Use Nix from any terminal
 
-Once Nix is installed and bootstrapped, every executable it builds should be using the Intel architecture running on Rosetta. This means you can use any terminal you want. it doesn't need to be running on Rosetta.
+Once Nix is installed and bootstrapped, every executable it builds should be using the Intel architecture running on Rosetta. This means you can use any terminal you want. It doesn't need to be running on Rosetta.
 
 ## Updates on the original problem
 
@@ -125,14 +125,14 @@ Once Nix is installed and bootstrapped, every executable it builds should be usi
 
 *TLDR; as of 2022/9/1 the `unstable` channel should work out of the box. But I haven't taken the time to test it, now that I have a working system.*
 
-The core of the problem was the cycle in the filesystem that threw Nix for a loop. There are several tickets on github that happen to deal with this. The relevant aspects of this process seem to be merged in. The fun is seeing if the nixpkgs have been updated to include these fixes.
+The core of the problem was the cycle in the filesystem that threw Nix for a loop. There are several tickets on GitHub that happen to deal with this. The relevant aspects of this process seem to be merged in. The fun is seeing if the nixpkgs have been updated to include these fixes.
 
 * [haskell packages with separate bin outputs fail due to a reference cycle on aarch64-darwin #140774](https://github.com/NixOS/nixpkgs/issues/140774)
 * [ghc8107: fix seperate bin outputs on aarch64-darwin #154046](https://github.com/NixOS/nixpkgs/pull/154046)
 * [haskell.compiler.ghc902: fix seperate bin outputs on aarch64-darwin #167895](https://github.com/NixOS/nixpkgs/pull/167895)
 * [Add cabal-paths patch for ghc 9.2.3 #184041](https://github.com/NixOS/nixpkgs/pull/184041)
 
-Digging through through the nixpkgs for Haskell, and it turns out that in in channel [`22.05`](https://raw.githubusercontent.com/NixOS/nixpkgs/nixos-22.05/pkgs/development/haskell-modules/hackage-packages.nix) it still uses ghc 9.2.2, which does not have the correct fixes. Whereas in [`unstable`](https://raw.githubusercontent.com/NixOS/nixpkgs/nixos-unstable/pkgs/development/haskell-modules/hackage-packages.nix) it uses ghc 9.2.4, which does have the correct fixes.
+Digging through the nixpkgs for Haskell, and it turns out that in channel [`22.05`](https://raw.githubusercontent.com/NixOS/nixpkgs/nixos-22.05/pkgs/development/haskell-modules/hackage-packages.nix) it still uses ghc 9.2.2, which does not have the correct fixes. Whereas in [`unstable`](https://raw.githubusercontent.com/NixOS/nixpkgs/nixos-unstable/pkgs/development/haskell-modules/hackage-packages.nix) it uses ghc 9.2.4, which does have the correct fixes.
 
 These updates were merged into master Monday, 29 August:
 ```
@@ -141,7 +141,7 @@ ab0f52080fd - Merge pull request #187575 from NixOS/haskell-updates (9 days ago)
 7f909b041b9 - haskell.compiler: ghc923 -> ghc924 (6 weeks ago) <sternenseemann>
 ```
 
-Looking at the `nixpkgs-unstable` branch, it was last cut on Thursday, 1 September &mdash; which is just a few days after I last tried this excercise.
+Looking at the `nixpkgs-unstable` branch, it was last cut on Thursday, 1 September &mdash; which is just a few days after I last tried this exercise.
 
 ```
 2da64a81275 - (origin/nixos-unstable, nixos-unstable) Merge #188383: ngtcp2-gnutls: init at 0.7.0 and use in knot-dns (6 days ago) <Vladimír Čunát>

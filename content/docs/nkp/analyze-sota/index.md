@@ -9,7 +9,7 @@ monetize: true
 This is a work in progress. It will likely become a book at some point.
 {{< /hint >}}
 
-With todays applications, there is typically a focus on serving large numbers of
+With today's applications, there is typically a focus on serving large numbers of
 people across multiple platforms. This is complicated by those various platforms
 requiring different languages and technologies in order to implement each part.
 Many languages have been focused on incremental improvements over previous
@@ -20,33 +20,33 @@ fact, our choice on the server side is nearly unlimited and is only constrained
 by convenience or special needs. Clients can be written in many different
 languages, especially given the rise of transpilers. Generally, browser based
 apps are constrained to languages which readily allow usage of JavaScript
-libraries. Client apps on iOS are limited Objective C, Swift, and other 
-languages which transpile to Javascipt running in a web view. Android apps are
+libraries. Client apps on iOS are limited to Objective C, Swift, and other 
+languages which transpile to JavaScript running in a web view. Android apps are
 limited to languages which run in the JVM, languages with a C interface which
 can be called from within the JVM, and languages which transpile to JavaScript
 running in a web view.
-+
+
 In the recent few years, web apps have started to mature in their approach to
 using components, data binding, and approaches to manipulating the DOM. Methods
 like Relay and GraphQL have also simplified the serialization of data for views.
 Other technologies like flat buffers on ArrayBuffers, service workers, and HTTP/2
-have allowed speeding up the tranfer of data.
+have allowed speeding up the transfer of data.
 
 Despite all of these improvements, web application development is still not too
 far removed from where it was in the beginning when JavaScript and VBScript were
 just taking off in browsers. Programming is still stuck in low level thought,
 while apps are much broader in scope. Our languages and tools have not kept up
 with the complexity of what we try to accomplish. Most of our programming
-languages are still systems programming laguages leaving us to repeat oursleves
+languages are still systems programming languages leaving us to repeat ourselves
 over and over again.
 
 ## Duplication in Architecture
 
-Let's analyze a relative simple web application that could be something from real
-life. Each of the components may be physically duplicates and load balanced. We
+Let's analyze a relatively simple web application that could be something from real
+life. Each of the components may be physically duplicated and load balanced. We
 have a system composed of:
 
-1. Websever which serves front end code.
+1. Webserver which serves front end code.
 1. Backend API service proxied through the webserver.
 1. Database which holds all the data for the system.
 1. Service which collects and aggregates statistics from the system in Redis.
@@ -56,7 +56,7 @@ have a system composed of:
 {{< diagram src="images/system-diagram.svg" >}}
 
 {{< hint info >}}
-We can see a lot duplication which should be examined in order to determine if
+We can see a lot of duplication which should be examined in order to determine if
 there are any opportunities for reducing complexity. The first set of duplicates
 to bring attention to are the aspects of **data modeling** and **validation**.
 
@@ -152,7 +152,7 @@ in JavaScript, the Service is written in C++, and the database schema is in a
 MySQL dialect. This means that we have duplication of:
 
 * the type specifications in four different languages.
-* validation constraints in four different laguages.
+* validation constraints in four different languages.
 * serialization of these models in three different languages (the DB already has
   a serialization format built in, but I'm not counting it since we don't have to
   specify it or manually wire it).
@@ -161,7 +161,7 @@ Let's take an overview of each of these. First, there's the SQL definition of th
 table. There's a few things we need to notice about this. It uses the database's
 built-in types. It specifies ranges on the length of certain fields. Curiously,
 besides basic type safety, it provides no actual verification of the data for
-patterns. If there was an `EMAIL` type in SQDL's DDL, it would be able to
+patterns. If there was an `EMAIL` type in SQL's DDL, it would be able to
 validate the form of the email address according to the RFC. Having the database
 perform all the validation would be less than ideal given the latency in verifying
 the form of the data by going through at least two network connections, with one

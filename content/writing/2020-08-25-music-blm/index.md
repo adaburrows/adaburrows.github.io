@@ -9,7 +9,7 @@ monetize: true
 images: []
 ---
 
-[We've sat to down to meditate on possible differences between what we think people need and and their actual needs]({{< ref "/writing/2020-6-28-come-lets-gather/index.md" >}}). Again, come join me. Gather round, let us listen. If it helps, you can go through the stretches in the previous blog post. This is going to be the first in a series of articles that might stretch some of you beyond your comfort zone. If you happen to be a person of color, this is likely to bring up trauma. You can step aside if you want to, or you can nod you head to the truths in here which make up daily life for many people. If you're ready (this will take about an hour), let us begin.
+[We've sat down to meditate on possible differences between what we think people need and their actual needs]({{< ref "/writing/2020-6-28-come-lets-gather/index.md" >}}). Again, come join me. Gather round, let us listen. If it helps, you can go through the stretches in the previous blog post. This is going to be the first in a series of articles that might stretch some of you beyond your comfort zone. If you happen to be a person of color, this is likely to bring up trauma. You can step aside if you want to, or you can nod your head to the truths in here which make up daily life for many people. If you're ready (this will take about an hour), let us begin.
 
 
 ### Mexican Chef
@@ -20,9 +20,9 @@ images: []
 It's a party across America // Bachata in the back
 {{< /hint >}}
 
-This forms the bridge which alludes back to all the other verses with its mentions of "Bachata in the back". It forms a structure which mirrors the structural opression of Brown and Black bodies where we are generally kept out of the party (the metaphor for the ability to succeed and enjoy our lives). While this racial power dynamic may not be evenly spread across America, it does tend to be widespread in places where there is a mixed population and more affluent European decendents want cheap labor.
+This forms the bridge which alludes back to all the other verses with its mentions of "Bachata in the back". It forms a structure which mirrors the structural oppression of Brown and Black bodies where we are generally kept out of the party (the metaphor for the ability to succeed and enjoy our lives). While this racial power dynamic may not be evenly spread across America, it does tend to be widespread in places where there is a mixed population and more affluent European descendants want cheap labor.
 
-In places where there are only people of European descent, the emergent dynamic is that poor are disenfranchised compared to the more affluent peers. Additionally, they have been taught to have pride in the work they do and to not aspire to much beyond being the best worker they can. This makes them susceptible to racist scapegoating. It also keeps them hopeful, since they want to think that given enough hard work they can become as affluent as their peers and live the American dream many of their immigrant ancestors were tempted with. The problem is that there are very specific structural conditions which keep poor people from becoming affluent, no matter their race. Lack of access to capital is one of those structural conditions. However, only people who are not perceived as white suffer from racism. As Rom, Quarks brother, in DS9's "The Bar Association" said:
+In places where there are only people of European descent, the emergent dynamic is that the poor are disenfranchised compared to the more affluent peers. Additionally, they have been taught to have pride in the work they do and to not aspire to much beyond being the best worker they can. This makes them susceptible to racist scapegoating. It also keeps them hopeful, since they want to think that given enough hard work they can become as affluent as their peers and live the American dream many of their immigrant ancestors were tempted with. The problem is that there are very specific structural conditions which keep poor people from becoming affluent, no matter their race. Lack of access to capital is one of those structural conditions. However, only people who are not perceived as white suffer from racism. As Rom, Quark's brother, in DS9's "The Bar Association" said:
 
 {{< hint info >}}
 "You don't understand. Ferengi wokers don't want to stop the exploitation, we want to find a way to become the exploiters."
@@ -43,24 +43,24 @@ You just a big dawg, yeah // I kenneled him in the backyard </br>
 No proper life to a dog // For a big dog
 {{< /hint >}}
 
-I'm not going to unpack everything here, because a book could be written on the 13th Ammendment. Speaking of which, [you should watch Ava Duvernays documentary](https://www.youtube.com/watch?v=krfcq5pF8u8). But if you're already hip to that, let's go on:
+I'm not going to unpack everything here, because a book could be written on the 13th Amendment. Speaking of which, [you should watch Ava DuVernay's documentary](https://www.youtube.com/watch?v=krfcq5pF8u8). But if you're already hip to that, let's go on:
 
-From the begning of America as the United States, and even before, there was a strong component of white supremacy and slavery. This means that where there was slavery, where there was racism, or where white supremacy took hold, there is still a cultural component of that present in modern populations. No matter how enlighted one person of European descent is, there is likely another person (or two!) who feels equally empowered by white supremacy.
+From the beginning of America as the United States, and even before, there was a strong component of white supremacy and slavery. This means that where there was slavery, where there was racism, or where white supremacy took hold, there is still a cultural component of that present in modern populations. No matter how enlightened one person of European descent is, there is likely another person (or two!) who feels equally empowered by white supremacy.
 
 {{< hint info >}}
 "The Nixon campiagn in 1968, and the Nixon White House ater that, had two enemies: the antiwar left and black people. You understand what I'm saying? We knew we could make it illegal to be either against the war or black, but by getting the public to associate hippies with marijuana and blacks with heroin and the criminalizing both heavily, we could disrupt those communities. We could arrest their leaders, raid their homes, break up their meetings, and villify them night after night on the evening news. Did we know we were lying about the drugs? Of course we did."<br/>
 &mdash; John Ehrlichman, Nixon Advisor
 {{< /hint >}}
 
-This quote hopefully gives you the proper picture that there are people who are white supremacists with wealth who want to shape society in America. They have seen the opening to promulgate white supremacy and raism through the 13th ammendment ever since the US forced some of the southern states to ratify it at gunpoint. Quitely, through the generations, they have been passing on their beliefs and culture of white supremacy to their children and those who will listen to them. These people do not consider these weird, backward, or foreign beliefs, because it's what they live.
+This quote hopefully gives you the proper picture that there are people who are white supremacists with wealth who want to shape society in America. They have seen the opening to promulgate white supremacy and racism through the 13th Amendment ever since the US forced some of the southern states to ratify it at gunpoint. Quietly, through the generations, they have been passing on their beliefs and culture of white supremacy to their children and those who will listen to them. These people do not consider these weird, backward, or foreign beliefs, because it's what they live.
 
-Because of these contemptible people, life for Black people in America is equivalent to being treated like a runaway dog that needs to be kenneled in America's back yard: prison. Because of these contemptible, backwards people, life in America is like not having a name. It like being a product, a machine that can sew clothes, debur fishing weights, fight you fires for free, etc. Need I go on?
+Because of these contemptible people, life for Black people in America is equivalent to being treated like a runaway dog that needs to be kenneled in America's back yard: prison. Because of these contemptible, backwards people, life in America is like not having a name. It's like being a product, a machine that can sew clothes, deburr fishing weights, fight your fires for free, etc. Need I go on?
 
 ### Reality Check (feat. Akenya & Eryn Allen Kane)
 
 {{< youtube 50UtRgK00TY >}}
 
-This is song about the self-doubt that racism creates and pushing past it.
+This is a song about the self-doubt that racism creates and pushing past it.
 
 ### LAND OF THE FREE
 
@@ -232,9 +232,9 @@ _chorus_ <br/>
 
 If you don't know about the people mentioned in this video, you really need to read up on them:
 
-* [Ida B. Wells-Barnet](https://en.wikipedia.org/wiki/Ida_B._Wells) &mdash; She was an early leader in the civil rights movement, and investigative journalist, and an educator. There's [a article about how her and her great-granddaughter is still fighting for the same things over at Time](https://time.com/5879344/ida-b-wells-great-granddaughter-19th-amendment/).
-* [Marsha P. Johnson](https://legacyprojectchicago.org/person/marsha-p-johnson) &mdash; Her, along with her friend, [Silvia Riveria](https://legacyprojectchicago.org/person/sylvia-rivera), were at the Stonewall uprising. They also cofounded Street Transvestite Action Revolutionaries. These days, the T has been replaced with Transgender, becuase it's a better match. Back when it was founded, the word "transgender" didn't exist.
-* [Ella Baker](https://ellabakercenter.org/about/who-was-ella-baker) &mdash; There's a shout out to her in the begining of the song. She was a major force in organizing within the civil rights movement.
+* [Ida B. Wells-Barnett](https://en.wikipedia.org/wiki/Ida_B._Wells) &mdash; She was an early leader in the civil rights movement, an investigative journalist, and an educator. There's [an article about how her and her great-granddaughter are still fighting for the same things over at Time](https://time.com/5879344/ida-b-wells-great-granddaughter-19th-amendment/).
+* [Marsha P. Johnson](https://legacyprojectchicago.org/person/marsha-p-johnson) &mdash; Her, along with her friend, [Sylvia Rivera](https://legacyprojectchicago.org/person/sylvia-rivera), were at the Stonewall uprising. They also cofounded Street Transvestite Action Revolutionaries. These days, the T has been replaced with Transgender, because it's a better match. Back when it was founded, the word "transgender" didn't exist.
+* [Ella Baker](https://ellabakercenter.org/about/who-was-ella-baker) &mdash; There's a shout out to her in the beginning of the song. She was a major force in organizing within the civil rights movement.
 
 ### Lockdown
 
@@ -268,9 +268,9 @@ I'm an ugly one &mdash; I'm an ugly one that knows how to love.<br/>
 He truly loves you with all of his heart.
 {{< /hint >}}
 
-There's a bit of context behind the "[Black Saint](https://www.cultura.gob.ar/por-que-se-celebra-san-baltasar_5274/)", [San Baltazar](https://en.wikipedia.org/wiki/San_Baltasar), also [Santo Cambá](https://en.wikipedia.org/wiki/Camba#Etymology_and_Context). According to stories, he was one the three Magi (kings, as most people call them) who visited Jesus on the Epiphany and gave the gift of Frankincense. This character went through several evolutions. At first, he was white. Then there was a Black child who attended to him as a [page](https://en.wikipedia.org/wiki/Page_(servant)#The_decorative_page). Then he became Black and one of his compatriots became Asian. Christianity changed the depiction to give people a Black token in Christendom. This last change happened right around the start of slavery and as the slavers were converting enslaved Black people to slavery.
+There's a bit of context behind the "[Black Saint](https://www.cultura.gob.ar/por-que-se-celebra-san-baltasar_5274/)", [San Baltazar](https://en.wikipedia.org/wiki/San_Baltasar), also [Santo Cambá](https://en.wikipedia.org/wiki/Camba#Etymology_and_Context). According to stories, he was one of the three Magi (kings, as most people call them) who visited Jesus on the Epiphany and gave the gift of Frankincense. This character went through several evolutions. At first, he was white. Then there was a Black child who attended to him as a [page](https://en.wikipedia.org/wiki/Page_(servant)#The_decorative_page). Then he became Black and one of his compatriots became Asian. Christianity changed the depiction to give people a Black token in Christendom. This last change happened right around the start of slavery and as the slavers were converting enslaved Black people to Christianity.
 
-Enslaved people freed themselves and formed their own communities. They made Baltazar their own saint &mdash; seemingly representative of the only Black person who was respected by Christians. Because of racism, everyone who didn't conform to European or mestizo standards of beauty was considered ugly, or "un feo". Part of me wonders how many people still hold thes views, since I've met a few people who do. People tend to call them "a product of their age" but seems to absolve them of their actions and they are still very responsible for the views they hold and the words they say.
+Enslaved people freed themselves and formed their own communities. They made Baltazar their own saint &mdash; seemingly representative of the only Black person who was respected by Christians. Because of racism, everyone who didn't conform to European or mestizo standards of beauty was considered ugly, or "un feo". Part of me wonders how many people still hold these views, since I've met a few people who do. People tend to call them "a product of their age" but seems to absolve them of their actions and they are still very responsible for the views they hold and the words they say.
 
 See:
 
@@ -302,7 +302,7 @@ So what you gonna do?
 
 [This playlist is also available as a Spotify Playlist](https://open.spotify.com/playlist/21SLX8AJL5pvoc7EeBy6cP?si=kvb54DxAQWCNjIZYjZXfrQ).
 
-| Title | Artist(s) | Albumn | Time | Released |
+| Title | Artist(s) | Album | Time | Released |
 |-------|-----------|--------|------|----------|
 | Mexican Chef | Xenia Rubinos | Black Terry Cat | 3:49 | 2016 |
 | This Is America | Childish Gambino | This Is America | 3:45 | 2018 |

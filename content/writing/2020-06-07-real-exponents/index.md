@@ -10,7 +10,7 @@ categories: ["Mathematics"]
 aliases: ["/docs/math-explorations/real-exponents/"]
 ---
 
-When I was younger, I was told that exponentiation was repeated multiplication. I was also told that multiplication was repeated addition. I took this at face value and I though that this was how computers calculated things. It made sense for integers. It made sense that one could cheat repeated addition for powers of two by bit shifting and not repeated addition on platforms that only have addition, but not multiplication.
+When I was younger, I was told that exponentiation was repeated multiplication. I was also told that multiplication was repeated addition. I took this at face value and I thought that this was how computers calculated things. It made sense for integers. It made sense that one could cheat repeated addition for powers of two by bit shifting and not repeated addition on platforms that only have addition, but not multiplication.
 
 {{< katex display >}}
 \begin{aligned}
@@ -26,7 +26,7 @@ Then I momentarily thought about square roots, because the square root of two ca
 
 {{< katex display >}}\sqrt{2} = 2^{\frac{1}{2}}{{< /katex >}}
 
-Using the mental framework with which my teachers had equiped me, meant that two is being multiplied by itself one-half times. This, of course, made no sense. How can one apply an operation a fractional amount of times? So then I wondered if looking at this in terms of addition would help, but that was a fractional amount too:
+Using the mental framework with which my teachers had equipped me, meant that two is being multiplied by itself one-half times. This, of course, made no sense. How can one apply an operation a fractional amount of times? So then I wondered if looking at this in terms of addition would help, but that was a fractional amount too:
 
 {{< katex display >}}
 \begin{aligned}
@@ -37,7 +37,7 @@ Using the mental framework with which my teachers had equiped me, meant that two
 \end{aligned}
 {{< /katex >}}
 
-Lets check our original example of {{<katex>}}2^5{{</katex>}}
+Let's check our original example of {{<katex>}}2^5{{</katex>}}
 
 {{< katex display >}}
 \begin{aligned}
@@ -61,7 +61,7 @@ Of course, this is even more mystical because how does one apply addition ~0.707
 
 ## Logarithms
 
-Logarithms are interesting concept. Base ten logarithms let us know the magnitude of a decimal based number. A base two logarithm can let us know in which octave a frequency belongs. A base two logarithm can also let us know how many digits are needed to represent a number. Base two logarithms are found in measurements of entropy.
+Logarithms are an interesting concept. Base ten logarithms let us know the magnitude of a decimal based number. A base two logarithm can let us know in which octave a frequency belongs. A base two logarithm can also let us know how many digits are needed to represent a number. Base two logarithms are found in measurements of entropy.
 
 Mathematically, logarithms are pretty simple. They form a mapping from multiplication to addition:
 
@@ -90,7 +90,7 @@ Since, the base doesn't matter, we can use the natural logarithm:
 \log_{b_2} y = \frac{\ln y}{\ln b_2}
 {{< /katex >}}
 
-The most commonly occuring logarithm is the natural logarithm, in base {{<katex>}}e{{</katex>}}:
+The most commonly occurring logarithm is the natural logarithm, in base {{<katex>}}e{{</katex>}}:
 
 {{< katex display >}}
 \begin{aligned}
@@ -125,7 +125,7 @@ This next graph is a combination of computing the area under the curve {{<katex>
 
 {{< figure src="images/graph.jpg" >}}
 
-As should be obvious from the chart above, the exponential and the logarithm are inverses of each other are are reflections along the values of {{<katex>}}y = x{{</katex>}}. This means that if we can calculate one of these we can calculate both just by transposing the coordinate values.
+As should be obvious from the chart above, the exponential and the logarithm are inverses of each other and are reflections along the values of {{<katex>}}y = x{{</katex>}}. This means that if we can calculate one of these we can calculate both just by transposing the coordinate values.
 
 There's a problem with this though. The above integral definition of {{<katex>}}\ln{{</katex>}} is very limited in some important ways:
 
@@ -142,7 +142,7 @@ Fortunately, there are easily found analytic definitions for these functions usi
 \end{aligned}
 {{< /katex >}}
 
-There are some other identities that can come in handy because they tend to converge quickly. For when x falls with the complex unit circle:
+There are some other identities that can come in handy because they tend to converge quickly. For when x falls within the complex unit circle:
 
 {{< katex display >}}
 \begin{aligned}
@@ -175,13 +175,13 @@ Wait! We need a more complicated formula:
 \end{aligned}
 {{< /katex >}}
 
-Since this has a periodic aspect to it, that means there are infinitely many loagrithms of a complex number. This is important to keep in mind, since some of the formulae above don't seem to mind this. For instance those hyperbolic identities above only give what is called the "principle value". This means the other infinitude of values are neglected, but can be computed from this.
+Since this has a periodic aspect to it, that means there are infinitely many logarithms of a complex number. This is important to keep in mind, since some of the formulae above don't seem to mind this. For instance those hyperbolic identities above only give what is called the "principal value". This means the other infinitude of values are neglected, but can be computed from this.
 
 ## Putting It All Together
 
-The analytic formulae all have summations between 0 or 1 and infinity. Computers don't really like infinities because it takes them an infinite amount of time to deal with them. This means we've got to cheat. Cheating is easy: we just use a few terms of the analytic function. However, we still need to be mindful of the errors. The Taylor series really only has good accurracy for logarithms within a certain distance from the point we expanded the series around. In our case, that point is zero.
+The analytic formulae all have summations between 0 or 1 and infinity. Computers don't really like infinities because it takes them an infinite amount of time to deal with them. This means we've got to cheat. Cheating is easy: we just use a few terms of the analytic function. However, we still need to be mindful of the errors. The Taylor series really only has good accuracy for logarithms within a certain distance from the point we expanded the series around. In our case, that point is zero.
 
-Since we know that the logarithm and exponential are realy the same thing just rotated around the the identity function, we can choose which ever one has the better convergence and then iteratively solve for a value using a variant of Newton's method. In the case using the exponential, we just need to be careful of the large values generated in the factorials. Then we iteratively converge on the value we know while solving for the exponent.
+Since we know that the logarithm and exponential are really the same thing just rotated around the identity function, we can choose whichever one has the better convergence and then iteratively solve for a value using a variant of Newton's method. In the case using the exponential, we just need to be careful of the large values generated in the factorials. Then we iteratively converge on the value we know while solving for the exponent.
 
 Using everything we know about logarithms and exponents, we can set up a way to solve for {{<katex>}}\sqrt x{{</katex>}}:
 
@@ -193,7 +193,7 @@ Visually, we can see these relationships as:
 
 {{< figure src="images/graph2.jpg" >}}
 
-More generally, we can setup a general {{<katex>}}n^{th}{{</katex>}} root:
+More generally, we can set up a general {{<katex>}}n^{th}{{</katex>}} root:
 
 {{< katex display >}}
 \sqrt[n] x = e^{\frac{1}{n}\ln x}
@@ -219,13 +219,13 @@ b^x = e^{x \ln b}
 
 My preferred way of thinking about this, is integers are really a special case where our notational system happens to have the most simplicity for notating those numbers. They are points of minimal encoding, but they are just as complicated or information dense as any other algebraic number. This is how two infinite sums can be found in integer relationships to each other.
 
-By asking the question I started with &mdash; "How do we multiply a number by itself a fractional number of times?" &mdash; we can find out new things about our numbers and operations. It is questions and answers like this which make me wonder what is more fundamental in terms of operations. Are fields with addition and groups with multiplication realy fundamental? Or is everything that we do really just an approximation or convergence of an infinity of terms reducing to a point for as long as it's needed or convienient for our minds?
+By asking the question I started with &mdash; "How do we multiply a number by itself a fractional number of times?" &mdash; we can find out new things about our numbers and operations. It is questions and answers like this which make me wonder what is more fundamental in terms of operations. Are fields with addition and groups with multiplication really fundamental? Or is everything that we do really just an approximation or convergence of an infinity of terms reducing to a point for as long as it's needed or convenient for our minds?
 
 Is anything as simple as {{<katex>}}2+1{{</katex>}}? Maybe it all is as complicated as:
 {{<katex display>}}
 \begin{aligned}
 2+1 & = e^{x \ln 2} \\
-x & = \frac{\ln 2 + 1}{\ln 2} \\
-3 & = e^{\ln 2 + 1}
+x & = \frac{\ln (2 + 1)}{\ln 2} \\
+3 & = e^{\ln (2 + 1)}
 \end{aligned}
 {{</katex>}}
