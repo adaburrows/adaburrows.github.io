@@ -27,6 +27,7 @@
   --tape: var(--green);
   --tape-on: #e3e7ec; /* the dark-mode ink, a touch lighter: off-white reads greyer on bright pages */
   --tape-sel: var(--red);
+  --h1: var(--red);
   --photo: url("/images/theme/leaf.jpg");
   --logo: url("/images/theme/logo.png");
   --measure: 64rem;
@@ -59,6 +60,7 @@
   --tape: #2e3159;
   --tape-on: var(--ink); /* stress-whitened plastic never gets fully white */
   --tape-sel: color-mix(in srgb, var(--green) 76%, #000); /* a block of colour reads lighter than text in it, so darken to match */
+  --h1: var(--blue);
   --photo: url("/images/theme/river-dark.jpg");
   color-scheme: dark;
 }
@@ -85,6 +87,7 @@
     --tape: #2e3159;
     --tape-on: var(--ink); /* stress-whitened plastic never gets fully white */
     --tape-sel: color-mix(in srgb, var(--green) 76%, #000); /* a block of colour reads lighter than text in it, so darken to match */
+    --h1: var(--blue);
     --photo: url("/images/theme/river-dark.jpg");
     color-scheme: dark;
   }
@@ -206,7 +209,7 @@ body::before {
 main { max-width: var(--measure); margin: 0 auto; padding-inline: 16px; display: grid; gap: 1.1rem; }
 .content-area { background: var(--card); box-shadow: var(--shadow); border-radius: 1em; padding: 1.4rem 1.6rem; min-width: 0; overflow-wrap: break-word; }
 h1, h2, h3, h4, h5 { font-family: var(--script); font-weight: 400; letter-spacing: .01em; text-wrap: balance; scroll-margin-top: 1rem; }
-h1 { font-size: 2rem; line-height: 1.15; color: var(--red); margin: 0 0 .5rem; }
+h1 { font-size: 2rem; line-height: 1.15; color: var(--h1); margin: 0 0 .5rem; }
 h2 { font-size: 1.45rem; line-height: 1.2; color: var(--green); margin: 1.6rem 0 .45rem; }
 .content-area > h2:first-child, .card-title { margin-top: 0; }
 h3 { font-size: 1.15rem; color: var(--blue); margin: 1.3rem 0 .35rem; }
