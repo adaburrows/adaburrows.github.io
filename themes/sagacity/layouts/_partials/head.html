@@ -27,4 +27,14 @@
 <meta property="og:image" content="{{ . | absURL }}">
 <meta name="twitter:card" content="summary_large_image">
 {{- end }}
+{{- if .HasShortcode "katex" }}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+{{- end }}
+{{- if .HasShortcode "mermaid" }}
+<script type="module">
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.min.mjs";
+const dark = document.documentElement.getAttribute("data-theme") === "dark";
+mermaid.initialize({ startOnLoad: true, theme: dark ? "dark" : "neutral", fontFamily: "Spinnaker, sans-serif" });
+</script>
+{{- end }}
 {{- partial "head-extra.html" . }}

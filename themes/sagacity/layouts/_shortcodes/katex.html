@@ -1,8 +1,5 @@
-{{- /* {{< katex [display] >}}TeX{{< /katex >}}, rendered to HTML at build time (no page script). */ -}}
+{{- /* {{< katex [display] >}}TeX{{< /katex >}}, rendered to HTML at build time (no page script; head.html adds the KaTeX stylesheet). */ -}}
 {{- $display := in .Params "display" }}
-{{- if not (.Page.Store.Get "katexCSS") }}{{ .Page.Store.Set "katexCSS" true -}}
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
-{{- end }}
 {{- $tex := trim .Inner " \n\t" }}
 {{- with try (transform.ToMath $tex (dict "displayMode" $display "throwOnError" false)) }}
   {{- if .Err }}{{ warnf "katex in %s: %s" $.Page.File.Path .Err }}<code class="math-error">{{ $tex }}</code>
