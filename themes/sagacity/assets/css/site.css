@@ -56,7 +56,7 @@
   --shadow: 3px 3px 7px rgba(255,255,255,0.33);
   --glow: rgba(255,255,255,0.33);
   --chip: #000000;
-  --tape: var(--blue);
+  --tape: #2e3159;
   --tape-on: #ffffff;
   --emboss: -1px -1px 0 rgba(255,255,255,.35), 1px 1px 0 rgba(13,27,42,.85), 1px 2px 2px rgba(13,27,42,.6);
   --photo: url("/images/theme/river-dark.jpg");
@@ -82,7 +82,7 @@
     --shadow: 3px 3px 7px rgba(255,255,255,0.33);
     --glow: rgba(255,255,255,0.33);
     --chip: #000000;
-    --tape: var(--blue);
+    --tape: #2e3159;
     --tape-on: #ffffff;
     --emboss: -1px -1px 0 rgba(255,255,255,.35), 1px 1px 0 rgba(13,27,42,.85), 1px 2px 2px rgba(13,27,42,.6);
     --photo: url("/images/theme/river-dark.jpg");
@@ -218,7 +218,7 @@ th { font-family: var(--script); font-weight: 400; color: var(--green); }
 .page-head h1 { margin-bottom: .2rem; }
 .crumbs { font: .82rem var(--mono); color: var(--muted); margin: 0 0 .35rem; }
 .crumbs a { color: inherit; }
-/* Category tags (and the social links) as embossed label-maker (Dymo) tape: flat plastic in the palette green (light) or blue (dark), the selected tag in the palette red, square-cut ends, a pale bottom edge, and
+/* Category tags (and the social links) as embossed label-maker (Dymo) tape: flat plastic in the palette green (light) or the night-sky indigo of the dark photo, the selected tag in the palette red, square-cut ends, a pale bottom edge, and
    bold monospace capitals pressed up out of the tape (--emboss lights them per theme). */
 .chips { display: flex; flex-wrap: wrap; gap: .75rem .55rem; list-style: none; padding: 0; margin: .6rem 0 1.1rem; }
 /* Hand-placed look: site.js tilts every label on the page (tags and caption strips) from one shared
