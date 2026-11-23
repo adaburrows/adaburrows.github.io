@@ -11,7 +11,22 @@
         <summary>{{ .Name }}</summary>
         <ul class="panel">
           {{- range .Children }}
-          <li><a href="{{ .URL }}"{{ if $page.IsMenuCurrent "main" . }} aria-current="page"{{ end }}>{{ .Name }}{{ with .Params.note }}<span class="note">{{ . }}</span>{{ end }}</a></li>
+          <li><a href="{{ .URL }}"{{ if $page.IsMenuCurrent "main" . }} aria-current="page"{{ end }}>{{ .Name }}{{ with .Params.note }}<span class="note">{{ . }}</span>{{ end }}</a>
+            {{- /* A book (section) lists its full contents: chapters, and each chapter's sections. */}}
+            {{- with .Page }}{{ if and .IsSection .RegularPages }}
+            <ol class="toc-tree">
+              {{- range .RegularPages.ByWeight }}
+              <li><a href="{{ .RelPermalink }}"{{ if eq $page .}} aria-current="page"{{ end }}>{{ .LinkTitle }}</a>
+                {{- $ch := . }}{{ $secs := slice }}
+                {{- range .Fragments.Headings }}{{ if eq .Level 2 }}{{ $secs = $secs | append . }}{{ else }}{{ range .Headings }}{{ if eq .Level 2 }}{{ $secs = $secs | append . }}{{ end }}{{ end }}{{ end }}{{ end }}
+                {{- with $secs }}
+                <ul>{{ range . }}{{ if ne (.Title | plainify) $ch.LinkTitle }}<li><a href="{{ $ch.RelPermalink }}#{{ .ID }}">{{ .Title | plainify }}</a></li>{{ end }}{{ end }}</ul>
+                {{- end }}
+              </li>
+              {{- end }}
+            </ol>
+            {{- end }}{{ end }}
+          </li>
           {{- end }}
           {{- if .Params.social }}
           <li class="group">Elsewhere</li>
