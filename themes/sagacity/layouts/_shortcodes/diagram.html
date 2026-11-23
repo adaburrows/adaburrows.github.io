@@ -1,0 +1,11 @@
+{{- /* {{< diagram src="images/foo.svg" caption="…" >}} inlines an SVG from the page bundle so the
+   site's colours reach inside it (an <img> can't be styled). Draw with the .sd classes in site.css:
+   g.box (rect + text), g.box.comp (label top-left), g.box.cyl (database), path.link (arrows, with
+   marker #sd-arrow), text.link-label, path.tree (part-of lines). Wide diagrams scroll on phones. */ -}}
+{{- $src := .Get "src" }}
+{{- with .Page.Resources.Get $src }}
+<figure class="diagram">
+  <div class="diagram-scroll">{{ .Content | safeHTML }}</div>
+  {{- with $.Get "caption" }}<figcaption><p>{{ . }}</p></figcaption>{{ end }}
+</figure>
+{{- else }}{{ errorf "diagram: %s not found in %s" $src .Page.File.Path }}{{ end }}

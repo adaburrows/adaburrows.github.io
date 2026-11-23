@@ -336,6 +336,18 @@ a.button img, a.button svg { vertical-align: middle; }
 .math-display { overflow-x: auto; overflow-y: hidden; margin: 1rem 0; padding: .2rem 0; }
 .math-error { color: var(--red); }
 pre.mermaid { background: var(--chip); text-align: center; }
+/* Hand-drawn SVG diagrams ({{< diagram >}}): every colour comes from the theme tokens. */
+.diagram { margin: 1.2rem 0; }
+.diagram-scroll { overflow-x: auto; background: var(--chip); border-radius: .6em; box-shadow: var(--shadow); padding: .6rem; }
+.sd { display: block; width: 100%; min-width: 640px; height: auto; font-family: var(--body); font-size: 15px; }
+.sd text { fill: var(--ink); text-anchor: middle; dominant-baseline: central; }
+.sd .box rect, .sd .box path { fill: var(--chip); stroke: var(--ink); stroke-width: 1.2; filter: drop-shadow(3px 3px 0 var(--rule)); }
+.sd .comp text { text-anchor: start; }
+.sd .cyl text { font-size: 13px; }
+.sd .link, .sd .tree { fill: none; stroke: var(--ink); stroke-width: 1.2; }
+.sd .tree { stroke: var(--muted); }
+.sd .arrowhead path { fill: var(--ink); }
+.sd .link-label { font: 13px var(--mono); }
 
 /* ---------- footer ---------- */
 .site-footer { max-width: var(--measure); margin: 1.1rem auto 0; padding-inline: 16px; }

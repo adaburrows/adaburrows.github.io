@@ -1,0 +1,72 @@
+<svg class="sd" viewBox="0 0 1080 790" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="sd-title">
+  <title id="sd-title">System diagram: DB (from a DB Schema), Redis, a Stat Aggregator, an API and a front end (FE). DB and Redis talk to the API over TCP; Redis also talks to the Stat Aggregator over TCP; the Stat Aggregator talks to the API over TCP/Flatbuffers; the API and FE talk over HTTP/JSON. The Stat Aggregator has Validation, Models and Business Logic. The API and FE each have Auth, Validation, Models, Business Logic and Presentation, and Presentation has Style, Templates, Data binding, Animation Logic and Behavioral Logic.</title>
+  <defs><marker id="sd-arrow" class="arrowhead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z"/></marker></defs>
+  <g class="box"><rect x="25" y="48" width="106" height="28"/><text x="78" y="62">DB Schema</text></g>
+  <path class="link" d="M55,78 V115" marker-end="url(#sd-arrow)"/>
+  <g class="box cyl"><path d="M25,125 a30.0,7 0 0 0 60,0 a30.0,7 0 0 0 -60,0 v48 a30.0,7 0 0 0 60,0 v-48"/><text x="55" y="142">DB</text></g>
+  <g class="box cyl"><path d="M25,235 a30.0,7 0 0 0 60,0 a30.0,7 0 0 0 -60,0 v52 a30.0,7 0 0 0 60,0 v-52"/><text x="55" y="252">Redis</text></g>
+  <g class="box comp"><rect x="465" y="118" width="82" height="86"/><text x="481" y="134">API</text></g>
+  <g class="box comp"><rect x="765" y="118" width="82" height="86"/><text x="781" y="134">FE</text></g>
+  <g class="box"><rect x="165" y="232" width="220" height="28"/><text x="275" y="246">Stat Aggregator</text></g>
+  <path class="link" d="M90,133 H461" marker-start="url(#sd-arrow)" marker-end="url(#sd-arrow)"/>
+  <text class="link-label" x="285" y="125">TCP</text>
+  <path class="link" d="M461,160 H195 V188 H55 V225" marker-start="url(#sd-arrow)" marker-end="url(#sd-arrow)"/>
+  <text class="link-label" x="285" y="152">TCP</text>
+  <path class="link" d="M461,188 H295 V229" marker-start="url(#sd-arrow)" marker-end="url(#sd-arrow)"/>
+  <text class="link-label" x="375" y="180">TCP/Flatbuffers</text>
+  <path class="link" d="M90,246 H162" marker-start="url(#sd-arrow)" marker-end="url(#sd-arrow)"/>
+  <text class="link-label" x="125" y="236">TCP</text>
+  <path class="link" d="M549,133 H761" marker-start="url(#sd-arrow)" marker-end="url(#sd-arrow)"/>
+  <text class="link-label" x="655" y="125">HTTP/JSON</text>
+  <g class="box"><rect x="215" y="288" width="114" height="28"/><text x="272" y="302">Validation</text></g>
+  <path class="tree" d="M185,302.0 H215"/>
+  <g class="box"><rect x="215" y="344" width="80" height="28"/><text x="255" y="358">Models</text></g>
+  <path class="tree" d="M185,358.0 H215"/>
+  <g class="box"><rect x="215" y="400" width="148" height="28"/><text x="289" y="414">Business Logic</text></g>
+  <path class="tree" d="M185,414.0 H215"/>
+  <path class="tree" d="M185,414.0 V263" marker-end="url(#sd-arrow)"/>
+  <g class="box"><rect x="515" y="232" width="64" height="28"/><text x="547" y="246">Auth</text></g>
+  <path class="tree" d="M485,246.0 H515"/>
+  <g class="box"><rect x="515" y="288" width="114" height="28"/><text x="572" y="302">Validation</text></g>
+  <path class="tree" d="M485,302.0 H515"/>
+  <g class="box"><rect x="515" y="344" width="80" height="28"/><text x="555" y="358">Models</text></g>
+  <path class="tree" d="M485,358.0 H515"/>
+  <g class="box"><rect x="515" y="400" width="148" height="28"/><text x="589" y="414">Business Logic</text></g>
+  <path class="tree" d="M485,414.0 H515"/>
+  <g class="box"><rect x="515" y="456" width="131" height="28"/><text x="580" y="470">Presentation</text></g>
+  <g class="box"><rect x="565" y="512" width="72" height="28"/><text x="601" y="526">Style</text></g>
+  <path class="tree" d="M535,526.0 H565"/>
+  <g class="box"><rect x="565" y="568" width="106" height="28"/><text x="618" y="582">Templates</text></g>
+  <path class="tree" d="M535,582.0 H565"/>
+  <g class="box"><rect x="565" y="624" width="131" height="28"/><text x="630" y="638">Data binding</text></g>
+  <path class="tree" d="M535,638.0 H565"/>
+  <g class="box"><rect x="565" y="680" width="156" height="28"/><text x="643" y="694">Animation Logic</text></g>
+  <path class="tree" d="M535,694.0 H565"/>
+  <g class="box"><rect x="565" y="736" width="164" height="28"/><text x="647" y="750">Behavioral Logic</text></g>
+  <path class="tree" d="M535,750.0 H565"/>
+  <path class="tree" d="M485,470.0 H515"/>
+  <path class="tree" d="M485,470.0 V207" marker-end="url(#sd-arrow)"/>
+  <g class="box"><rect x="815" y="232" width="64" height="28"/><text x="847" y="246">Auth</text></g>
+  <path class="tree" d="M785,246.0 H815"/>
+  <g class="box"><rect x="815" y="288" width="114" height="28"/><text x="872" y="302">Validation</text></g>
+  <path class="tree" d="M785,302.0 H815"/>
+  <g class="box"><rect x="815" y="344" width="80" height="28"/><text x="855" y="358">Models</text></g>
+  <path class="tree" d="M785,358.0 H815"/>
+  <g class="box"><rect x="815" y="400" width="148" height="28"/><text x="889" y="414">Business Logic</text></g>
+  <path class="tree" d="M785,414.0 H815"/>
+  <g class="box"><rect x="815" y="456" width="131" height="28"/><text x="880" y="470">Presentation</text></g>
+  <g class="box"><rect x="865" y="512" width="72" height="28"/><text x="901" y="526">Style</text></g>
+  <path class="tree" d="M835,526.0 H865"/>
+  <g class="box"><rect x="865" y="568" width="106" height="28"/><text x="918" y="582">Templates</text></g>
+  <path class="tree" d="M835,582.0 H865"/>
+  <g class="box"><rect x="865" y="624" width="131" height="28"/><text x="930" y="638">Data binding</text></g>
+  <path class="tree" d="M835,638.0 H865"/>
+  <g class="box"><rect x="865" y="680" width="156" height="28"/><text x="943" y="694">Animation Logic</text></g>
+  <path class="tree" d="M835,694.0 H865"/>
+  <g class="box"><rect x="865" y="736" width="164" height="28"/><text x="947" y="750">Behavioral Logic</text></g>
+  <path class="tree" d="M835,750.0 H865"/>
+  <path class="tree" d="M785,470.0 H815"/>
+  <path class="tree" d="M785,470.0 V207" marker-end="url(#sd-arrow)"/>
+  <path class="tree" d="M535,484 V750.0"/>
+  <path class="tree" d="M835,484 V750.0"/>
+</svg>

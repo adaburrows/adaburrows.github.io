@@ -53,7 +53,7 @@ have a system composed of:
 1. Redis keystore which stores the online aggregation of data and also stores
    the session data in another database.
 
-![](./images/system-diagram.png)
+{{< diagram src="images/system-diagram.svg" >}}
 
 {{< hint info >}}
 We can see a lot duplication which should be examined in order to determine if
