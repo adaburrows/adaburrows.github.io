@@ -26,7 +26,7 @@
   --chip: #ffffff;
   --tape: var(--green);
   --tape-on: #f2f2ee;
-  --emboss: -1px -1px 0 rgba(255,255,255,.4), 1px 1px 0 rgba(0,0,0,.7), 1px 2px 2px rgba(0,0,0,.45);
+  --tape-sel: var(--red);
   --photo: url("/images/theme/leaf.jpg");
   --logo: url("/images/theme/logo.png");
   --measure: 64rem;
@@ -58,7 +58,7 @@
   --chip: #000000;
   --tape: #2e3159;
   --tape-on: #ffffff;
-  --emboss: -1px -1px 0 rgba(255,255,255,.35), 1px 1px 0 rgba(13,27,42,.85), 1px 2px 2px rgba(13,27,42,.6);
+  --tape-sel: #cc77cc;
   --photo: url("/images/theme/river-dark.jpg");
   color-scheme: dark;
 }
@@ -84,7 +84,7 @@
     --chip: #000000;
     --tape: #2e3159;
     --tape-on: #ffffff;
-    --emboss: -1px -1px 0 rgba(255,255,255,.35), 1px 1px 0 rgba(13,27,42,.85), 1px 2px 2px rgba(13,27,42,.6);
+    --tape-sel: #cc77cc;
     --photo: url("/images/theme/river-dark.jpg");
     color-scheme: dark;
   }
@@ -138,7 +138,7 @@ button.toggle { font: .8rem var(--mono); color: var(--ink); background: var(--ch
 .site-nav .top > a, .site-nav summary {
   display: flex; align-items: center; gap: .45em; padding: .5em .75em .46em .9em; border-radius: 1px;
   font: 700 .8rem/1 var(--mono); text-transform: uppercase; letter-spacing: .16em;
-  color: var(--tape-on); background-color: var(--tape); text-shadow: var(--emboss);
+  color: var(--tape-on); background-color: var(--tape); text-shadow: 1px 1px 0 color-mix(in srgb, var(--tape) 50%, #fff);
   border-bottom: 1px solid rgba(255,255,255,.75);
   text-decoration: none; cursor: pointer; user-select: none; white-space: nowrap;
   transform: rotate(var(--tilt, 0deg)); transition: transform .12s ease;
@@ -153,7 +153,7 @@ button.toggle { font: .8rem var(--mono); color: var(--ink); background: var(--ch
 }
 .site-nav details[open] > summary::after { transform: translateY(.1em) rotate(-135deg); }
 .site-nav .top > a:hover, .site-nav summary:hover, .site-nav details[open] > summary { transform: translateY(-1px) rotate(0); }
-.site-nav .current > a, .site-nav .current > details > summary { background-color: var(--red); }
+.site-nav .current > a, .site-nav .current > details > summary { --tape: var(--tape-sel); }
 .site-nav .dd { position: relative; }
 .site-nav .panel {
   position: absolute; top: calc(100% + .45rem); left: 0; min-width: 17rem; max-width: min(24rem, calc(100vw - 32px));
@@ -218,8 +218,8 @@ th { font-family: var(--script); font-weight: 400; color: var(--green); }
 .page-head h1 { margin-bottom: .2rem; }
 .crumbs { font: .82rem var(--mono); color: var(--muted); margin: 0 0 .35rem; }
 .crumbs a { color: inherit; }
-/* Category tags (and the social links) as embossed label-maker (Dymo) tape: flat plastic in the palette green (light) or the night-sky indigo of the dark photo, the selected tag in the palette red, square-cut ends, a pale bottom edge, and
-   bold monospace capitals pressed up out of the tape (--emboss lights them per theme). */
+/* Category tags (and the social links) as embossed label-maker (Dymo) tape: flat plastic in the palette green (light) or the night-sky indigo of the dark photo, the selected one in --tape-sel (red in light, purple in dark), square-cut ends, a pale bottom edge, and
+   bold monospace capitals pressed up out of the tape with an edge blended from the tape colour and white. */
 .chips { display: flex; flex-wrap: wrap; gap: .75rem .55rem; list-style: none; padding: 0; margin: .6rem 0 1.1rem; }
 /* Hand-placed look: site.js tilts every label on the page (tags and caption strips) from one shared
    sequence in document order, at most 2.5 degrees. This 7-step cycle is the no-script fallback. */
@@ -237,13 +237,13 @@ th { font-family: var(--script); font-weight: 400; color: var(--green); }
   padding: .42em .5em .38em .7em; border-radius: 1px;
   color: var(--tape-on); text-decoration: none;
   background-color: var(--tape);
-  text-shadow: var(--emboss);
+  text-shadow: 1px 1px 0 color-mix(in srgb, var(--tape) 50%, #fff);
   border-bottom: 1px solid rgba(255,255,255,.75);
   transition: transform .12s ease;
 }
 .chips a:hover, .social-list a:hover { transform: translateY(-1px) rotate(0); }
 .chips a:focus-visible, .social-list a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
-.chips a[aria-current="page"] { background-color: var(--red); }
+.chips a[aria-current="page"] { --tape: var(--tape-sel); }
 .chips .count { opacity: .75; letter-spacing: .1em; }
 .chips.mini { margin: 0; gap: .35rem; align-items: center; }
 .chips a { font-size: .66rem; }
@@ -322,7 +322,7 @@ pre.mermaid { background: var(--chip); text-align: center; }
 .site-footer p { max-width: none; margin: .35rem 0; }
 svg.fa { display: inline-block; width: auto; height: 1em; vertical-align: -.125em; }
 .site-footer .social-list a { font-size: .68rem; gap: .5em; color: var(--tape-on); }
-.site-footer .social-list svg.fa { height: 1.3em; vertical-align: 0; filter: drop-shadow(1px 1px 0 rgba(0,0,0,.6)); }
+.site-footer .social-list svg.fa { height: 1.3em; vertical-align: 0; filter: drop-shadow(1px 1px 0 color-mix(in srgb, var(--tape) 50%, #fff)); }
 
 /* ---------- small screens ---------- */
 @media (max-width: 640px) {
