@@ -1,7 +1,8 @@
 /* Sagacity: the Creative Sagacity style of adaburrows.com, ported from the artifact page system
    (design-source/site.css). Fixed leaf photograph, a white header strip with the title right-aligned
-   and the round logo over its edge, translucent rounded cards. Dark keeps every colour token's hue
-   and meaning in a lighter shade, over the John Day / Columbia River photograph.
+   and the round logo over its edge, translucent rounded cards. Dark keeps each colour token's hue
+   in a lighter shade (except --green, which turns the original purple #cc77cc), over the John Day /
+   Columbia River photograph.
    Theme choice: data-theme="light|dark" on <html> (set before first paint by an inline script, and
    kept in localStorage); with no script, prefers-color-scheme decides. */
 :root {
@@ -47,7 +48,7 @@
   --red: #ff705b;
   --gold: #e9b539;
   --rose: #fb9895;
-  --green: #6fbe6c;
+  --green: #cc77cc;
   --blue: #7aace1;
   --tint: rgba(255,255,255,0.035);
   --code-bg: rgba(255,255,255,0.06);
@@ -73,7 +74,7 @@
     --red: #ff705b;
     --gold: #e9b539;
     --rose: #fb9895;
-    --green: #6fbe6c;
+    --green: #cc77cc;
     --blue: #7aace1;
     --tint: rgba(255,255,255,0.035);
     --code-bg: rgba(255,255,255,0.06);
