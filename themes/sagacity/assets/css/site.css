@@ -110,7 +110,7 @@ body::before {
 .strip .heading { text-align: right; min-width: 0; }
 .strip .site-title { font: 400 1.82rem/1.1 var(--script); letter-spacing: .01em; color: var(--red); text-shadow: 1px 1px 7px var(--glow); margin: 0; text-wrap: balance; }
 .strip .site-title a { color: inherit; text-decoration: none; }
-.strip .site-sub { font: 400 .94rem var(--script); letter-spacing: .01em; color: var(--ink); text-shadow: 1px 1px 7px var(--glow); margin: .1rem 0 0; }
+.strip .site-sub { font: 400 .94rem var(--script); letter-spacing: .01em; color: var(--green); text-shadow: 1px 1px 7px var(--glow); margin: .1rem 0 0; }
 .strip .logo-link { flex: none; display: block; margin: -1.6rem 0 -1.6rem .5rem; border-radius: 60px; }
 .strip img.logo { display: block; width: 120px; height: 120px; border-radius: 60px; box-shadow: var(--shadow); }
 .strip img.logo-dark { display: none; }
