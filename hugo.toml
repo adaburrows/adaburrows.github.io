@@ -17,7 +17,7 @@ enableRobotsTXT = false
   repo = "https://github.com/adaburrows/adaburrows.github.io"
   avatar = "https://s.gravatar.com/avatar/44645c684eb67fc38f700fdf5ff4ff2c?s=400"
 
-  # Shown in the About menu and the footer.
+  # Shown on the home page and in the footer.
   [[params.social]]
     name = "GitHub"
     icon = "github-square"
@@ -94,8 +94,6 @@ enableRobotsTXT = false
     name = "About"
     identifier = "about"
     weight = 40
-    [menus.main.params]
-      social = true
   [[menus.main]]
     name = "Resume"
     pageRef = "/docs/resume"

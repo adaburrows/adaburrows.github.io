@@ -127,11 +127,24 @@ button.toggle { font: .8rem var(--mono); color: var(--ink); background: var(--ch
    One bar, identical on every screen. Dropdowns are <details>: tap or click to open, no script
    needed (site.js only closes an open one on outside click / Escape). On wide screens a panel
    hangs under its own item; on narrow ones it spans the bar so nothing runs off-screen. */
-.site-nav { max-width: var(--measure); margin: 0 auto 1.1rem; padding-inline: 16px; position: relative; z-index: 20; }
+/* Header + nav share a .masthead. Wide screens (over 1100px): the nav is laid into the strip's
+   bottom-left, level with the subtitle and theme toggle. Narrower: there's no room beside the name,
+   so it's its own bar under the strip. */
+.masthead { position: relative; margin-bottom: 1.1rem; }
+.masthead .strip { margin: 0; }
+.site-nav { max-width: var(--measure); margin: 2.2rem auto 0; padding-inline: 16px; position: relative; z-index: 20; }
 .site-nav > ul {
   position: relative; display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .6rem;
   list-style: none; margin: 0; padding: .6rem .8rem;
   background: var(--card); box-shadow: var(--shadow); border-radius: 1em;
+}
+@media (max-width: 1100px) {
+  .masthead .site-nav .top > a, .masthead .site-nav summary { font-size: .68rem; letter-spacing: .08em; padding: .5em .55em .46em .65em; }
+}
+@media (min-width: 1101px) {
+  .masthead { margin-bottom: 2.2rem; }
+  .site-nav { position: absolute; left: 0; right: 0; bottom: .6rem; margin: 0 auto; pointer-events: none; }
+  .site-nav > ul { width: fit-content; padding: 0; background: none; box-shadow: none; border-radius: 0; pointer-events: auto; }
 }
 .site-nav li { margin: 0; }
 /* Top-level items are label-maker tape too (see the tape rules further down for the shared look). */
@@ -173,7 +186,7 @@ button.toggle { font: .8rem var(--mono); color: var(--ink); background: var(--ch
   .site-nav .dd { position: static; }
   .site-nav .panel { left: .4rem; right: .4rem; top: calc(100% + .3rem); min-width: 0; max-width: none; }
   .site-nav > ul { gap: .3rem; padding: .45rem .35rem; flex-wrap: nowrap; justify-content: space-between; }
-  .site-nav .top > a, .site-nav summary { padding: .5em .35em .46em .45em; font-size: .58rem; gap: .2em; letter-spacing: .03em; }
+  .masthead .site-nav .top > a, .masthead .site-nav summary { padding: .5em .35em .46em .45em; font-size: .58rem; gap: .2em; letter-spacing: .03em; }
   .site-nav .top .icon { width: 1.25em; height: 1.25em; margin: -.2em 0; }
   .site-nav summary::after { width: .4em; height: .4em; }
   /* Home is icon-only on phones; the label stays for screen readers. */

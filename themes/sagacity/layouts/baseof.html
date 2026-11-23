@@ -5,8 +5,10 @@
 </head>
 <body>
   <a class="skip" href="#content">Skip to content</a>
+  <div class="masthead">
   {{- partial "header.html" . }}
   {{- partial "nav.html" . }}
+  </div>
   <main id="content">
     {{- block "main" . }}{{ end }}
   </main>
