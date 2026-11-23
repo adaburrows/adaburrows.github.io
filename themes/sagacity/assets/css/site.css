@@ -24,9 +24,9 @@
   --shadow: 3px 3px 7px rgba(0,0,0,0.33);
   --glow: rgba(0,0,0,0.33);
   --chip: #ffffff;
-  --tape: #1e4426;
+  --tape: var(--green);
   --tape-on: #f2f2ee;
-  --tape-hot: #b8301f;
+  --emboss: -1px -1px 0 rgba(255,255,255,.4), 1px 1px 0 rgba(0,0,0,.7), 1px 2px 2px rgba(0,0,0,.45);
   --photo: url("/images/theme/leaf.jpg");
   --logo: url("/images/theme/logo.png");
   --measure: 64rem;
@@ -56,9 +56,9 @@
   --shadow: 3px 3px 7px rgba(255,255,255,0.33);
   --glow: rgba(255,255,255,0.33);
   --chip: #000000;
-  --tape: #2a5d8f;
-  --tape-on: #f2f2ee;
-  --tape-hot: #c23a28;
+  --tape: var(--blue);
+  --tape-on: #0d1b2a;
+  --emboss: 0 1px 0 rgba(255,255,255,.55), -1px -1px 0 rgba(0,0,0,.2);
   --photo: url("/images/theme/river-dark.jpg");
   color-scheme: dark;
 }
@@ -82,9 +82,9 @@
     --shadow: 3px 3px 7px rgba(255,255,255,0.33);
     --glow: rgba(255,255,255,0.33);
     --chip: #000000;
-    --tape: #2a5d8f;
-    --tape-on: #f2f2ee;
-    --tape-hot: #c23a28;
+    --tape: var(--blue);
+    --tape-on: #0d1b2a;
+    --emboss: 0 1px 0 rgba(255,255,255,.55), -1px -1px 0 rgba(0,0,0,.2);
     --photo: url("/images/theme/river-dark.jpg");
     color-scheme: dark;
   }
@@ -214,8 +214,8 @@ th { font-family: var(--script); font-weight: 400; color: var(--green); }
 .page-head h1 { margin-bottom: .2rem; }
 .crumbs { font: .82rem var(--mono); color: var(--muted); margin: 0 0 .35rem; }
 .crumbs a { color: inherit; }
-/* Category tags (and the social links) as embossed label-maker (Dymo) tape: flat plastic (green in light, blue in dark), square-cut ends, a pale bottom edge, and
-   bold monospace capitals pressed up out of the tape, stress-whitened, lit from the top left. */
+/* Category tags (and the social links) as embossed label-maker (Dymo) tape: flat plastic in the palette green (light) or blue (dark), the selected tag in the palette red, square-cut ends, a pale bottom edge, and
+   bold monospace capitals pressed up out of the tape (--emboss lights them per theme). */
 .chips { display: flex; flex-wrap: wrap; gap: .75rem .55rem; list-style: none; padding: 0; margin: .6rem 0 1.1rem; }
 /* Hand-placed look: site.js tilts every label on the page (tags and caption strips) from one shared
    sequence in document order, at most 2.5 degrees. This 7-step cycle is the no-script fallback. */
@@ -233,17 +233,17 @@ th { font-family: var(--script); font-weight: 400; color: var(--green); }
   padding: .42em .5em .38em .7em; border-radius: 1px;
   color: var(--tape-on); text-decoration: none;
   background-color: var(--tape);
-  text-shadow: -1px -1px 0 rgba(255,255,255,.45), 1px 1px 0 rgba(0,0,0,.75), 1px 2px 2px rgba(0,0,0,.5);
+  text-shadow: var(--emboss);
   border-bottom: 1px solid rgba(255,255,255,.75);
   transition: transform .12s ease;
 }
 .chips a:hover, .social-list a:hover { transform: translateY(-1px) rotate(0); }
 .chips a:focus-visible, .social-list a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
-.chips a[aria-current="page"] { background-color: var(--tape-hot); }
+.chips a[aria-current="page"] { background-color: var(--red); }
 .chips .count { opacity: .75; letter-spacing: .1em; }
 .chips.mini { margin: 0; gap: .35rem; align-items: center; }
 .chips a { font-size: .66rem; }
-.chips.mini a { font-size: .6rem; }
+.chips.mini a { font-size: .56rem; padding: .3em .45em .26em .6em; }
 /* Figure captions use the same tape: the title, then the caption as its own strip (wraps if long). */
 figcaption h4, figcaption p { display: inline-block; margin: .15rem .25rem; max-width: 100%; line-height: 1.5; }
 figcaption p { font-size: .66rem; }
