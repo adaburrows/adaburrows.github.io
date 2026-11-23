@@ -23,7 +23,7 @@
   --shadow: 3px 3px 7px rgba(0,0,0,0.33);
   --glow: rgba(0,0,0,0.33);
   --chip: #ffffff;
-  --tape: #1d1f22;
+  --tape: #1e4426;
   --tape-on: #f2f2ee;
   --tape-hot: #b8301f;
   --photo: url("/images/theme/leaf.jpg");
@@ -55,7 +55,7 @@
   --shadow: 3px 3px 7px rgba(255,255,255,0.33);
   --glow: rgba(255,255,255,0.33);
   --chip: #000000;
-  --tape: #3a4048;
+  --tape: #1f4a29;
   --tape-on: #f2f2ee;
   --tape-hot: #c23a28;
   --photo: url("/images/theme/river-dark.jpg");
@@ -81,7 +81,7 @@
     --shadow: 3px 3px 7px rgba(255,255,255,0.33);
     --glow: rgba(255,255,255,0.33);
     --chip: #000000;
-    --tape: #3a4048;
+    --tape: #1f4a29;
     --tape-on: #f2f2ee;
     --tape-hot: #c23a28;
     --photo: url("/images/theme/river-dark.jpg");
@@ -214,7 +214,7 @@ th { font-family: var(--script); font-weight: 400; color: var(--green); }
 .page-head h1 { margin-bottom: .2rem; }
 .crumbs { font: .82rem var(--mono); color: var(--muted); margin: 0 0 .35rem; }
 .crumbs a { color: inherit; }
-/* Category tags as embossed label-maker (Dymo) tape: flat glossy plastic, square-cut ends, and
+/* Category tags as embossed label-maker (Dymo) tape: flat dark-green plastic, square-cut ends, a pale bottom edge, and
    bold monospace capitals pressed up out of the tape, stress-whitened, lit from the top left. */
 .chips { display: flex; flex-wrap: wrap; gap: .55rem .5rem; list-style: none; padding: 0; margin: .6rem 0 1.1rem; }
 .chips li:nth-child(3n+1) a { transform: rotate(-.6deg); }
@@ -226,11 +226,10 @@ th { font-family: var(--script); font-weight: 400; color: var(--green); }
   color: rgba(255,255,255,.9); text-decoration: none;
   background-color: var(--tape);
   text-shadow: -1px -1px 0 rgba(255,255,255,.45), 1px 1px 0 rgba(0,0,0,.75), 1px 2px 2px rgba(0,0,0,.5);
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.35), inset 0 -2px 1px rgba(0,0,0,.35), 1px 2px 3px rgba(0,0,0,.45);
-  transition: transform .12s ease, box-shadow .12s ease;
+  border-bottom: 1px solid rgba(255,255,255,.75);
+  transition: transform .12s ease;
 }
-.chips a:hover { color: #fff; transform: translateY(-1px) rotate(0);
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.35), inset 0 -2px 1px rgba(0,0,0,.35), 2px 4px 6px rgba(0,0,0,.45); }
+.chips a:hover { color: #fff; transform: translateY(-1px) rotate(0); }
 .chips a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
 .chips a[aria-current="page"] { background-color: var(--tape-hot); }
 .chips .count { opacity: .75; letter-spacing: .1em; }
