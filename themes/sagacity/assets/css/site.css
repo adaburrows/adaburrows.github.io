@@ -58,7 +58,7 @@
   --chip: #000000;
   --tape: #2e3159;
   --tape-on: #ffffff;
-  --tape-sel: #cc77cc;
+  --tape-sel: var(--green);
   --photo: url("/images/theme/river-dark.jpg");
   color-scheme: dark;
 }
@@ -84,7 +84,7 @@
     --chip: #000000;
     --tape: #2e3159;
     --tape-on: #ffffff;
-    --tape-sel: #cc77cc;
+    --tape-sel: var(--green);
     --photo: url("/images/theme/river-dark.jpg");
     color-scheme: dark;
   }
