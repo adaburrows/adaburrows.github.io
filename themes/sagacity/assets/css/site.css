@@ -197,8 +197,7 @@ img, video, svg { max-width: 100%; height: auto; }
 .prose img { border-radius: .5em; }
 figure { margin: 1rem 0; }
 figure img { display: block; margin: 0 auto; }
-figcaption { font-size: .88rem; color: var(--muted); text-align: center; margin-top: .4rem; }
-figcaption h4 { margin: 0; }
+figcaption { text-align: center; margin-top: .6rem; line-height: 2.1; }
 blockquote { margin: 1rem 0; padding: .3rem 1rem; border-left: 3px solid var(--rose); background: var(--tint); border-radius: 0 .5em .5em 0; }
 code, kbd, .mono { font-family: var(--mono); font-size: .92em; }
 :not(pre) > code { background: var(--code-bg); padding: .05em .3em; border-radius: .3em; }
@@ -219,7 +218,7 @@ th { font-family: var(--script); font-weight: 400; color: var(--green); }
 .chips { display: flex; flex-wrap: wrap; gap: .55rem .5rem; list-style: none; padding: 0; margin: .6rem 0 1.1rem; }
 .chips li:nth-child(3n+1) a { transform: rotate(-.6deg); }
 .chips li:nth-child(3n+2) a { transform: rotate(.4deg); }
-.chips a, .chip {
+.chips a, .chip, figcaption h4, figcaption p {
   display: inline-flex; align-items: baseline; gap: .6em;
   font: 700 .74rem/1 var(--mono); text-transform: uppercase; letter-spacing: .2em;
   padding: .42em .5em .38em .7em; border-radius: 1px;
@@ -235,6 +234,9 @@ th { font-family: var(--script); font-weight: 400; color: var(--green); }
 .chips .count { opacity: .75; letter-spacing: .1em; }
 .chips.mini { margin: 0; gap: .35rem; align-items: center; }
 .chips.mini a { font-size: .64rem; }
+/* Figure captions use the same tape: the title, then the caption as its own strip (wraps cleanly). */
+figcaption h4, figcaption p { display: inline; margin: 0 .2rem; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+figcaption p { font-size: .66rem; }
 
 /* table of contents */
 details.toc { margin: .4rem 0 1rem; border: 1px dotted var(--rule); border-radius: .6em; padding: .4rem .9rem; background: var(--tint); }
