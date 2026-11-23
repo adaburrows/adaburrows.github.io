@@ -10,7 +10,7 @@
     <div class="meta">
       <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2" }}</time>
       {{- with $host }}<span class="via">on {{ . }}</span>{{ end }}
-      {{- with .GetTerms "categories" }}<span>{{ range $i, $t := . }}{{ if $i }}, {{ end }}<a href="{{ $t.RelPermalink }}">{{ $t.LinkTitle }}</a>{{ end }}</span>{{ end }}
+      {{- with .GetTerms "categories" }}<ul class="chips mini" aria-label="Categories">{{ range . }}<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>{{ end }}</ul>{{ end }}
     </div>
     {{- with or .Params.summary .Description .Summary }}
     <p class="summary">{{ . | plainify | htmlUnescape | truncate 280 }}</p>
