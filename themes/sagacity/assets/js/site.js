@@ -10,7 +10,7 @@
   var btn = document.getElementById("theme-toggle");
   function sync() {
     var dark = root.getAttribute("data-theme") === "dark";
-    if (btn) { btn.textContent = dark ? "Light" : "Dark"; btn.setAttribute("aria-pressed", String(dark)); }
+    if (btn) btn.setAttribute("aria-pressed", String(dark)); // CSS shows Dark or Light by data-theme
   }
   if (btn) {
     btn.hidden = false;
@@ -50,7 +50,7 @@
 // 13 steps (prime, so it won't line up with rows or lists), all within 2.5 degrees.
 (function () {
   var tilts = [-.75, 1.25, -2, .5, 1.75, -1.25, 2.5, -.25, -1.75, 1, -2.5, 2, -.5];
-  document.querySelectorAll(".site-nav .top > a, .site-nav .top summary, .chips a, .social-list a, figcaption h4, figcaption p").forEach(function (el, i) {
+  document.querySelectorAll(".site-nav .top > a, .site-nav .top summary, .site-nav .top > button, .chips a, .social-list a, figcaption h4, figcaption p").forEach(function (el, i) {
     el.style.setProperty("--tilt", tilts[i % tilts.length] + "deg");
   });
 })();

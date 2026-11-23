@@ -3,7 +3,6 @@
     <div class="heading">
       <p class="site-title"><a href="{{ "/" | relURL }}">{{ site.Title }}</a></p>
       {{- with site.Params.subtitle }}<p class="site-sub">{{ . }}</p>{{ end }}
-      <button class="toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle dark mode" hidden>Dark</button>
     </div>
     <a class="logo-link" href="{{ "/" | relURL }}" aria-label="Home">
       <img class="logo logo-light" src="{{ "images/theme/logo.png" | relURL }}" width="120" height="120" alt="Creative Sagacity" title="Conceptor, Connector, Conductor of Creative Sagacity">
