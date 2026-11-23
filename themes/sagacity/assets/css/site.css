@@ -231,13 +231,13 @@ th { font-family: var(--script); font-weight: 400; color: var(--green); }
   display: inline-flex; align-items: baseline; gap: .6em;
   font: 700 .74rem/1 var(--mono); text-transform: uppercase; letter-spacing: .2em;
   padding: .42em .5em .38em .7em; border-radius: 1px;
-  color: rgba(255,255,255,.9); text-decoration: none;
+  color: var(--tape-on); text-decoration: none;
   background-color: var(--tape);
   text-shadow: -1px -1px 0 rgba(255,255,255,.45), 1px 1px 0 rgba(0,0,0,.75), 1px 2px 2px rgba(0,0,0,.5);
   border-bottom: 1px solid rgba(255,255,255,.75);
   transition: transform .12s ease;
 }
-.chips a:hover, .social-list a:hover { color: #fff; transform: translateY(-1px) rotate(0); }
+.chips a:hover, .social-list a:hover { transform: translateY(-1px) rotate(0); }
 .chips a:focus-visible, .social-list a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
 .chips a[aria-current="page"] { background-color: var(--tape-hot); }
 .chips .count { opacity: .75; letter-spacing: .1em; }
@@ -316,7 +316,7 @@ pre.mermaid { background: var(--chip); text-align: center; }
 .site-footer a { color: inherit; }
 .site-footer p { max-width: none; margin: .35rem 0; }
 svg.fa { display: inline-block; width: auto; height: 1em; vertical-align: -.125em; }
-.site-footer .social-list a { font-size: .68rem; gap: .5em; }
+.site-footer .social-list a { font-size: .68rem; gap: .5em; color: var(--tape-on); }
 .site-footer .social-list svg.fa { height: 1.3em; vertical-align: 0; filter: drop-shadow(1px 1px 0 rgba(0,0,0,.6)); }
 
 /* ---------- small screens ---------- */
