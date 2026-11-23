@@ -27,7 +27,8 @@
   });
   sync();
 
-  // Dropdowns: one open at a time; close on outside click or Escape.
+  // Dropdowns: one open at a time; close on outside click, on choosing a link (a same-page
+  // #section jump doesn't reload the page, so the menu would otherwise stay open), or Escape.
   var menus = Array.prototype.slice.call(document.querySelectorAll(".site-nav details"));
   menus.forEach(function (d) {
     d.addEventListener("toggle", function () {
@@ -35,7 +36,8 @@
     });
   });
   document.addEventListener("click", function (e) {
-    menus.forEach(function (d) { if (d.open && !d.contains(e.target)) d.open = false; });
+    var link = e.target.closest && e.target.closest(".panel a");
+    menus.forEach(function (d) { if (d.open && (link || !d.contains(e.target))) d.open = false; });
   });
   document.addEventListener("keydown", function (e) {
     if (e.key !== "Escape") return;
