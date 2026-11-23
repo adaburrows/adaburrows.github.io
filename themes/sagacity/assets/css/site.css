@@ -242,7 +242,8 @@ th { font-family: var(--script); font-weight: 400; color: var(--green); }
 .chips a[aria-current="page"] { background-color: var(--tape-hot); }
 .chips .count { opacity: .75; letter-spacing: .1em; }
 .chips.mini { margin: 0; gap: .35rem; align-items: center; }
-.chips.mini a { font-size: .64rem; }
+.chips a { font-size: .66rem; }
+.chips.mini a { font-size: .6rem; }
 /* Figure captions use the same tape: the title, then the caption as its own strip (wraps if long). */
 figcaption h4, figcaption p { display: inline-block; margin: .15rem .25rem; max-width: 100%; line-height: 1.5; }
 figcaption p { font-size: .66rem; }
