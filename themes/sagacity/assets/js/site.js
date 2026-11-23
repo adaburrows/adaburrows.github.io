@@ -49,9 +49,9 @@
 
 // Label tape: one tilt sequence shared by every label on the page (nav items, category tags, post tags,
 // social links and caption strips), counted in document order so neighbouring groups never repeat the same pattern.
-// 13 steps (prime, so it won't line up with rows or lists), all within 2.5 degrees.
+// 13 steps (prime, so it won't line up with rows or lists), all within 1.6 degrees.
 (function () {
-  var tilts = [-.75, 1.25, -2, .5, 1.75, -1.25, 2.5, -.25, -1.75, 1, -2.5, 2, -.5];
+  var tilts = [-.5, .8, -1.3, .3, 1.1, -.8, 1.6, -.15, -1.1, .65, -1.6, 1.3, -.3];
   document.querySelectorAll(".site-nav .top > a, .site-nav .top summary, .site-nav .top > button, .chips a, .social-list a, figcaption h4, figcaption p").forEach(function (el, i) {
     el.style.setProperty("--tilt", tilts[i % tilts.length] + "deg");
   });

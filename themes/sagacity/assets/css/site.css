@@ -244,15 +244,15 @@ th { font-family: var(--script); font-weight: 400; color: var(--green); }
    bold monospace capitals pressed up out of the tape with an edge blended from the tape colour and white. */
 .chips { display: flex; flex-wrap: wrap; gap: .75rem .55rem; list-style: none; padding: 0; margin: .6rem 0 1.1rem; }
 /* Hand-placed look: site.js tilts every label on the page (tags and caption strips) from one shared
-   sequence in document order, at most 2.5 degrees. This 7-step cycle is the no-script fallback. */
+   sequence in document order, at most 1.6 degrees. This 7-step cycle is the no-script fallback. */
 .chips a, .social-list a, figcaption h4, figcaption p { --tilt: 0deg; transform: rotate(var(--tilt)); }
-.chips li:nth-child(7n+1) a { --tilt: -.75deg; }
-.chips li:nth-child(7n+2) a { --tilt: 1.1deg; }
-.chips li:nth-child(7n+3) a { --tilt: -1.7deg; }
-.chips li:nth-child(7n+4) a { --tilt: .4deg; }
-.chips li:nth-child(7n+5) a { --tilt: 1.9deg; }
-.chips li:nth-child(7n+6) a { --tilt: -.3deg; }
-.chips li:nth-child(7n+7) a { --tilt: -1.3deg; }
+.chips li:nth-child(7n+1) a { --tilt: -.5deg; }
+.chips li:nth-child(7n+2) a { --tilt: .7deg; }
+.chips li:nth-child(7n+3) a { --tilt: -1.1deg; }
+.chips li:nth-child(7n+4) a { --tilt: .25deg; }
+.chips li:nth-child(7n+5) a { --tilt: 1.2deg; }
+.chips li:nth-child(7n+6) a { --tilt: -.2deg; }
+.chips li:nth-child(7n+7) a { --tilt: -.85deg; }
 .chips a, .chip, .social-list a, figcaption h4, figcaption p {
   display: inline-flex; align-items: baseline; gap: .6em;
   font: 700 .74rem/1 var(--mono); text-transform: uppercase; letter-spacing: .2em;
